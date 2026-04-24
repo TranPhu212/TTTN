@@ -173,7 +173,7 @@ pre: " <b> 1.1. </b> "
         * Budget creation complete.
         * ![Proof: RI budget successfully created](/images/1-Worklog/1.1-Week1/Day2/Tạo_RI_Budget_thành_công.png)
         * Verify the created budget.
-        * ![Proof: Check RI budget](/images/1-Worklog/1.1-Week1/Day2/Check_RI_budget.png.png)
+        * ![Proof: Check RI budget](/images/1-Worklog/1.1-Week1/Day2/Check_RI_budget.png)
 
     * **Configure Alerts & Email Notifications**
         * Set up automatic email notifications to personal accounts when actual or forecasted costs hit established thresholds.
@@ -304,7 +304,7 @@ pre: " <b> 1.1. </b> "
     * Assign `AdministratorAccess` permission to this Role.
     * Access AWS Management Console and open IAM service
     * In the left navigation pane, select Roles and click Create role
-    * ![Proof: Initialize Role](/images/1-Worklog/1.1-Week1/Day3/Create_Role.png)
+    * ![Proof: Initialize Role](/images/1-Worklog/1.1-Week1/Day3/Create_role.png)
     * Select AWS account
     * This option allows the role to be used within the current AWS account or another account
     * ![Proof: Select trusted entity](/images/1-Worklog/1.1-Week1/Day3/Select_trusted_entity.png)
@@ -427,7 +427,7 @@ pre: " <b> 1.1. </b> "
 
 ## Wednesday: Advanced Network Infrastructure - AMAZON VPC
 
-# Amazon VPC Overview
+### Amazon VPC Overview
 **Amazon Virtual Private Cloud (VPC)** is a private virtual network dedicated to your AWS account. It allows you to launch AWS resources in a logically isolated virtual network, providing complete control over your networking environment.
 
 * **Core Characteristics:**
@@ -435,7 +435,7 @@ pre: " <b> 1.1. </b> "
     * **Scope:** A VPC spans an entire **Region** but is divided into **Availability Zones (AZs)** through Subnets.
     * **Control:** Define your own IP ranges, Route Tables, and configure security layers (Security Groups/NACLs).
 
-# Key Components
+### Key Components
 * **CIDR Block & IP Addressing**
     * VPC uses the **CIDR** methodology to define IP address ranges.
     * **VPC CIDR:** Typically uses a `/16` range (65,536 IPs) to optimize scalability.
@@ -458,7 +458,7 @@ pre: " <b> 1.1. </b> "
         * *Public Route:* `0.0.0.0/0 -> IGW`.
     * **NAT Gateway:** A service residing in a Public Subnet that enables resources in a Private Subnet to access the Internet (for patches or library downloads) while preventing the Internet from initiating a connection back to them.
 
-# Multi-layered Security
+### Multi-layered Security
 * **The VPC security system operates based on two main firewall layers:**
     * **Security Groups (Instance Level)**
         * Acts as a firewall for servers (EC2).
@@ -470,9 +470,30 @@ pre: " <b> 1.1. </b> "
         * **Stateless:** You must explicitly configure both Inbound and Outbound rules.
         * Supports both **Allow** and **Deny** rules.
 
-# High Availability (HA) Design Thinking
+### High Availability (HA) Design Thinking
 * **To ensure the system remains uninterrupted when a data center encounters an issue:**
     * Deploy resources across at least **2 Availability Zones**.
     * In each AZ, set up corresponding pairs of Public/Private Subnets.
     * Utilize high-availability AWS services like **ELB (Elastic Load Balancing)** to distribute traffic.
 
+
+
+* **Management Console:**
+    * **Root Login**
+        * We can log in with the root user or with the IAM User (a sub user that helps manage AWS resource export)
+    * **IAM User Login**
+        * When logging in with an IAM User, we need to provide additional Account ID information (12-digit string) to identify the AWS Account
+    * **Service Search**
+        * After logging in to the AWS Management Console interface, we can search for AWS services
+        * Each service will have its site management that allows us to the features of that service
+    
+    * **Support Center**
+        * On the left, there is the Support menu, they can go to the Support Center to create support cases to request support from the AWS team
+
+    * **AWS Command Line Interface (CLI)**
+        * AWS command line interface (AWS CLI) is an open-source coding tool that allows you to interact with AWS services using commands
+        * The AWS CLI allows you to run command development function that are compatible with those provided by the browser-based AWS Management Console
+    
+    * **AWS SDK**
+        * AWS SDK simplifiles the use of AWS services for applications by providing a best-in-class library that is familiar to application development teams
+        * The AWS SDK provides support for API lifecycle management tasks to AWS services such as credential management, retrying, data wrangling, serialization and deserialization

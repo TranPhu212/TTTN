@@ -19,7 +19,7 @@ pre: " <b> 1.1. </b> "
 | 2 | - Thiết lập AWS Budgets để quản lý chi phí | 20/04/2026 | 20/04/2026 | <https://000007.awsstudygroup.com/>  |
 | 3 | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br> - Học về Access Management với AWS IAM (User, Group, Policy, Role) | 21/04/2026 | 21/04/2026 | <https://000002.awsstudygroup.com/> |
 | 4 | - Học Networking với Amazon VPC | 22/04/2026 | 22/04/2026 | <https://000003.awsstudygroup.com/> |
-| 5 | - **Thực hành:** <br>&emsp; + Thực hành các lệnh AWS CLI cơ bản | 23/04/2026 | 23/04/2026 | <https://000003.awsstudygroup.com/> |
+| 5 | - Introduction to AWS <br> - Management Console | 23/04/2026 | 23/04/2026 | <https://www.youtube.com/watch?v=qVCF7UjYC5s&t=146s> <br> <https://www.youtube.com/watch?v=95quNuhvMT0> |
 
 
 ### Kết quả đạt được tuần 1:
@@ -173,7 +173,7 @@ pre: " <b> 1.1. </b> "
         * Hoàn thành tạo budget.
         * ![Minh chứng: Tạo RI budget thành công](/images/1-Worklog/1.1-Week1/Day2/Tạo_RI_Budget_thành_công.png)
         * Kiểm tra budget đã tạo.
-        * ![Minh chứng: Kiểm tra budget RI](/images/1-Worklog/1.1-Week1/Day2/Check_RI_budget.png.png)
+        * ![Minh chứng: Kiểm tra budget RI](/images/1-Worklog/1.1-Week1/Day2/Check_RI_budget.png)
 
     * **Cấu hình Cảnh báo & Thông báo Email**
         * Cài đặt gửi thông báo tự động về email cá nhân khi chi phí thực tế hoặc dự báo (Forecasted) chạm ngưỡng thiết lập.
@@ -303,7 +303,7 @@ pre: " <b> 1.1. </b> "
     * Gán quyền `AdministratorAccess` cho Role này.
     * Truy cập AWS Management Console và mở dịch vụ IAM
     * Trong thanh điều hướng bên trái, chọn Roles và nhấn Create role
-    * ![Minh chứng: Khởi tạo Role](/images/1-Worklog/1.1-Week1/Day3/Create_Role.png)
+    * ![Minh chứng: Khởi tạo Role](/images/1-Worklog/1.1-Week1/Day3/Create_role.png)
     * Chọn AWS account
     * Tùy chọn này cho phép role được sử dụng trong tài khoản AWS hiện tại hoặc tài khoản khác
     * ![Minh chứng: Select trusted entity](/images/1-Worklog/1.1-Week1/Day3/Select_trusted_entity.png)
@@ -426,7 +426,7 @@ pre: " <b> 1.1. </b> "
 
 ## Thứ 4: Hạ tầng Mạng Chuyên sâu AMAZON VPC
 
-# Tổng quan về Amazon VPC
+### Tổng quan về Amazon VPC
 **Amazon Virtual Private Cloud (VPC)** là một mạng ảo dành riêng cho tài khoản AWS của bạn. Nó cho phép bạn khởi tạo các tài nguyên AWS trong một mạng ảo được cách ly logic, mang lại sự kiểm soát toàn diện đối với môi trường mạng.
 
 * **Đặc điểm cốt lõi:**
@@ -434,7 +434,7 @@ pre: " <b> 1.1. </b> "
     * **Phạm vi (Scope):** Một VPC bao phủ toàn bộ một **Region** nhưng được chia nhỏ vào các **Availability Zones (AZs)** thông qua Subnets.
     * **Quyền kiểm soát:** Tự định nghĩa dải IP, bảng định tuyến (Route Tables), và thiết lập các tầng bảo mật (Security Groups/NACLs).
 
-# Các thành phần cấu tạo chính
+### Các thành phần cấu tạo chính
 * **CIDR Block & Địa chỉ IP**
     * VPC sử dụng phương pháp **CIDR** để xác định dải địa chỉ IP.
     * **VPC CIDR:** Thường dùng dải `/16` (65,536 IP) để tối ưu khả năng mở rộng.
@@ -457,7 +457,7 @@ pre: " <b> 1.1. </b> "
         * *Public Route:* `0.0.0.0/0 -> IGW`.
     * **NAT Gateway:** Thiết bị đặt tại Public Subnet giúp tài nguyên ở Private Subnet truy cập Internet (để cập nhật patch, tải thư viện) nhưng ngăn chặn Internet truy cập ngược vào.
 
-# Bảo mật đa lớp (Security Layers)
+### Bảo mật đa lớp (Security Layers)
 * **Hệ thống bảo mật của VPC hoạt động dựa trên hai lớp tường lửa chính:**
     * **Security Groups (Cấp độ Instance)**
     * Hoạt động như tường lửa cho máy chủ (EC2).
@@ -469,63 +469,81 @@ pre: " <b> 1.1. </b> "
     * **Stateless:** Phải cấu hình tường minh cả chiều vào (Inbound) và chiều ra (Outbound).
     * Hỗ trợ cả luật **Allow** và **Deny**.
 
-# Tư duy thiết kế High Availability (HA)
+### Tư duy thiết kế High Availability (HA)
 * **Để đảm bảo hệ thống không bị gián đoạn khi một trung tâm dữ liệu gặp sự cố:**
     * Triển khai tài nguyên trên ít nhất **2 Availability Zones**.
     * Tại mỗi AZ, thiết lập các cặp Public/Private Subnet tương ứng.
     * Sử dụng các dịch vụ có tính sẵn sàng cao của AWS như **ELB (Elastic Load Balancing)** để điều phối lưu lượng.
 
-## Thứ 5: Thực hành hạ tầng Mạng Chuyên sâu AMAZON VPC
+## Thứ 5: 
+* **Introduction to AWS:**
+    * Giới thiệu về dịch vụ mới và sự xuất hiện của agent AI trong học tập và công việc
+    * **Cloud Computing**
+        * Cloud Computing là cách chúng ta cung cấp dịch vụ về IT thông qua internet với mô hình "Sài bao nhiêu tính bấy nhiêu"
 
-# 3. Chuẩn bị môi trường (Environment Preparation - 6 Bài Lab)
-* **3.1 Tạo VPC:** Khởi tạo mạng logic, xác định dải IP cơ sở cho toàn bộ hệ thống.
-* **3.2 Tạo Subnet:** Phân vùng mạng. **Public Subnet** cho dịch vụ giao tiếp bên ngoài; **Private Subnet** cho cơ sở dữ liệu và backend.
-* **3.3 Tạo Internet Gateway (IGW):** Cổng quy mô lớn, sẵn sàng cao, cho phép giao tiếp giữa VPC và Internet.
-* **3.4 Tạo Route Table:** Chứa các quy tắc định hướng luồng dữ liệu. Public Subnet cần route trỏ đến IGW (`0.0.0.0/0 -> IGW`).
-* **3.5 Tạo Security Group:** Định nghĩa giao thức (TCP/UDP) và cổng (22, 80, 443) được phép truy cập.
-* **3.6 Kích hoạt VPC Flow Logs:** Thu thập thông tin lưu lượng IP đi qua giao diện mạng để kiểm tra cấu hình bảo mật hoặc phát hiện xâm nhập.
+        * **Sự khác biệt giữa mô hình truyền thống và hiện đại:**
+            * **Truyền thống (On-premises):**
+                * Muốn xây dựng hệ thống, sản phẩm hay dịch vụ cho rất nhiều người sử dụng cần phải xây dựng hạ tầng ở môi trường on-premises, hạ tầng trung tâm dữ liệu, in house, tức là mỗi doanh nghiệp tự xây khu trung tâm dữ liệu, phải mua sắm các thiết bị phần cứng, đầu tư trung tâm dữ liệu với chi phí rất lớn.
+                * Nếu dự án, sản phẩm, dịch vụ đó ko thành công thì chi phí sau thất bại rất cao
 
-## 4. Triển khai Amazon EC2 Instances (7 Bài Lab)
-* **4.1 Tạo máy chủ EC2:** Chọn AMI, Instance Type và gắn vào Subnet tương ứng đã tạo.
-* **4.2 Kiểm tra kết nối:** Sử dụng Bastion Host hoặc Jump Box để SSH từ mạng ngoài vào các máy chủ trong Private Subnet.
-* **4.3 Tạo NAT Gateway:** Dịch địa chỉ mạng cho Private Subnet. Phải đặt ở Public Subnet để có thể gửi dữ liệu ra Internet.
-* **4.4 Reachability Analyzer:** Công cụ phân tích cấu hình tĩnh để xác định khả năng kết nối giữa hai điểm trong VPC dựa trên Route và SG.
-* **4.5 EC2 Instance Connect Endpoint (EIC):** Cho phép kết nối SSH/RDP an toàn qua hạ tầng AWS mà không cần cấp IP Public cho máy chủ.
-* **4.6 Systems Manager Session Manager:** Quản trị instance an toàn qua trình duyệt mà không cần quản lý SSH keys hay mở cổng inbound 22.
-* **4.7 CloudWatch Monitoring & Alerting:** Giám sát chỉ số (CPU, Network In/Out) và gửi thông báo qua SNS khi có bất thường.
+            * **Hiện đại (Cloud):**
+                * Còn điện toán đám mây hiểu đơn giản là đi thuê tài nguyên thay vì mua đứt 1 căn nhà thì có thể thuê các phòng khách sạn chẳng hạn, mô hình tính phí sẽ là "Pay as you go"
 
-## 5. Thiết lập AWS Site-to-Site VPN (Phần Chuyên sâu)
+        * **Lợi ích**
+            * Tối ưu chi phí: Loại bỏ chi phí duy trì phần cứng không cần thiết
+            * Tốc độ & Linh hoạt: Triển khai tài nguyên chỉ trong vài phút
+            * Tính bảo mật & AI: Tận dụng các công cụ bảo mật và trí tuệ nhân tạo có sẵn từ nhà cung cấp
+            * Quy mô toàn cầu: Khả năng mở rộng ứng dụng để phục vụ khách hàng trên khắp thế giới dễ dàng
 
-### 5.1 Tạo môi trường VPN (2 Bài Lab nhỏ)
-* **5.1.1 Tạo VPC cho VPN:** Xây dựng mô hình mô phỏng mạng văn phòng (On-premises).
-* **5.1.2 Tạo EC2 Instance:** Thiết lập máy chủ đóng vai trò thiết bị đầu cuối phía khách hàng (Customer Gateway).
+    * **AWS global infrastructure**
+        * **AWS Data Center**
+            * Tập trung toàn bộ thiết bị, phần cứng của AWS với quy mô cực lớn lên tới hàng chục ngàn máy chủ
+            * Toàn bộ thiết bị của AWS ở trong AWS data center đều được customiz dựa trên tiêu chuẩn vận hành của AWS
+            * Bo mạnh chủ, máy chủ, hệ thống network, hệ thống bảo mật, những dòng GPU cũng được AWS thiết kế
 
-### 5.2 Cấu hình kết nối VPN (8 Bài Lab nhỏ)
-* **5.2.1 Virtual Private Gateway (VGW):** Cổng VPN tập trung phía AWS.
-* **5.2.2 Customer Gateway (CGW):** Đại diện cho thiết bị mạng phía văn phòng người dùng.
-* **5.2.3 Tạo VPN Connection:** Thiết lập kết nối IPSec giữa VGW và CGW.
-* **5.2.4 Cấu hình CGW:** Tải cấu hình và thiết lập tham số bảo mật trên thiết bị thực tế.
-* **5.2.5 Tùy chỉnh VPN Tunnel:** Hiệu chỉnh thuật toán mã hóa (AES-256, SHA-2) và chu kỳ đổi khóa.
-* **5.2.6 Cấu hình VPN Nâng cao:** Sử dụng BGP (Border Gateway Protocol) để trao đổi thông tin định tuyến tự động.
-* **5.2.7 Troubleshooting VPN:** Kiểm tra pha 1 (IKE) và pha 2 (IPSec) của kết nối.
-* **5.2.8 Troubleshooting từ AWS:** Sử dụng tài liệu hướng dẫn chính thức giải quyết lỗi cấu hình phổ biến.
+        * **Availability Zone (AZ)**
+            * Bao gồm 1 hoặc nhiều trung tâm dữ liệu của AWS
+            * Được thiết kế để đảm bảo nếu có sự cố xảy ra thì sẽ không ảnh hưởng 2 AZ đồng thời gọi lại fault isolation
+            * Các sự cố: sự cố về điện, thiên tai
+            * Khoảng cách giữa 2 AZ đủ lớn để tránh những cái sự cố xảy ra ảnh hưỡng đồng thời giữa 2 AZ
+            * Về hệ thống điện năng hệ thống về mạng cũng được thiết kế độc lập ở mức cao nhất
+            * Tiêu chuẩn thiết kế trung tâm dữ liệu , tiêu chuẩn thiết kế AG Region của AWS là ở mức cao nhất, cao hơn tiêu chuẩn chung của industry
 
-### 5.3 VPN với Strongswan & Transit Gateway (6 Bài Lab nhỏ)
-* **5.3.1 Tạo Customer Gateway:** Xác định thực thể mạng phía khách hàng.
-* **5.3.2 Transit Gateway (TGW):** Hub trung tâm đơn giản hóa việc kết nối giữa hàng ngàn VPC và mạng VPN.
-* **5.3.3 Tạo kết nối VPN:** Thiết lập đường truyền qua TGW.
-* **5.3.4 TGW Attachment:** Gắn kết các VPC vào Hub để chúng liên lạc với nhau.
-* **5.3.5 Cấu hình TGW Route Tables:** Kiểm soát luồng dữ liệu đi qua Hub trung tâm.
-* **5.3.6 Cấu hình Strongswan:** Cài đặt phần mềm VPN mã nguồn mở hoàn tất kết nối.
+        * **Region**
+            * 1 Region tối thiểu là 3 AZ, một số có nhiều hơn 3 AZ
+            * Tất cả các Region được kết nối với nhau thông qua mạng backbond của AWS
+            * Những dữ liệu, dịch vụ không phụ thuộc lẫn nhau giữa các Region
+            * Một số dịch vụ được thiết kế ở global scale nhu dịch vụ DNS sẽ nằm ngoài Region
 
-## 6. Dọn dẹp tài nguyên (Cleanup)
-Đây là bước tối quan trọng để tránh phát sinh chi phí không mong muốn:
-1.  Xóa các máy chủ **EC2**.
-2.  Xóa kết nối **VPN** và **Customer Gateways**.
-3.  Xóa **NAT Gateways** (Lưu ý: NAT Gateway tính phí theo giờ).
-4.  Gỡ bỏ **Internet Gateway** khỏi VPC.
-5.  Cuối cùng, xóa **VPC** để xóa toàn bộ Subnet và Route Table đi kèm.
+        * **Edge Locations (POP)**
+            * Những trung tâm dữ liệu mạng bin Edge Location
+            * Là một mạng lưới, những cái trung tâm dữ liệu được sử dụng để cung cấp các dịch vụ bin
+            * Dịch vụ bin phổ biến: 
+                * CloudFront (CDN) đóng vai trò là content delivery network CDN, caching các dữ liệu mà khác hàng thường xuyên truy cập tới
+                * Web Application Firewall (WAF) tường lửa cho những ứng dụng web
+                * Route 53(DNS Service) có thể host domain, phân giải domain và hỗ trợ phân giải những domain public lần domain trong môi trường private
+                
+        * **Local Zone**
+            * Giống như 1 phiên bản nhỏ hơn của Availability Zone của AG
 
-## 7. Infrastructure as Code (IaC) Templates
-* Sử dụng **AWS CloudFormation** để đóng gói toàn bộ kịch bản thực hành vào một file duy nhất.
-* Việc sử dụng mã nguồn (**JSON/YAML**) giúp triển khai hạ tầng nhất quán, nhanh chóng và dễ dàng phục hồi sau sự cố.
+* **Management Console:**
+    * **Root Login**
+        * Chúng ta có thể đăng nhập bằng tài khoản người dùng root hoặc bằng tài khoản người dùng IAM (một tài khoản người dùng phụ giúp quản lý việc xuất tài nguyên AWS)
+
+    * **IAM User Login**
+        * Khi đăng nhập bằng tài khoản IAM, chúng ta cần cung cấp thêm thông tin ID tài khoản (chuỗi 12 chữ số) để xác định tài khoản AWS
+
+    * **Service Search**
+        * Sau khi đăng nhập vào giao diện Bảng điều khiển quản trị AWS, chúng ta có thể tìm kiếm các dịch vụ AWS
+        * Mỗi dịch vụ sẽ có hệ thống quản lý trang web riêng, cho phép chúng ta truy cập các tính năng của dịch vụ đó
+    
+    * **Support Center**
+        * Ở bên trái là menu Hỗ trợ, người dùng có thể vào Trung tâm Hỗ trợ để tạo yêu cầu hỗ trợ và nhận được sự trợ giúp từ nhóm AWS
+    
+    * **AWS Command Line Interface (CLI)**
+        * Giao diện dòng lệnh AWS (AWS CLI) là một công cụ lập trình mã nguồn mở cho phép bạn tương tác với các dịch vụ AWS bằng các lệnh
+        * AWS CLI cho phép bạn chạy các chức năng phát triển lệnh tương thích với các chức năng được cung cấp bởi Bảng điều khiển quản lý AWS dựa trên trình duyệt
+    
+    * **AWS SDK**
+        * AWS SDK đơn giản hóa việc sử dụng các dịch vụ AWS cho các ứng dụng bằng cách cung cấp một thư viện hàng đầu, quen thuộc với các nhóm phát triển ứng dụng.
+        * AWS SDK hỗ trợ các tác vụ quản lý vòng đời API cho các dịch vụ AWS như quản lý thông tin xác thực, thử lại, xử lý dữ liệu, tuần tự hóa và giải tuần tự hóa.
