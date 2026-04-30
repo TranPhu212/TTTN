@@ -12,7 +12,7 @@ Typically, and as a standard, a worklog is carried out over about 3 months (thro
 
 **Week 1:** [Establishing AWS foundations through secure account setup, core service exploration, and VPC networking basics via Console and CLI](1.1-week1/)
 
-**Week 2:** [Doing task A...](1.2-week2/)
+**Week 2:** [AWS Compute, Storage & Application Migration](1.2-week2/)
 
 **Week 3:** [Doing task B...](1.3-week3/)
 
