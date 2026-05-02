@@ -451,3 +451,72 @@ pre: " <b> 1.2. </b> "
       * EC2 Auto Scaling can automatically register EC2 Instances with an Elastic Load Balancer
       * EC2 Auto Scaling operates across multiple AWS Availability Zones
       * EC2 Auto Scaling can support various Pricing options
+
+##
+* **Amazon Elastic Compute Cloud (EC2) – Pricing options**
+  * EC2 includes 4 pricing options
+    * **On-demand**: Pay by the hour / minute / second, pay as you go, most expensive. Suitable for workloads running up to 6 hours per day
+    * **Reserved Instance**: Commit to a 1-3 year term to get a discount; however, it is limited by EC2 Instance type / family
+    * **Saving Plans**: Commit to a 1-3 year term to get a discount; it may not be limited by EC2 Instance type/family
+    * **Spot Instance**: Utilize spare capacity at a low price; however, AWS can terminate the instance within 2 minutes when capacity is needed
+  
+  * Combine multiple Pricing Options within an EC2 Auto Scaling Group
+
+* **Amazon Lightsail**
+  * Amazon Lightsail is a low-cost computing service (monthly pricing starts at only $3.5 / month); additionally, each Lightsail Instance created comes with a specific amount of data transfer. (This data transfer rate is significantly cheaper than EC2 data transfer)
+  * Amazon Lightsail is suitable for light workloads and dev/test environments that do not require continuous high CPU load for more than 2 hours per day
+  * Amazon Lightsail also has backup capabilities using snapshots, similar to EC2
+  * Amazon Lightsail runs in a special VPC and can connect to a standard VPC via 1-click VPC Peering
+
+* **Amazon EFS**
+  * EFS (Elastic File System) allows creating NFSv4 Network volumes and attaching them to multiple EC2 instances simultaneously, with storage scaling up to petabytes. EFS only supports Linux
+  * Using EFS only charges based on the actual storage used (whereas EBS charges based on provisioned capacity)
+  * EFS can be configured to mount to on-premise environments via DX (Direct Connect) or VPN
+
+* **Amazon FSx**
+  * FSx allows creating NTFS volumes and attaching them to multiple EC2 instances simultaneously using the SMB (Server Message Block) protocol. FSx supports both Windows and Linux
+  * Using FSx only charges based on the actual storage used (whereas EBS charges based on provisioned capacity)
+  * FSx supports deduplication, which helps reduce costs by 30-50% for common use cases
+
+* **AWS Application Migration Service (MGN)**
+  * AWS Application Migration Service (MGN) is used to migrate and replicate physical or virtual servers to the AWS environment for building Disaster Recovery Sites. MGN continuously copies source servers to EC2 instances in your AWS account (asynchronous/synchronous)
+  * During the replication process, MGN uses staging instances that are significantly fewer in number and smaller in scale/configuration compared to the original source servers
+  * When performing a cut-over, MGN will automatically create and run the final EC2 instances on AWS
+
+* **Practice**
+  * **Basic EC2 Operations**
+    * 000004
+      * Create an EC2 server
+      * Perform an EC2 instance snapshot
+      * Install applications on EC2
+
+  * **Resource Management using Tags and Resource Groups**
+    * 000027
+      * Using Tags
+      * Using Resource Groups
+
+  * **Resource Management with Amazon CloudWatch**
+    * 000008
+      * CloudWatch Agent
+      * Create CloudWatch Dashboard
+
+  * **Deploying Auto Scaling Group**
+    * 000006
+      * Initialize Launch Template
+      * Initialize Target Group
+      * Initialize Load Balancer
+      * Initialize Auto Scaling Group
+      * Verify Results
+
+  * **Getting Started with Amazon Lightsail**
+    * 000045
+      * Preparation
+      * Verify applications on Lightsail
+      * Using Lightsail Load Balancer
+      * Using RDS
+      * Migrate to EC2
+
+* **Supplementary Research**
+  * **Microsoft Workloads on AWS**
+    * A series of supplementary practical labs for running Microsoft servers and applications on AWS
+    * [YouTube Playlist](https://www.youtube.com/playlist?list=PLhr1KZpdzukdJIlxuIUM7pMB7aJ2_FfTP)

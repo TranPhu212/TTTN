@@ -380,73 +380,142 @@ pre: " <b> 1.2. </b> "
         * Tạo Inbound Endpoint
 
 ## Thứ 3: Dịch vụ Máy chủ ảo EC2 và Cơ sở hạ tầng tính toán (Compute & Storage)
-  * Amazon Elastic Compute Cloud (EC2)
-  * Amazon Lightsail
-  * Amazon EFS / FSx
-  * AWS Application Migration Service (Dịch vụ di chuyển ứng dụng AWS - MGN)
-  * **Amazon Elastic Compute Cloud (EC2)**
-    * Amazon EC2 giống với máy chủ ảo hoặc máy chủ vật lý truyền thống. EC2 có khả năng khởi tạo nhanh, khả năng co giãn tài nguyên mạnh mẽ, linh hoạt
-    * Amazon EC2 có thể hỗ trợ các workload như lưu trữ web, ứng dụng, cơ sở dữ liệu, dịch vụ xác thực và bất cứ công việc nào khác mà máy chủ thông thường có thể đáp ứng
-    * Môi trường truyền thống: khi chúng ta mua một cái phần cứng thì chúng ta xài hết vòng đời của cải sản phẩm của mình và chúng ta thay thế một cái máy chủ mới thì chúng ta phải trả cái chi phí  thay thế máy chủ khá là cao
-    * Sử dụng dịch vụ EC2 thì giống như đi thuê 1 cái nhà và cái hay là sau vài năm chúng ta có thể có một cái nhà đẹp hơn, xịn hơn. Sau vài năm, nhà cung cấp dịch vụ AWS sẽ nâng cấp CPU, chipset, những phiên bản máy chủ mạnh mẽ hơn và chi phí phiên bản mới có thể thấp hơn so với phiên bản cũ đang sử dụng
-    * Chi phí bỏ ra cho một cái dịch vụ trong một cái tính năng sẽ chỉ có giảm đi theo thời gian, không tăng lên
-    * Khả năng co giãn tài nguyên gọi là Elasticcity, có thể hiểu là khi xây dựng một cái ứng dụng dịch vụ, muốn cái ứng dụng dịch vụ có thể phục vụ một cái lượng người dùng lớn
-    * Thì khi phục vụ lượng người dùng lớn thì cái số lượng máy chủ sẽ tăng lên, ta có 1 máy chủ thì khi mà sử dụng dịch vụ, khi có rất nhiều người dùng thì nó sẽ tăng số lượng máy chủ lên
-    * Sau đó, giả sử người dùng sủ dụng xong, họ không có vào cái ứng dụng của chúng ta nữa thì chúng ta có thể giảm bớt số máy chủ để chúng ta phải trả tiền ít hơn, bởi vì mô hình trả phí của chúng ta ở trên môi trường cloud, môi trường xài bao nhiêu tính bấy nhiêu, cho nên là nếu như chúng ta có tăng khả năng co giãn, khả tăng tăng giảm số lượng tài nguyên tùy theo nhu cầu thực dụng của chúng ta sẽ tiết kiệm chi phí rất nhiều thì nó gọi là thuật ngữ elasticcity
-    * Ngày xưa ở môi trường local thì chúng ta khá lạc quan, chỉ quan tâm  cái gọi là scalable, tức là ứng dụng của chúng ta có  khả năng mở rộng hay không
-    * Thời điểm hiện tại thì không phải lúc nào cũng suôn sẻ cho nên ứng dụng của chúng ta thiết kế có khả năng co giãn để cái tài nguyên  của chúng ta đáp ứng được lượng người dùng thực tế và tiết kiệm chi phí
-    * Máy ảo EC2 sẽ tương tự như máy ảo ở môi trường truyền thống, hỗ trợ được những cái công việc, những cái worklog như là ứng dụng web rồi cơ sở dữ liệu, những cái dịch vụ xác thực hay bất cứ một cái gì khác mà máy chủ thông thường có thể đáp ứng
+* Amazon Elastic Compute Cloud (EC2)
+* Amazon Lightsail
+* Amazon EFS / FSx
+* AWS Application Migration Service (Dịch vụ di chuyển ứng dụng AWS - MGN)
+* **Amazon Elastic Compute Cloud (EC2)**
+  * Amazon EC2 giống với máy chủ ảo hoặc máy chủ vật lý truyền thống. EC2 có khả năng khởi tạo nhanh, khả năng co giãn tài nguyên mạnh mẽ, linh hoạt
+  * Amazon EC2 có thể hỗ trợ các workload như lưu trữ web, ứng dụng, cơ sở dữ liệu, dịch vụ xác thực và bất cứ công việc nào khác mà máy chủ thông thường có thể đáp ứng
+  * Môi trường truyền thống: khi chúng ta mua một cái phần cứng thì chúng ta xài hết vòng đời của cải sản phẩm của mình và chúng ta thay thế một cái máy chủ mới thì chúng ta phải trả cái chi phí  thay thế máy chủ khá là cao
+  * Sử dụng dịch vụ EC2 thì giống như đi thuê 1 cái nhà và cái hay là sau vài năm chúng ta có thể có một cái nhà đẹp hơn, xịn hơn. Sau vài năm, nhà cung cấp dịch vụ AWS sẽ nâng cấp CPU, chipset, những phiên bản máy chủ mạnh mẽ hơn và chi phí phiên bản mới có thể thấp hơn so với phiên bản cũ đang sử dụng
+  * Chi phí bỏ ra cho một cái dịch vụ trong một cái tính năng sẽ chỉ có giảm đi theo thời gian, không tăng lên
+  * Khả năng co giãn tài nguyên gọi là Elasticcity, có thể hiểu là khi xây dựng một cái ứng dụng dịch vụ, muốn cái ứng dụng dịch vụ có thể phục vụ một cái lượng người dùng lớn
+  * Thì khi phục vụ lượng người dùng lớn thì cái số lượng máy chủ sẽ tăng lên, ta có 1 máy chủ thì khi mà sử dụng dịch vụ, khi có rất nhiều người dùng thì nó sẽ tăng số lượng máy chủ lên
+  * Sau đó, giả sử người dùng sủ dụng xong, họ không có vào cái ứng dụng của chúng ta nữa thì chúng ta có thể giảm bớt số máy chủ để chúng ta phải trả tiền ít hơn, bởi vì mô hình trả phí của chúng ta ở trên môi trường cloud, môi trường xài bao nhiêu tính bấy nhiêu, cho nên là nếu như chúng ta có tăng khả năng co giãn, khả tăng tăng giảm số lượng tài nguyên tùy theo nhu cầu thực dụng của chúng ta sẽ tiết kiệm chi phí rất nhiều thì nó gọi là thuật ngữ elasticcity
+   * Ngày xưa ở môi trường local thì chúng ta khá lạc quan, chỉ quan tâm  cái gọi là scalable, tức là ứng dụng của chúng ta có  khả năng mở rộng hay không
+  * Thời điểm hiện tại thì không phải lúc nào cũng suôn sẻ cho nên ứng dụng của chúng ta thiết kế có khả năng co giãn để cái tài nguyên  của chúng ta đáp ứng được lượng người dùng thực tế và tiết kiệm chi phí
+  * Máy ảo EC2 sẽ tương tự như máy ảo ở môi trường truyền thống, hỗ trợ được những cái công việc, những cái worklog như là ứng dụng web rồi cơ sở dữ liệu, những cái dịch vụ xác thực hay bất cứ một cái gì khác mà máy chủ thông thường có thể đáp ứng
 
-    * **Amazon Elastic Compute Cloud (EC2) – Instance Type**
-      * Cấu hình của Amazon EC2 không được tùy chọn tùy ý, mà lựa chọn cấu hình thông qua việc lựa chọn các EC2 Instance type. ( https://aws.amazon.com/ec2/instance-types/?nc1=h_ls )
-      * Instance type quyết định các yếu tố:
-        * CPU ( Intel / AMD / ARM (Graviton 1 / 2 / 3) / GPU)
-        * Memory
-        * Network
-        * Storage
+  * **Amazon Elastic Compute Cloud (EC2) – Instance Type**
+    * Cấu hình của Amazon EC2 không được tùy chọn tùy ý, mà lựa chọn cấu hình thông qua việc lựa chọn các EC2 Instance type. ( https://aws.amazon.com/ec2/instance-types/?nc1=h_ls )
+    * Instance type quyết định các yếu tố:
+      * CPU ( Intel / AMD / ARM (Graviton 1 / 2 / 3) / GPU)
+      * Memory
+      * Network
+      * Storage
 
-    * **Amazon Elastic Compute Cloud (EC2) – AMI / Backup / Key Pair**
-      * Sử dụng AMI (Amazon Machine Image) có thể provision ra một hoặc nhiều EC2 Instances cùng lúc. AMI có sẵn của AWS, trên AWS Marketplace và custom AMI tự tạo từ EC2 Instances
-      * AMI bao gồm root OS volumes, quyền sử dụng AMI quy định tài khoản AWS được sử dụng và mapping EBS volume sẽ được tạo và gắn vào EC2 Instances
-      * EC2 instance có thể được backup bằng cách tạo snapshot
-      * Key pair (public key và private key) dùng để mã hóa thông tin đăng nhập cho EC2 Instance
-      * AMI (Amazon Machine Image) có thể provision ra một hoặc nhiều EC2 Instances cùng lúc
-      * Key pair (bao gồm 1 public key và 1 private key) dùng để mã hóa thông tin đăng nhập cho EC2 Instance
+  * **Amazon Elastic Compute Cloud (EC2) – AMI / Backup / Key Pair**
+    * Sử dụng AMI (Amazon Machine Image) có thể provision ra một hoặc nhiều EC2 Instances cùng lúc. AMI có sẵn của AWS, trên AWS Marketplace và custom AMI tự tạo từ EC2 Instances
+    * AMI bao gồm root OS volumes, quyền sử dụng AMI quy định tài khoản AWS được sử dụng và mapping EBS volume sẽ được tạo và gắn vào EC2 Instances
+    * EC2 instance có thể được backup bằng cách tạo snapshot
+    * Key pair (public key và private key) dùng để mã hóa thông tin đăng nhập cho EC2 Instance
+    * AMI (Amazon Machine Image) có thể provision ra một hoặc nhiều EC2 Instances cùng lúc
+    * Key pair (bao gồm 1 public key và 1 private key) dùng để mã hóa thông tin đăng nhập cho EC2 Instance
 
-    * **Amazon Elastic Compute Cloud (EC2) – Elastic Block Store**
-      * Amazon EBS cung cấp block storage và được gán trực tiếp vào EC2 Instance. Tuy được gán trực tiếp như 1 RAW device, EBS về bản chất hoạt động độc lập với EC2 và được kết nối thông qua mạng riêng của EB
-      * EBS có hai nhóm đĩa chính là HDD và SSD, được thiết kế để đạt độ sẵn sàng 99.999% bằng cách replicate dữ liệu giữa 3 Storage Node trong 1 AZ
-      * EBS về bản chất hoạt động độc lập với EC2 và được kết nối thông qua mạng riêng của EBS trong cùng 1 AZ. EC2 không thể hoạt động mà không có EBS
-      * Có một số EC2 Instances đặc thù được tối ưu hóa hiệu năng của EBS. (Optimized EBS Instances)  
-      * EBS volumes, mặc định chỉ được gắn vào 1 EC2 Instances. Các EC2 Instances chạy trên Hypervisor Nitro có thể dùng 1 EBS volume gắn vào nhiều EC2 Instances. (EBS Multi-attach)  
-      * EBS được backup bằng cách thực hiện snapshot vào S3 (Simple Storage Service):  
-        * Snapshot đầu tiên là full, tất cả các snapshot tiếp theo là incremental
+  * **Amazon Elastic Compute Cloud (EC2) – Elastic Block Store**
+    * Amazon EBS cung cấp block storage và được gán trực tiếp vào EC2 Instance. Tuy được gán trực tiếp như 1 RAW device, EBS về bản chất hoạt động độc lập với EC2 và được kết nối thông qua mạng riêng của EB
+    * EBS có hai nhóm đĩa chính là HDD và SSD, được thiết kế để đạt độ sẵn sàng 99.999% bằng cách replicate dữ liệu giữa 3 Storage Node trong 1 AZ
+    * EBS về bản chất hoạt động độc lập với EC2 và được kết nối thông qua mạng riêng của EBS trong cùng 1 AZ. EC2 không thể hoạt động mà không có EBS
+    * Có một số EC2 Instances đặc thù được tối ưu hóa hiệu năng của EBS. (Optimized EBS Instances)  
+    * EBS volumes, mặc định chỉ được gắn vào 1 EC2 Instances. Các EC2 Instances chạy trên Hypervisor Nitro có thể dùng 1 EBS volume gắn vào nhiều EC2 Instances. (EBS Multi-attach)  
+    * EBS được backup bằng cách thực hiện snapshot vào S3 (Simple Storage Service):  
+      * Snapshot đầu tiên là full, tất cả các snapshot tiếp theo là incremental
 
-    * **Amazon Elastic Compute Cloud (EC2) – Instance Store**
-      * Instance store là vùng đĩa NVME tốc độ cực cao, nằm trên physical node chạy các máy ảo EC2
-        * Instance store sẽ bị xóa hết dữ liệu khi chúng ta thực hiện stop EC2 instance
-        * Instance store không bị xóa dữ liệu khi chúng ta thực hiện restart máy, hoặc bị crash
-        * Instance store không replicate dữ liệu dự phòng nên thường không khuyến khích lưu trữ dữ liệu quan trọng
-          * Sử dụng trong các trường hợp cần hiệu năng cực cao lên tới hàng triệu IOPS
-            * Khi sử dụng thường được replicate dữ liệu vào một EBS volume để bảo đảm an toàn
-      * Sử dụng trong các trường hợp cần hiệu năng cực cao lên tới hàng triệu IOPS:
-        * swap
-        * paging
-        * buffer / cache
-        * log
+  * **Amazon Elastic Compute Cloud (EC2) – Instance Store**
+    * Instance store là vùng đĩa NVME tốc độ cực cao, nằm trên physical node chạy các máy ảo EC2
+      * Instance store sẽ bị xóa hết dữ liệu khi chúng ta thực hiện stop EC2 instance
+      * Instance store không bị xóa dữ liệu khi chúng ta thực hiện restart máy, hoặc bị crash
+      * Instance store không replicate dữ liệu dự phòng nên thường không khuyến khích lưu trữ dữ liệu quan trọng
+        * Sử dụng trong các trường hợp cần hiệu năng cực cao lên tới hàng triệu IOPS
+          * Khi sử dụng thường được replicate dữ liệu vào một EBS volume để bảo đảm an toàn
+    * Sử dụng trong các trường hợp cần hiệu năng cực cao lên tới hàng triệu IOPS:
+      * swap
+      * paging
+      * buffer / cache
+      * log
 
-    * **Amazon Elastic Compute Cloud (EC2) – User data**
-      * EC2 user data là đoạn script chạy một lần khi provision EC2 Instance từ AMI
-      * Tùy hệ điều hành mà chúng ta sẽ sử dụng bash shell scripts (Linux) / powershell (Windows)
-        * Bạn có thể kiểm tra user data của EC2 tại: http://169.254.169.254/latest/user-data
+  * **Amazon Elastic Compute Cloud (EC2) – User data**
+    * EC2 user data là đoạn script chạy một lần khi provision EC2 Instance từ AMI
+    * Tùy hệ điều hành mà chúng ta sẽ sử dụng bash shell scripts (Linux) / powershell (Windows)
+      * Bạn có thể kiểm tra user data của EC2 tại: http://169.254.169.254/latest/user-data
 
-    * **Amazon Elastic Compute Cloud (EC2) – Meta data**
-      * EC2 Metadata là các thông tin liên quan tới bản thân EC2 instances, ví dụ địa chỉ IP Private, Public, Hostname, Security groups....
-      * Đường dẫn truy cập: http://169.254.169.254/latest/meta-data/
-      * Dùng thông tin EC2 Metadata để thiết lập hostname cho EC2 Instance Linux với EC2 user data
+  * **Amazon Elastic Compute Cloud (EC2) – Meta data**
+    * EC2 Metadata là các thông tin liên quan tới bản thân EC2 instances, ví dụ địa chỉ IP Private, Public, Hostname, Security groups....
+    * Đường dẫn truy cập: http://169.254.169.254/latest/meta-data/
+    * Dùng thông tin EC2 Metadata để thiết lập hostname cho EC2 Instance Linux với EC2 user data
 
-    * **Amazon Elastic Compute Cloud (EC2) – EC2 Auto Scaling**
-      * EC2 Auto Scaling là tính năng hỗ trợ tăng giảm số lượng EC2 Instance dựa theo các điều kiện cụ thể (scaling policy)
-      * EC2 Auto Scaling có thể tự đăng ký các EC2 Instance vào Elastic Load Balancer
-      * EC2 Auto Scaling hoạt động trên nhiều AWS Availability Zone
-      * EC2 Auto Scaling có thể hỗ trợ nhiều Pricing options khác nhau
+  * **Amazon Elastic Compute Cloud (EC2) – EC2 Auto Scaling**
+    * EC2 Auto Scaling là tính năng hỗ trợ tăng giảm số lượng EC2 Instance dựa theo các điều kiện cụ thể (scaling policy)
+    * EC2 Auto Scaling có thể tự đăng ký các EC2 Instance vào Elastic Load Balancer
+    * EC2 Auto Scaling hoạt động trên nhiều AWS Availability Zone
+    * EC2 Auto Scaling có thể hỗ trợ nhiều Pricing options khác nhau
+
+## Thứ 4:
+* **Amazon Elastic Compute Cloud (EC2) – Các tùy chọn về giá**
+  * EC2 bao gồm 4 tùy chọn giá
+    * **On-demand** (Theo yêu cầu): Trả theo giờ / phút / giây, xài bao nhiêu tính bấy nhiêu, chi phí cao nhất. Phù hợp cho các khối lượng công việc (workloads) chạy lên tới 6 tiếng 1 ngày
+    * **Reserved Instance** (Instance dự phòng): Cam kết sử dụng theo kỳ hạn 1-3 năm để nhận chiết khấu; tuy nhiên bị giới hạn theo loại hoặc dòng EC2 Instance (Instance type / family)
+    * **Saving Plans**: Cam kết sử dụng theo kỳ hạn 1-3 năm để lấy chiết khấu; có thể không bị giới hạn bởi loại hoặc dòng EC2 Instance (instance type/family)
+    * **Spot Instance**: Tận dụng tài nguyên dư thừa, giá rẻ; tuy nhiên khi cần, AWS sẽ chấm dứt (terminate) instance trong vòng 2 phút
+  
+  * Kết hợp nhiều tùy chọn giá (Pricing Options) trong một nhóm tự động giãn nở EC2 (EC2 Auto Scaling Group)
+
+* **Amazon Lightsail**
+  * Amazon Lightsail là dịch vụ tính toán có chi phí thấp (giá tính theo tháng chỉ bắt đầu từ 3,5 $/tháng); ngoài ra mỗi Instance Lightsail tạo ra cũng sẽ có một mức data transfer đi kèm. (Data transfer này có mức giá rẻ hơn data transfer từ EC2 tương đối nhiều)
+  * Amazon Lightsail phù hợp cho các workload nhẹ, môi trường test dev, không yêu cầu tải CPU cao liên tục > hơn 2 giờ mỗi ngày
+  * Amazon Lightsail cũng có khả năng backup bằng snapshot tương tự như EC2
+  * Amazon Lightsail chạy trong một VPC đặc biệt, có thể kết nối tới VPC thông thường qua 1 click VPC Peering
+
+* **Amazon EFS**
+  * EFS (Elastic File System) cho phép tạo các NFSv4 Network volume và gán vào nhiều EC2 Instances cùng lúc, quy mô lưu trữ lên đến hàng petabyte. EFS chỉ hỗ trợ Linux
+  * Sử dụng EFS chỉ tính chi phí theo dung lượng sử dụng (trong khi EBS tính phí theo dung lượng cấp phát)
+  * EFS có thể được cấu hình để mount vào môi trường on-premise qua DX hoặc VPN
+
+* **Amazon FSx**
+  * FSx cho phép tạo các NTFS volume và gán vào nhiều EC2 Instances cùng lúc sử dụng giao thức SMB (Server Message Block). FSx hỗ trợ cả Windows và Linux
+  * Sử dụng FSx chỉ tính chi phí theo dung lượng sử dụng (trong khi EBS tính phí theo dung lượng cấp phát)
+  * FSx hỗ trợ tính năng deduplication (khử trùng lặp dữ liệu), giúp giảm chi phí từ 30-50% cho các trường hợp sử dụng thông thường
+
+* **AWS Application Migration Service (MGN)**
+  * AWS Application Migration Service (MGN) dùng để migrate và replicate phục vụ mục đích xây dựng Disaster Recovery Site cho các máy chủ thực, ảo lên môi trường AWS. Application Migration Service (MGN) liên tục sao chép các máy chủ nguồn sang EC2 Instance trên tài khoản AWS (asynchronous / synchronous)
+  * MGN trong quá trình sao chép sẽ sử dụng các máy staging có số lượng và quy mô cấu hình nhỏ hơn máy chủ gốc rất nhiều
+  * Khi thực hiện cut-over, MGN sẽ tự động tạo và chạy các máy chủ EC2 trên AWS
+
+* **Thực hành**
+  * **Thao tác EC2 cơ bản**
+    * 000004
+      * Tạo máy chủ EC2
+      * Thực hiện snapshot EC2 instance
+      * Cài đặt ứng dụng trên EC2
+
+  * **Quản lý tài nguyên bằng Tag và Resource Group**
+    * 000027
+      * Sử dụng Tag
+      * Sử dụng Resource Group
+
+  * **Quản lý tài nguyên với Amazon CloudWatch**
+    * 000008
+      * CloudWatch Agent
+      * Tạo CloudWatch Dashboard
+
+  * **Triển khai Auto Scaling Group**
+    * 000006
+      * Khởi tạo Launch Template
+      * Khởi tạo Target Group
+      * Khởi tạo Load Balancer
+      * Khởi tạo Auto Scaling Group
+      * Kiểm tra kết quả
+
+  * **Bắt đầu với Amazon Lightsail**
+    * 000045
+      * Chuẩn bị
+      * Kiểm tra ứng dụng trên Lightsail
+      * Sử dụng Lightsail Loadbalancer
+      * Sử dụng RDS
+      * Dịch chuyển sang EC2
+
+* **Nghiên cứu bổ sung**
+  * **Microsoft Workloads on AWS**
+    * Series các bài thực hành bổ sung dành cho việc chạy các máy chủ và ứng dụng của Microsoft trên AWS
+    * https://www.youtube.com/playlist?list=PLhr1KZpdzukdJIlxuIUM7pMB7aJ2_FfTP
