@@ -21,6 +21,7 @@ pre: " <b> 1.2. </b> "
 |  6  | - Agentic AI Development (Kiro) & AWS Cost Optimization | 24/04/2026 | 24/04/2026 | <https://www.youtube.com/watch?v=uAQCm4sm_1c&t=2s> <br> <https://www.youtube.com/watch?v=UIw8UxGZCHA&t=3s> |
 |  2  | - VPC Deep Dive, Hybrid Connectivity & Elastic Load Balancing (ELB) | 27/04/2026 | 27/04/2026 | <https://youtu.be/O9Ac_vGHquM> <br> <https://youtu.be/BPuD1l2hEQ4> <br> <https://youtu.be/CXU8D3kyxIc> |
 |  3  | - EC2 Fundamentals, Storage & Auto Scaling | 28/04/2026 | 28/04/2026 | <https://youtu.be/-t5h4N6vfBs> <br> <https://youtu.be/e7XeKdOVq40> <br> <https://youtu.be/yAR6QRT3N1k> <br> <https://youtu.be/hKr_TfGP7NY> <br> <https://youtu.be/6IHNDJ85aoQ> <br> <https://youtu.be/_v_43Wi7zjo> <br> <https://youtu.be/Ew3QRaKJQSA> <br> <https://youtu.be/bbLcPitXJSY> |
+|  4  | - EC2 Pricing, Lightsail, EFS, FSx & MGN | 29/04/2026 | 29/04/2026 | <https://youtu.be/O9Ac_vGHquM> |
 
 ### Week 2 Achievements:
 
@@ -452,7 +453,7 @@ pre: " <b> 1.2. </b> "
       * EC2 Auto Scaling operates across multiple AWS Availability Zones
       * EC2 Auto Scaling can support various Pricing options
 
-##
+## wednesday: AWS Compute, Storage & Migration Services
 * **Amazon Elastic Compute Cloud (EC2) – Pricing options**
   * EC2 includes 4 pricing options
     * **On-demand**: Pay by the hour / minute / second, pay as you go, most expensive. Suitable for workloads running up to 6 hours per day

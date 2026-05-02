@@ -21,6 +21,7 @@ pre: " <b> 1.2. </b> "
 |  6  | - Phát triển phần mềm bằng Agentic AI (Kiro) & Tối ưu chi phí AWS | 24/04/2026 | 24/04/2026 | <https://www.youtube.com/watch?v=uAQCm4sm_1c&t=2s> <br> <https://www.youtube.com/watch?v=UIw8UxGZCHA&t=3s> |
 |  2  | - Quản trị Mạng chuyên sâu (VPC), Kết nối Hybrid & Cân bằng tải (ELB) | 27/04/2026 | 27/04/2026 | <https://youtu.be/O9Ac_vGHquM> <br> <https://youtu.be/BPuD1l2hEQ4> <br> <https://youtu.be/CXU8D3kyxIc> |
 |  3  | - AWS Compute: EC2, Storage & Auto Scaling | 28/04/2026 | 28/04/2026 | <https://youtu.be/-t5h4N6vfBs> <br> <https://youtu.be/e7XeKdOVq40> <br> <https://youtu.be/yAR6QRT3N1k> <br> <https://youtu.be/hKr_TfGP7NY> <br> <https://youtu.be/6IHNDJ85aoQ> <br> <https://youtu.be/_v_43Wi7zjo> <br> <https://youtu.be/Ew3QRaKJQSA> <br> <https://youtu.be/bbLcPitXJSY> |
+|  4  | - EC2 Pricing, Lightsail, EFS, FSx & MGN | 29/04/2026 | 29/04/2026 | <https://youtu.be/-t5h4N6vfBs> |
 
 ### Kết quả đạt được tuần 2:
 
@@ -451,7 +452,7 @@ pre: " <b> 1.2. </b> "
     * EC2 Auto Scaling hoạt động trên nhiều AWS Availability Zone
     * EC2 Auto Scaling có thể hỗ trợ nhiều Pricing options khác nhau
 
-## Thứ 4:
+## Thứ 4: AWS Compute, Storage & Migration Services
 * **Amazon Elastic Compute Cloud (EC2) – Các tùy chọn về giá**
   * EC2 bao gồm 4 tùy chọn giá
     * **On-demand** (Theo yêu cầu): Trả theo giờ / phút / giây, xài bao nhiêu tính bấy nhiêu, chi phí cao nhất. Phù hợp cho các khối lượng công việc (workloads) chạy lên tới 6 tiếng 1 ngày
