@@ -6,120 +6,105 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+# Bài thu hoạch “Thói Quen Học Tập – Kỹ Năng AI – BMAD Mindset workshop”
 
 ### Mục Đích Của Sự Kiện
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+- Chia sẻ những kiến thức và kỹ năng thực tiễn giúp người tham gia nâng cao khả năng học tập
+- Cải thiện tư duy và kỹ năng làm việc
+- Đặc biệt nâng cao kỹ năng **Prompt Engineering** – công cụ quan trọng trong thời đại AI hiện nay
+- Xây dựng thói quen học tập bền vững
+- Phát triển mindset tích cực
+- Học hỏi các phương pháp làm việc hiệu quả
 
 ### Danh Sách Diễn Giả
-
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+- **Anh Long** - Làm sao để nghiện học như nghiện mạng xã hội**Jignesh Shah** - Director, Open Source Databases
+- **Anh Thịnh** - Cách xử lí prompt (Prompt Engineering)
+- **Anh Khang** - Mindset khi làm việc
+- **Chị Thảo** - BMAD Method
 
 ### Nội Dung Nổi Bật
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+#### Phân tích suy nghĩ của con người giữa học và làm việc
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+- Phân tích sâu về tâm lý và hành vi của con người khi học tập so với khi làm việc
+- Chỉ ra những điểm tương đồng và khác biệt trong cách não bộ tiếp nhận thông tin, duy trì động lực
+- Giải thích rõ ràng lý do tại sao con người dễ nghiện mạng xã hội (cơ chế dopamine, reward loop, instant gratification)
+- Phương pháp chuyển hóa thói quen nghiện mạng xã hội thành “nghiện học” một cách khoa học và bền vững
+- Các kỹ thuật thay đổi suy nghĩ, xây dựng trigger, reward system và thói quen học tập lâu dài
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+#### Cách xử lí prompt (Prompt Engineering)
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+- Trình bày chuyên sâu và chi tiết về kỹ thuật viết prompt hiệu quả.
+- Các cấu trúc prompt nâng cao, cách định nghĩa role, task, context, format và constraint
+- Kỹ thuật debug, refine và tối ưu prompt khi kết quả chưa như mong đợi
+- Best practices và nhiều ví dụ thực tế giúp khai thác tối đa tiềm năng của các mô hình AI
+- Cách áp dụng prompt engineering vào các tình huống công việc khác nhau
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+#### Mindset khi làm việc
 
-#### Domain-Driven Design (DDD)
+- Phân tích nhu cầu tuyển dụng hiện tại của thị trường và doanh nghiệp
+- Đánh giá năng lực, khả năng xử lý công việc thực tế của người đi làm và người đang tìm việc
+- Những yếu tố then chốt giúp ứng viên nổi bật và lọt vào mắt nhà tuyển dụng
+- Các kỹ năng, tư duy và phẩm chất cần thiết trong môi trường làm việc hiện nay
+- Định hướng hướng đi, lập kế hoạch phát triển sự nghiệp phù hợp với từng cá nhân
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+#### BMAD Method
 
-#### Event-Driven Architecture
-
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
-
-#### Amazon Q Developer
-
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+- Giới thiệu tổng quan và chi tiết về phương pháp BMAD.
+- Các thành phần chính, cách thức hoạt động và ý nghĩa của từng bước trong phương pháp
+- Ví dụ minh họa cách áp dụng BMAD vào quản lý công việc và phát triển bản thân
+- Lợi ích thực tế khi sử dụng framework này trong cuộc sống hàng ngày
 
 ### Những Gì Học Được
 
-#### Tư Duy Thiết Kế
+#### Tư Duy & Thói Quen Học Tập
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
+- Hiểu rõ cơ chế tâm lý đằng sau việc nghiện mạng xã hội và cách tận dụng chính cơ chế đó để tạo động lực học tập bền vững
+- Phương pháp thay đổi suy nghĩ và xây dựng hệ thống học tập có khoa học thay vì dựa vào cảm hứng nhất thời
+- Tầm quan trọng của mindset đúng đắn trong học tập và làm việc
 
-#### Kiến Trúc Kỹ Thuật
+#### Kỹ Năng Chuyên Môn
 
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
+- Kỹ năng **Prompt Engineering** chuyên sâu: cách viết prompt rõ ràng, có cấu trúc và đạt hiệu quả cao khi làm việc với AI
+- Phương pháp **BMAD** để quản lý công việc, lập kế hoạch và theo dõi tiến độ cá nhân
+- Cách đánh giá năng lực bản thân và hiểu rõ hơn về kỳ vọng của nhà tuyển dụng
 
-#### Chiến Lược Hiện Đại Hóa
+#### Mindset & Định Hướng Sự Nghiệp
 
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
-
+- Hiểu rõ nhu cầu thực tế của thị trường lao động và những gì nhà tuyển dụng đang tìm kiếm
+- Cách xây dựng hình ảnh cá nhân và kỹ năng để tăng cơ hội nghề nghiệp
+- Định hướng phát triển sự nghiệp dài hạn dựa trên năng lực và mục tiêu cá nhân
+  
 ### Ứng Dụng Vào Công Việc
 
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
+- Áp dụng kỹ năng Prompt Engineering để tăng tốc độ và chất lượng công việc (tạo nội dung, phân tích, lập kế hoạch, viết code…)
+- Sử dụng BMAD Method để quản lý task, dự án và mục tiêu cá nhân hiệu quả hơn
+- Xây dựng thói quen học tập có hệ thống giúp nâng cao năng lực chuyên môn liên tục
+- Áp dụng mindset tích cực và hiểu rõ nhu cầu tuyển dụng để chuẩn bị tốt hơn cho các cơ hội thăng tiến
+- Định hướng và điều chỉnh hướng đi sự nghiệp phù hợp với năng lực và thị trường
 
 ### Trải nghiệm trong event
 
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
+Tham gia sự kiện là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện hơn về phát triển bản thân, tư duy học tập và kỹ năng làm việc trong thời đại hiện nay. Một số trải nghiệm nổi bật:
 
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
+#### Học hỏi từ các phần trình bày
 
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
+- Phần chia sẻ của Anh Long giúp tôi hiểu rõ cơ chế tâm lý và cách chuyển hóa thói quen xấu thành thói quen tốt
+- Phần Prompt Engineering được trình bày rất chuyên sâu, cung cấp nhiều kỹ thuật thực tế có thể áp dụng ngay
+- Phần chia sẻ về mindset khi làm việc mang tính thực tiễn cao, giúp tôi nhận ra những khoảng trống trong năng lực và cách cải thiện để đáp ứng nhu cầu nhà tuyển dụng
+- Phần giới thiệu BMAD Method cung cấp một framework hữu ích để quản lý công việc và bản thân
 
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
+#### Trải nghiệm thực tế
 
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
+- Học được cách tận dụng dopamine và reward system để duy trì động lực học tập lâu dài
+- Thành thạo hơn trong việc viết và tối ưu prompt khi làm việc với AI
+- Nhận thức rõ hơn về thị trường lao động, kỹ năng cần có và cách định hướng sự nghiệp
+- Có thêm công cụ thực tế (BMAD) để áp dụng vào quản lý công việc hàng ngày
 
 #### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
 
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+- Học tập và phát triển bản thân cần có hệ thống rõ ràng thay vì chỉ dựa vào động lực nhất thời
+- Prompt Engineering là kỹ năng quan trọng cần rèn luyện thường xuyên trong thời đại AI
+- Mindset và khả năng tự đánh giá năng lực quyết định rất lớn đến cơ hội nghề nghiệp
+- Luôn chủ động học hỏi, điều chỉnh suy nghĩ và áp dụng các phương pháp khoa học để phát triển bản thân

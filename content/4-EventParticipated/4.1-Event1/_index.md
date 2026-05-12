@@ -6,121 +6,101 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
-
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Summary Report: “Learning Habits – AI Skills & BMAD Mind workshop”
 
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+- Share practical knowledge and skills to help participants improve their learning abilities
+- Enhance thinking and working skills
+- Especially improve **Prompt Engineering** skills – an essential tool in the AI era
+- Build sustainable learning habits
+- Develop a positive mindset
+- Learn effective working methodologies
 
 ### Speakers
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+- **Mr. Long** - How to Get Addicted to Learning Like Social Media  
+- **Jignesh Shah** - Director, Open Source Databases  
+- **Mr. Thịnh** - Prompt Engineering Techniques  
+- **Mr. Khang** - Working Mindset  
+- **Ms. Thảo** - BMAD Method
 
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### Analysis of Human Thinking in Learning vs. Working
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+- In-depth analysis of human psychology and behavior when learning compared to working
+- Identify similarities and differences in how the brain receives information and maintains motivation
+- Clearly explain why people easily become addicted to social media (dopamine mechanism, reward loop, instant gratification)
+- Scientific and sustainable methods to transform social media addiction into “learning addiction”
+- Techniques for changing mindset, building triggers, reward systems, and long-term learning habits
 
-#### Transitioning to modern application architecture – Microservices
+#### Prompt Engineering
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+- Comprehensive and detailed presentation on effective prompt writing techniques
+- Advanced prompt structures, how to define role, task, context, format, and constraints
+- Techniques for debugging, refining, and optimizing prompts when results are not as expected
+- Best practices and numerous real-world examples to maximize the potential of AI models
+- How to apply prompt engineering in various work situations
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+#### Working Mindset
 
-#### Domain-Driven Design (DDD)
+- Analysis of current recruitment demands in the job market and businesses
+- Evaluation of real-world work competency of employees and job seekers
+- Key factors that help candidates stand out and catch recruiters’ attention
+- Essential skills, mindsets, and qualities needed in today’s workplace
+- Career orientation and personalized development planning
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+#### BMAD Method
 
-#### Event-Driven Architecture
-
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
-
-#### Amazon Q Developer
-
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+- Overall and detailed introduction to the BMAD Method
+- Main components, how it works, and the meaning of each step
+- Illustrated examples of applying BMAD to work management and personal development
+- Real-life benefits of using this framework in daily life
 
 ### Key Takeaways
 
-#### Design Mindset
+#### Mindset & Learning Habits
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+- Understand the psychological mechanisms behind social media addiction and how to leverage them to create sustainable learning motivation
+- Methods to shift mindset and build a scientific learning system instead of relying on temporary inspiration
+- The importance of the right mindset in learning and working
 
-#### Technical Architecture
+#### Professional Skills
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+- Advanced **Prompt Engineering** skills: how to write clear, structured, and highly effective prompts when working with AI
+- **BMAD Method** for task management, planning, and personal progress tracking
+- How to self-assess competencies and better understand employer expectations
 
-#### Modernization Strategy
+#### Mindset & Career Orientation
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+- Apply Prompt Engineering skills to increase work speed and quality (content creation, analysis, planning, coding…)
+- Use the BMAD Method to manage tasks, projects, and personal goals more effectively
+- Build a systematic learning habit to continuously improve professional competence
+- Apply a positive mindset and clear understanding of recruitment needs to better prepare for promotion opportunities
+- Orient and adjust your career path to match your capabilities and the market
 
 ### Applying to Work
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+Participating in the event was a highly valuable experience that gave me a more comprehensive view of personal development, learning mindset, and working skills in today’s world. Some notable experiences include:
 
-### Event Experience
+#### Learnings from the Presentations
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+- Mr. Long’s sharing helped me deeply understand psychological mechanisms and how to transform bad habits into good ones
+- The Prompt Engineering session was presented in great depth, providing many practical techniques that can be applied immediately
+- The working mindset session was highly practical, helping me recognize gaps in my capabilities and how to improve to meet employer demands
+- The BMAD Method introduction provided a useful framework for managing work and self-development
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+#### Real-World Takeaways
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+- Learned how to leverage dopamine and reward systems to maintain long-term learning motivation
+- Became more proficient in writing and optimizing prompts when working with AI
+- Gained clearer awareness of the job market, required skills, and career orientation
+- Acquired practical tools (BMAD) to apply in daily work management
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
+#### Key Lessons Learned
 
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
-
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
-
-#### Some event photos
-*Add your event photos here*  
-
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+- Learning and personal development need a clear system rather than relying solely on temporary motivation
+- Prompt Engineering is a critical skill that must be practiced regularly in the AI era
+- Mindset and the ability to self-assess competencies greatly influence career opportunities
+- Always proactively learn, adjust your thinking, and apply scientific methods for self-development
