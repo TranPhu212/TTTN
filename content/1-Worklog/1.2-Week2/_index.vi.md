@@ -5,15 +5,13 @@ weight: 1
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 2:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Làm chủ công cụ AI: Thành thạo quy trình phát triển phần mềm dựa trên đặc tả (Spec-driven Development) với Kiro IDE/CLI
+* Hạ tầng mạng & Kết nối: Thiết lập và quản lý mạng ảo (VPC), các cơ chế bảo mật (SG/NACL) và giải pháp kết nối Hybrid (VPN/Direct Connect)
+* Tính toán & Lưu trữ: Triển khai, vận hành EC2 và các loại hình lưu trữ (EBS, Instance Store, EFS) tối ưu theo nhu cầu hiệu suất
+* Tối ưu chi phí: Áp dụng AWS Budgets và các mô hình thanh toán để quản trị ngân sách đám mây hiệu quả
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |

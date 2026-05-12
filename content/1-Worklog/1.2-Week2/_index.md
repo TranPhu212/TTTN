@@ -5,15 +5,13 @@ weight: 1
 chapter: false
 pre: " <b> 1.2. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 2 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* AI Tool Mastery: Master the Spec-driven Development (SDD) workflow using Kiro IDE/CLI to streamline software development
+* Networking & Connectivity: Configure and manage Virtual Private Clouds (VPC), implement security layers (Security Groups/NACLs), and deploy Hybrid Cloud connectivity solutions (VPN/Direct Connect)
+* Compute & Storage: Deploy and operate EC2 instances and optimize storage performance using EBS, Instance Store, and EFS based on specific workload requirements
+* Cost Optimization: Leverage AWS Budgets and various pricing models (On-Demand, Spot, Savings Plans) to manage and optimize cloud expenditures effectively
 
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |

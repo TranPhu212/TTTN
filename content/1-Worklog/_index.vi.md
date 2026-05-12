@@ -14,7 +14,7 @@ Thông thường và cũng là tiêu chuẩn, một worklog được thực hi�
 
 **Tuần 2:** [Dịch vụ Tính toán, Lưu trữ & Di chuyển ứng dụng AWS](1.2-week2/)
 
-**Tuần 3:** [Làm công việc B...](1.3-week3/)
+**Tuần 3:** [Thực hành AWS Backup, CLI và CloudWatch](1.3-week3/)
 
 **Tuần 4:** [Làm công việc C...](1.4-week4/)
 
