@@ -151,41 +151,41 @@ pre: " <b> 1.3. </b> "
     * Truy cập vào AWS Management Console
       * Mở AWS Management Console
       * Tìm và chọn AWS Backup
-    * ![Tìm AWS Backup](/static/images/1-Worklog/1.3-Week3/Day2/SearchAWSBackup.png)
+    * ![Tìm AWS Backup](/images/1-Worklog/1.3-Week3/Day2/SearchAWSBackup.png)
     * Chọn AWS Backup Plan
-    * ![Tạo Backup Plan](/static/images/1-Worklog/1.3-Week3/Day2/CreateBackupPlan.png)
+    * ![Tạo Backup Plan](/images/1-Worklog/1.3-Week3/Day2/CreateBackupPlan.png)
     * Tạo kế hoạch sao lưu
       * Trong giao diện Create backup plan, chọn Build a new plan
       * Đối với trường Backup plan name, nhập BACKUP-LAB
-    * ![Giao diện backup plan](/static/images/1-Worklog/1.3-Week3/Day2/BackupPlanPerfomance.png)
+    * ![Giao diện backup plan](/images/1-Worklog/1.3-Week3/Day2/BackupPlanPerfomance.png)
     * Cấu hình quy tắc sao lưu
       * Điền RULE NAME là BACKUP-LAB-RULE
       * Về phần SCHEDULE, mục FREQUENCY, chọn Daily
       * Chọn Use backup window defaults - recommended để sử dụng cài đặt mặc định cho cửa sổ sao lưu
       * Đối với BACKUP VAULT, chọn CREATE NEW BACKUP VAULT
-    * ![Backup Rule](/static/images/1-Worklog/1.3-Week3/Day2/BackupRule.png)
+    * ![Backup Rule](/images/1-Worklog/1.3-Week3/Day2/BackupRule.png)
     * Đặt tên cho Backup Vault
       * Điền tên BACKUP VAULT NAME là BACKUP-LAB-VAULT
       * Chọn (default) aws/backup
       * Chọn CREATE BACKUP VAULT
-    * ![Backup Vault](/static/images/1-Worklog/1.3-Week3/Day2/BackupVaultName.png)
+    * ![Backup Vault](/images/1-Worklog/1.3-Week3/Day2/BackupVaultName.png)
     * Thêm các cặp Key và Value cho tag
       * Chọn Create plan
-    * ![Tạo Plan](/static/images/1-Worklog/1.3-Week3/Day2/CreateBackup.png)
+    * ![Tạo Plan](/images/1-Worklog/1.3-Week3/Day2/CreateBackup.png)
     * Hoàn tất việc tạo Backup Plan
       * Trong phần RESOURCE ASSIGNMENTS, chọn ASSIGN RESOURCES
-    * ![Tạo Backup Plan thành công](/static/images/1-Worklog/1.3-Week3/Day2/ASSIGNRESOURCES.png)
+    * ![Tạo Backup Plan thành công](/images/1-Worklog/1.3-Week3/Day2/ASSIGNRESOURCES.png)
     * Gán tài nguyên cho Backup Plan
       * Điền RESOURCE ASSIGNMENT NAME là BACKUP-RESOURCES
       * Chọn DEFAULT ROLE cho IAM ROLE. Nếu role không tồn tại, AWS Backup sẽ tự động tạo một role mới với các quyền cần thiết
       * Thêm Tag Key và Tag Value
       * Chọn ASSIGN RESOURCES
-      * ![Gán tài nguyên](/static/images/1-Worklog/1.3-Week3/Day2/ASSIGNRESOURCESname.png)
+      * ![Gán tài nguyên](/images/1-Worklog/1.3-Week3/Day2/ASSIGNRESOURCESname.png)
     * Xác nhận và tiếp tục
       * Xác nhận bằng cách chọn Continue
-    * ![Xác nhận gán](/static/images/1-Worklog/1.3-Week3/Day2/ConfirmPlan.png)
+    * ![Xác nhận gán](/images/1-Worklog/1.3-Week3/Day2/ConfirmPlan.png)
     * Hoàn tất việc gán tài nguyên
-    * ![Hoàn tất gán](/static/images/1-Worklog/1.3-Week3/Day2/CompletePlan.png)
+    * ![Hoàn tất gán](/images/1-Worklog/1.3-Week3/Day2/CompletePlan.png)
 
   * **Thiết lập thông báo**
     * Việc thiết lập thông báo giúp nhóm vận hành nắm bắt kịp thời trạng thái của các tác vụ sao lưu (backup) và khôi phục (restore), từ đó có phản ứng nhanh chóng nếu có lỗi xảy ra
@@ -193,12 +193,12 @@ pre: " <b> 1.3. </b> "
       * Mở Terminal và đảm bảo bạn có quyền truy cập vào AWS CLI. Hãy chắc chắn rằng phiên bản CLI đã được cập nhật và bạn có Quyền của quản trị viên AWS để thực thi các lệnh AWS CLI
       * Chỉnh sửa lệnh AWS CLI sau và thay thế bằng ARN của SNS TOPIC bạn đã tạo. ARN này có thể tìm thấy trong phần đầu ra của CloudFormation Stack
       * Sau khi đã chỉnh sửa, thực thi lệnh trên. Điều này sẽ kích hoạt thông báo thông qua SNS TOPIC mỗi khi một công việc sao lưu hoặc khôi phục hoàn thành. Thông tin này giúp nhóm Vận hành nắm bắt được các lỗi có thể xảy ra trong quá trình sao lưu hoặc khôi phục dữ liệu
-      * ![Lệnh AWS CLI](/static/images/1-Worklog/1.3-Week3/Day2/CommandAWSCLI.png)
+      * ![Lệnh AWS CLI](/images/1-Worklog/1.3-Week3/Day2/CommandAWSCLI.png)
     * Kiểm tra giao diện SNS
-    * ![Kiểm tra SNS](/static/images/1-Worklog/1.3-Week3/Day2/CheckSNS.png)
+    * ![Kiểm tra SNS](/images/1-Worklog/1.3-Week3/Day2/CheckSNS.png)
     * Xác minh thông báo
       * Để xác minh rằng thông báo đã được kích hoạt thành công, bạn có thể sử dụng lệnh sau. Kết quả đầu ra sẽ bao gồm một phần được gọi là SNSTopicArn, theo sau là ARN của SNS Topic đã được tạo
-      * ![Lệnh SNSTopicArn](/static/images/1-Worklog/1.3-Week3/Day2/CommandSNSTopicArn.png)
+      * ![Lệnh SNSTopicArn](/images/1-Worklog/1.3-Week3/Day2/CommandSNSTopicArn.png)
       * Bây giờ, bạn đã kích hoạt thành công thông báo cho BACKUP-LAB-VAULT, đảm bảo rằng nhóm Vận hành biết về việc hoàn thành các hoạt động sao lưu và khôi phục liên quan đến vault này cũng như bất kỳ lỗi nào liên quan đến các hoạt động đó
 
   * **Kiểm tra hoạt động**
@@ -208,74 +208,74 @@ pre: " <b> 1.3. </b> "
     * Truy cập vào AWS Management Console:
       * Mở giao diện AWS Backup
       * Chọn CREATE AN ON-DEMAND BACKUP
-    * ![Giao diện AWS Backup](/static/images/1-Worklog/1.3-Week3/Day2/AWSBackupDashboard.png)
+    * ![Giao diện AWS Backup](/images/1-Worklog/1.3-Week3/Day2/AWSBackupDashboard.png)
     * Trong phần RESOURCE TYPE, chọn EC2, sau đó dán Instance ID từ phần Output của CloudFormation Stack
       * Trong BACKUP WINDOW, chọn CREATE BACKUP NOW
       * Đối với Backup Vault, chọn BACKUP-LAB-VAULT
       * Sử dụng vai trò IAM mặc định
       * Chọn CREATE ON-DEMAND BACKUP
-    * ![Tạo on-demand backup](/static/images/1-Worklog/1.3-Week3/Day2/On-demandbackup.png)
+    * ![Tạo on-demand backup](/images/1-Worklog/1.3-Week3/Day2/On-demandbackup.png)
     * Trong Jobs, chọn Backup jobs, và chờ cho đến khi trạng thái chuyển sang Completed
-    * ![Backup jobs](/static/images/1-Worklog/1.3-Week3/Day2/WaitBackupJobs.png)
+    * ![Backup jobs](/images/1-Worklog/1.3-Week3/Day2/WaitBackupJobs.png)
     * Nhấp vào Backup jobs ID để xem chi tiết
-    * ![Backup jobs ID](/static/images/1-Worklog/1.3-Week3/Day2/BackupJobsID.png)
+    * ![Backup jobs ID](/images/1-Worklog/1.3-Week3/Day2/BackupJobsID.png)
     * Kiểm tra email để xác nhận thông báo
     * Kiểm tra email liên quan đến Restore Test Status
     * Xem thông tin Restore jobs, chọn Restore jobs ID
     * Xem chi tiết Restore jobs
     * Quay lại giao diện AWS Management Console:
       * Tìm và chọn CloudWatch
-    * ![Giao diện CloudWatch](/static/images/1-Worklog/1.3-Week3/Day2/SearchCloudWatch.png)
+    * ![Giao diện CloudWatch](/images/1-Worklog/1.3-Week3/Day2/SearchCloudWatch.png)
     * Trong giao diện CloudWatch:
       * Chọn Logs
       * Chọn Log group của bài lab. (/aws/lambda/RestoreTestFunction-<YOUR CLOUDFORMATION STACK NAME>)
-    * ![Logs](/static/images/1-Worklog/1.3-Week3/Day2/Logs.png)
+    * ![Logs](/images/1-Worklog/1.3-Week3/Day2/Logs.png)
     * Trong giao diện Logs:
       * Chọn Log streams
       * Chọn Log stream của bài lab
-    * ![Log stream](/static/images/1-Worklog/1.3-Week3/Day2/LogStreams.png)
+    * ![Log stream](/images/1-Worklog/1.3-Week3/Day2/LogStreams.png)
     * Xem chi tiết Log Events
-    * ![Chi tiết Log Events](/static/images/1-Worklog/1.3-Week3/Day2/LogEvents.png)
+    * ![Chi tiết Log Events](/images/1-Worklog/1.3-Week3/Day2/LogEvents.png)
   
   * **Dọn dẹp tài nguyên**
     * **Xóa SNS Subscriber**
       * Truy cập vào AWS SNS Console
       * Chọn Subscription ở thanh bên trái
       * Chọn và xóa các Subscriber liên quan
-    * ![SNS Subscriber](/static/images/1-Worklog/1.3-Week3/Day2/SNSSubscriber.png)
+    * ![SNS Subscriber](/images/1-Worklog/1.3-Week3/Day2/SNSSubscriber.png)
 
     * **Xóa SNS Topic**
       * Truy cập vào AWS SNS Console
       * Chọn Topics ở thanh bên trái
       * Chọn và xóa Topic liên quan
-    * ![SNS Topic](/static/images/1-Worklog/1.3-Week3/Day2/SNSTopic.png)
+    * ![SNS Topic](/images/1-Worklog/1.3-Week3/Day2/SNSTopic.png)
 
     * **Xóa Backup Vaults**
       * Truy cập vào AWS Backup Console
       * Chọn Backup Vaults ở thanh bên trái
       * Chọn Backup Vault được tạo trong bài này
-      * ![Backup Vaults](/static/images/1-Worklog/1.3-Week3/Day2/BackupVaults.png)
+      * ![Backup Vaults](/images/1-Worklog/1.3-Week3/Day2/BackupVaults.png)
       * Ở trang thông tin Backup Vault
       * Ở mục Recovery points, tick vào Recovery points, chọn Actions, và chọn Delete
-      * ![Recovery points](/static/images/1-Worklog/1.3-Week3/Day2/RecoveryPoints.png)
+      * ![Recovery points](/images/1-Worklog/1.3-Week3/Day2/RecoveryPoints.png)
       * Tiếp theo ở mục Backups khi đã xóa Recovery points ta chọn Delete vault
-      * ![Delete vault](/static/images/1-Worklog/1.3-Week3/Day2/Deletevault.png)
+      * ![Delete vault](/images/1-Worklog/1.3-Week3/Day2/Deletevault.png)
 
     * **Xóa Backup Plans**
       * Truy cập vào AWS Backup Console
       * Chọn Backup plans ở thanh bên trái
       * Chọn Backup plan được tạo trong bài này
-      * ![Backup Plans](/static/images/1-Worklog/1.3-Week3/Day2/BackupPlans.png)
+      * ![Backup Plans](/images/1-Worklog/1.3-Week3/Day2/BackupPlans.png)
       * Ở mục Resource assignments, chọn resource đã tạo và chọn Delete
-      * ![Backup Resource](/static/images/1-Worklog/1.3-Week3/Day2/BackupResource.png)
+      * ![Backup Resource](/images/1-Worklog/1.3-Week3/Day2/BackupResource.png)
       * Ở trang thông tin Backup plan, chọn Delete
-      * ![Backup Lab](/static/images/1-Worklog/1.3-Week3/Day2/BackupLab.png)
+      * ![Backup Lab](/images/1-Worklog/1.3-Week3/Day2/BackupLab.png)
 
     * **Xóa CloudFormation Stack**
       * Truy nhập vào AWS CloudFormation
       * Chọn Stack của bài lab
       * Chọn Delete
-    * ![Backup Stack](/static/images/1-Worklog/1.3-Week3/Day2/BackupStack.png)
+    * ![Backup Stack](/images/1-Worklog/1.3-Week3/Day2/BackupStack.png)
 
     * **Xóa CloudWatch Logs**
       * Truy nhập vào AWS CloudWatch
@@ -283,7 +283,7 @@ pre: " <b> 1.3. </b> "
       * Chọn /aws/lambda/RestoreTestFunction
       * Chọn Actions, chọn Delete Log Group
       * Chọn Yes, Delete
-    * ![CloudWatch Logs](/static/images/1-Worklog/1.3-Week3/Day2/CloudWatchLogs.png)
+    * ![CloudWatch Logs](/images/1-Worklog/1.3-Week3/Day2/CloudWatchLogs.png)
 
 ## Thứ 3: Giới thiệu và Thực hành AWS CLI
 * **Giới thiệu về AWS CLI**

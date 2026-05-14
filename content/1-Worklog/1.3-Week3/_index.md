@@ -159,41 +159,41 @@ pre: " <b> 1.3. </b> "
     * Access the AWS Management Console
       * Open the AWS Management Console
       * Search for and select AWS Backup
-    * ![Search AWS Backup](/static/images/1-Worklog/1.3-Week3/Day2/SearchAWSBackup.png)
+    * ![Search AWS Backup](/images/1-Worklog/1.3-Week3/Day2/SearchAWSBackup.png)
     * Select AWS Backup Plan
-    * ![Create Backup Plan](/static/images/1-Worklog/1.3-Week3/Day2/CreateBackupPlan.png)
+    * ![Create Backup Plan](/images/1-Worklog/1.3-Week3/Day2/CreateBackupPlan.png)
     * Create a backup plan
       * In the Create backup plan interface, select Build a new plan
       * For the Backup plan name field, enter BACKUP-LAB
-    * ![Backup Plan Interface](/static/images/1-Worklog/1.3-Week3/Day2/BackupPlanPerfomance.png)
+    * ![Backup Plan Interface](/images/1-Worklog/1.3-Week3/Day2/BackupPlanPerfomance.png)
     * Configure the backup rule
       * Enter BACKUP-LAB-RULE for RULE NAME
       * In the SCHEDULE section, under FREQUENCY, select Daily
       * Select Use backup window defaults - recommended to use the default backup window settings
       * For BACKUP VAULT, select CREATE NEW BACKUP VAULT
-    * ![Backup Rule](/static/images/1-Worklog/1.3-Week3/Day2/BackupRule.png)
+    * ![Backup Rule](/images/1-Worklog/1.3-Week3/Day2/BackupRule.png)
     * Set the Backup Vault name
       * Enter BACKUP-LAB-VAULT for BACKUP VAULT NAME
       * Select (default) aws/backup
       * Select CREATE BACKUP VAULT
-    * ![Backup Vault](/static/images/1-Worklog/1.3-Week3/Day2/BackupVaultName.png)
+    * ![Backup Vault](/images/1-Worklog/1.3-Week3/Day2/BackupVaultName.png)
     * Add Key and Value pairs for tags
       * Select Create plan
-    * ![Create Plan](/static/images/1-Worklog/1.3-Week3/Day2/CreateBackup.png)
+    * ![Create Plan](/images/1-Worklog/1.3-Week3/Day2/CreateBackup.png)
     * Successfully created the Backup Plan
       * In the RESOURCE ASSIGNMENTS section, select ASSIGN RESOURCES
-    * ![Create Backup Plan Success](/static/images/1-Worklog/1.3-Week3/Day2/ASSIGNRESOURCES.png)
+    * ![Create Backup Plan Success](/images/1-Worklog/1.3-Week3/Day2/ASSIGNRESOURCES.png)
     * Assign resources to the Backup Plan
       * Enter BACKUP-RESOURCES for RESOURCE ASSIGNMENT NAME
       * Select DEFAULT ROLE for IAM ROLE. If the role does not exist, AWS Backup will automatically create a new role with the required permissions
       * Add Tag Key and Tag Value
       * Select ASSIGN RESOURCES
-      * ![Assign Resources](/static/images/1-Worklog/1.3-Week3/Day2/ASSIGNRESOURCESname.png)
+      * ![Assign Resources](/images/1-Worklog/1.3-Week3/Day2/ASSIGNRESOURCESname.png)
     * Confirm and continue
       * Confirm by selecting Continue
-    * ![Confirm Plan](/static/images/1-Worklog/1.3-Week3/Day2/ConfirmPlan.png)
+    * ![Confirm Plan](/images/1-Worklog/1.3-Week3/Day2/ConfirmPlan.png)
     * Successfully completed resource assignment
-    * ![Complete Plan](/static/images/1-Worklog/1.3-Week3/Day2/CompletePlan.png)
+    * ![Complete Plan](/images/1-Worklog/1.3-Week3/Day2/CompletePlan.png)
 
   * **Setting Up Notifications**
     * Configuring notifications helps the operations team monitor the status of backup and restore tasks in a timely manner, allowing rapid response if errors occur
@@ -201,12 +201,12 @@ pre: " <b> 1.3. </b> "
       * Open Terminal and ensure you have access to AWS CLI. Make sure the CLI version is updated and that you have AWS Administrator permissions to execute AWS CLI commands
       * Modify the following AWS CLI command and replace it with the ARN of the SNS TOPIC you created. This ARN can be found in the CloudFormation Stack outputs section
       * After editing the command, execute it. This will trigger notifications through the SNS TOPIC whenever a backup or restore job is completed. This information helps the operations team monitor any failures during backup or restore processes
-      * ![AWS CLI Command](/static/images/1-Worklog/1.3-Week3/Day2/CommandAWSCLI.png)
+      * ![AWS CLI Command](/images/1-Worklog/1.3-Week3/Day2/CommandAWSCLI.png)
     * Check the SNS interface
-    * ![Check SNS](/static/images/1-Worklog/1.3-Week3/Day2/CheckSNS.png)
+    * ![Check SNS](/images/1-Worklog/1.3-Week3/Day2/CheckSNS.png)
     * Verify notifications
       * To verify that notifications were successfully enabled, you can use the following command. The output will include a section called SNSTopicArn, followed by the ARN of the created SNS Topic
-      * ![SNSTopicArn Command](/static/images/1-Worklog/1.3-Week3/Day2/CommandSNSTopicArn.png)
+      * ![SNSTopicArn Command](/images/1-Worklog/1.3-Week3/Day2/CommandSNSTopicArn.png)
       * You have now successfully enabled notifications for BACKUP-LAB-VAULT, ensuring that the operations team is informed about the completion of backup and restore activities related to this vault, as well as any associated failures
   
     * **Testing the Workflow**
@@ -216,7 +216,7 @@ pre: " <b> 1.3. </b> "
     * Access the AWS Management Console:
       * Open the AWS Backup interface
       * Select CREATE AN ON-DEMAND BACKUP
-    * ![AWS Backup Dashboard](/static/images/1-Worklog/1.3-Week3/Day2/AWSBackupDashboard.png)
+    * ![AWS Backup Dashboard](/images/1-Worklog/1.3-Week3/Day2/AWSBackupDashboard.png)
     * In the RESOURCE TYPE section:
       * Select EC2
       * Paste the Instance ID from the Outputs section of the CloudFormation Stack
@@ -224,76 +224,76 @@ pre: " <b> 1.3. </b> "
       * For Backup Vault, select BACKUP-LAB-VAULT
       * Use the default IAM role
       * Select CREATE ON-DEMAND BACKUP
-    * ![Create On-Demand Backup](/static/images/1-Worklog/1.3-Week3/Day2/On-demandbackup.png)
+    * ![Create On-Demand Backup](/images/1-Worklog/1.3-Week3/Day2/On-demandbackup.png)
     * In Jobs:
       * Select Backup jobs
       * Wait until the status changes to Completed
-    * ![Backup Jobs](/static/images/1-Worklog/1.3-Week3/Day2/WaitBackupJobs.png)
+    * ![Backup Jobs](/images/1-Worklog/1.3-Week3/Day2/WaitBackupJobs.png)
     * Click the Backup jobs ID to view details
-    * ![Backup Jobs ID](/static/images/1-Worklog/1.3-Week3/Day2/BackupJobsID.png)
+    * ![Backup Jobs ID](/images/1-Worklog/1.3-Week3/Day2/BackupJobsID.png)
     * Check your email to confirm notification delivery
     * Check the email related to Restore Test Status
     * View Restore jobs information and select the Restore jobs ID
     * View the details of the Restore jobs
     * Return to the AWS Management Console:
       * Search for and select CloudWatch
-    * ![CloudWatch Interface](/static/images/1-Worklog/1.3-Week3/Day2/SearchCloudWatch.png)
+    * ![CloudWatch Interface](/images/1-Worklog/1.3-Week3/Day2/SearchCloudWatch.png)
     * In the CloudWatch interface:
       * Select Logs
       * Select the Log group for this lab:
         * (/aws/lambda/RestoreTestFunction-<YOUR CLOUDFORMATION STACK NAME>)
-    * ![Logs](/static/images/1-Worklog/1.3-Week3/Day2/Logs.png)
+    * ![Logs](/images/1-Worklog/1.3-Week3/Day2/Logs.png)
     * In the Logs interface:
       * Select Log streams
       * Select the Log stream for this lab
-    * ![Log Streams](/static/images/1-Worklog/1.3-Week3/Day2/LogStreams.png)
+    * ![Log Streams](/images/1-Worklog/1.3-Week3/Day2/LogStreams.png)
     * View detailed Log Events
-    * ![Log Events Details](/static/images/1-Worklog/1.3-Week3/Day2/LogEvents.png)
+    * ![Log Events Details](/images/1-Worklog/1.3-Week3/Day2/LogEvents.png)
 
   * **Cleaning Up Resources**
     * **Delete SNS Subscribers**
       * Access the AWS SNS Console
       * Select Subscription from the left sidebar
       * Select and delete the related Subscribers
-    * ![SNS Subscriber](/static/images/1-Worklog/1.3-Week3/Day2/SNSSubscriber.png)
+    * ![SNS Subscriber](/images/1-Worklog/1.3-Week3/Day2/SNSSubscriber.png)
 
     * **Delete SNS Topics**
       * Access the AWS SNS Console
       * Select Topics from the left sidebar
       * Select and delete the related Topic
-    * ![SNS Topic](/static/images/1-Worklog/1.3-Week3/Day2/SNSTopic.png)
+    * ![SNS Topic](/images/1-Worklog/1.3-Week3/Day2/SNSTopic.png)
 
     * **Delete Backup Vaults**
       * Access the AWS Backup Console
       * Select Backup Vaults from the left sidebar
       * Select the Backup Vault created in this lab
-      * ![Backup Vaults](/static/images/1-Worklog/1.3-Week3/Day2/BackupVaults.png)
+      * ![Backup Vaults](/images/1-Worklog/1.3-Week3/Day2/BackupVaults.png)
       * In the Backup Vault details page:
         * In the Recovery points section, select the Recovery points
         * Choose Actions, then select Delete
-      * ![Recovery Points](/static/images/1-Worklog/1.3-Week3/Day2/RecoveryPoints.png)
+      * ![Recovery Points](/images/1-Worklog/1.3-Week3/Day2/RecoveryPoints.png)
       * Next, in the Backups section, after deleting the Recovery points:
         * Select Delete vault
-      * ![Delete Vault](/static/images/1-Worklog/1.3-Week3/Day2/Deletevault.png)
+      * ![Delete Vault](/images/1-Worklog/1.3-Week3/Day2/Deletevault.png)
 
     * **Delete Backup Plans**
       * Access the AWS Backup Console
       * Select Backup plans from the left sidebar
       * Select the Backup plan created in this lab
-      * ![Backup Plans](/static/images/1-Worklog/1.3-Week3/Day2/BackupPlans.png)
+      * ![Backup Plans](/images/1-Worklog/1.3-Week3/Day2/BackupPlans.png)
       * In the Resource assignments section:
         * Select the created resource
         * Select Delete
-      * ![Backup Resource](/static/images/1-Worklog/1.3-Week3/Day2/BackupResource.png)
+      * ![Backup Resource](/images/1-Worklog/1.3-Week3/Day2/BackupResource.png)
       * In the Backup plan details page:
         * Select Delete
-      * ![Backup Lab](/static/images/1-Worklog/1.3-Week3/Day2/BackupLab.png)
+      * ![Backup Lab](/images/1-Worklog/1.3-Week3/Day2/BackupLab.png)
 
     * **Delete the CloudFormation Stack**
       * Access AWS CloudFormation
       * Select the Stack for this lab
       * Select Delete
-    * ![Backup Stack](/static/images/1-Worklog/1.3-Week3/Day2/BackupStack.png)
+    * ![Backup Stack](/images/1-Worklog/1.3-Week3/Day2/BackupStack.png)
 
     * **Delete CloudWatch Logs**
       * Access AWS CloudWatch
@@ -301,7 +301,7 @@ pre: " <b> 1.3. </b> "
       * Select /aws/lambda/RestoreTestFunction
       * Select Actions, then choose Delete Log Group
       * Select Yes, Delete
-    * ![CloudWatch Logs](/static/images/1-Worklog/1.3-Week3/Day2/CloudWatchLogs.png)
+    * ![CloudWatch Logs](/images/1-Worklog/1.3-Week3/Day2/CloudWatchLogs.png)
 
 ## Tuesday: Introduction and Hands-on with AWS CLI
 * **Introduction to AWS CLI**

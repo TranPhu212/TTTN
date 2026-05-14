@@ -77,9 +77,88 @@ pre: " <b> 1.4. </b> "
     * If you put frequently accessed data into Standard Infrequent Access, you will actually pay a higher fee than S3 Standard
     * Object Lifecycle Management will move the object after the number of days we specify, calculated from the day the object was created
 
-  * **
+  * **Amazon Simple Storage Service (S3) – Static Website & CORS**
+    * Amazon S3 has the capability to host static websites (HTML, media, etc.), making it suitable for Single Page Applications (web applications or websites that interact with users by dynamically rewriting the current page with new data from the web server using JavaScript and its frameworks such as AngularJS, ReactJS, instead of the browser’s default method of loading an entirely new page).
+    * Amazon S3 supports CORS. CORS is a mechanism that allows various resources (fonts, JavaScript, etc.) of a website to be requested from a domain different from the website’s own domain. CORS stands for **Cross-Origin Resource Sharing**.
+    * https://docs.aws.amazon.com/AmazonS3/latest/userguide/cors.html
+    * Amazon S3 supports hosting static websites (HTML, media, etc.), which is suitable for Single Page Applications.
+    * Amazon S3 allows configuration of CORS (Cross-Origin Resource Sharing) policies, enabling client web applications to interact with resources located on different domains.
 
+  * **Amazon Simple Storage Service (S3) – Access Control**
+      * Amazon S3 provides 2 mechanisms for controlling access to buckets
+      * **S3 Access Control List (ACL)** is an access control mechanism that existed before IAM. However, if you are already using S3 ACLs and find them sufficient, there is no need to change. S3 ACLs are attached to both buckets and objects. They define which AWS accounts or groups are granted access and the type of access permitted
+      * **S3 Bucket Policies** and **IAM Policies** define permissions by specifying the objects in the `Resource` section of the policy. The statement applies to those objects within the bucket. Consolidating object-specific permissions into a single policy (as opposed to multiple S3 ACLs) makes it easier to determine access rights
+      * Every object in S3 is at the same level (no hierarchy) and is identified by an **object key**. Example: `/image/sample.jpg`, `sample.jpg`
 
+  * **Amazon Simple Storage Service (S3) – Endpoint & Versioning**
+      * **Amazon S3 Endpoints** allow access to S3 buckets through AWS’s private network. By default, access to S3 goes over the public internet
+      * You can enable **Versioning**, which allows you to recover objects after accidental deletion or overwriting. It also helps protect against ransomware/encryption attacks
+          * When you delete an object, Amazon S3 does not remove it permanently but instead adds a delete marker
+          * When you overwrite an object, a new version of the object is created in the bucket
+      * => In both cases, you can restore a previous version
+      * Versioning allows you to recover objects after accidental deletion or overwriting and provides protection against ransomware/encryption attacks
 
+  * **Amazon Simple Storage Service (S3) – Object Key & Performance**
+      * Every object in S3 is at the same level (no hierarchy) and is identified by an **object key**. Example: `/image/sample.jpg`, `sample.jpg`
+      * Internally, S3 divides data into **Partitions**. Partitions are automatically split when the number of requests increases or when there are too many object keys in one partition (which slows down object lookup)
+      * S3 stores a **key map** (the key map is also divided into multiple partitions and hashed by the prefix of the object key)
+      * To optimize S3 performance, you can use **random prefixes** (e.g., `/fscd/img/sample.jpg` instead of `/img/sample.jpg`). The goal is to distribute objects across as many partitions as possible, since S3 performance scales with the number of partitions
+
+  * **Amazon Simple Storage Service (S3) – Glacier**
+      * **Amazon S3 Glacier** is a low-cost storage option suitable for data that does not require immediate or frequent access — ideal for long-term archival
+      * When data is stored in Amazon S3 Glacier, you cannot access it directly. You must initiate a **retrieve** request to bring the data back to an S3 bucket
+      * There are three retrieval options with different access times and costs:
+          * **Expedited** – typically completes in 1–5 minutes
+          * **Standard** – typically completes in 3–5 hours
+          * **Bulk** – typically completes in 5–12 hours
+      * Amazon S3 Glacier is a low-cost storage class for long-term data that does not require direct or frequent retrieval.
+
+  * **Snow Family - Storage Gateway - Backup**
+      * **Snow Family – Snowball**
+          * A service that helps migrate data from on-premise environments to AWS at petabyte (PB) scale. Each Snowball device can hold up to 80 Terabytes (TB)
+          * The Snowball device is shipped back to the chosen AWS Region, where the data is loaded into your selected service (S3 or Glacier)
+          * You need to install the Snowball Client on your local machine to perform verification, compression, encryption, and data transfer
+
+      * **Snow Family – Snowball Edge**
+          * A service that helps migrate data from on-premise environments to AWS at petabyte (PB) scale. Each Snowball Edge device can hold up to 100 Terabytes (TB)
+          * The Snowball Edge device is shipped back to the chosen AWS Region
+          * It includes built-in compute resources for processing data locally before importing into the device
+
+      * **Snow Family – Snowmobile**
+          * A service for migrating data from on-premise to AWS at exabyte scale. Each Snowmobile can hold up to 100 PB.
+          * The Snowmobile is shipped back to the chosen AWS Region
+
+      * **AWS Storage Gateway**
+          * AWS Storage Gateway is a **hybrid storage** solution that combines AWS cloud storage with on-premise storage capacity.
+          * It allows you to leverage the scale and cost-effectiveness of cloud storage for large volumes of data that require long-term retention
+          * AWS Storage Gateway supports three main storage interfaces:
+              * **File Gateway**: Allows you to store and retrieve objects in Amazon S3 using standard file protocols (NFS and SMB). Objects written through File Gateway can be accessed directly in S3
+              * **Volume Gateway**: Provides block storage for your applications using the iSCSI protocol. Data is stored in Amazon S3. You can create EBS snapshots (automatically via AWS Backup) to restore as EBS volumes
+              * **Tape Gateway**: Provides a virtual tape library (VTL) interface via iSCSI, including virtual tape drives and virtual tapes. Virtual tape data is stored in Amazon S3 or can be archived to Amazon Glacier
+          * AWS Storage Gateway is a hybrid storage solution combining on-premise and cloud storage
+
+  * **Disaster Recovery on AWS**
+      * **RTO / RPO**
+          * **Recovery Time Objective (RTO)**: The maximum acceptable time to restore a service to normal operation after a disaster
+              * Example: If a disaster occurs at 2:00 PM and the RTO is 4 hours, the service must be restored by 6:00 PM at the latest
+          * **Recovery Point Objective (RPO)**: The maximum acceptable amount of data loss (measured in time)
+              * Example: If backups are performed once per day, in the worst case you could lose 24 hours of data → RPO = 24 hours
+
+      * **Disaster Recovery Strategies on AWS**
+          * Different applications have varying complexity and Service Level Agreements (SLAs) with different RTO/RPO requirements. You should choose the appropriate DR strategy accordingly
+          * There are **4 main disaster recovery strategies** on AWS:
+              * Backup and Restore
+              * Pilot Light (Active–Standby)
+              * Warm Standby (Low Capacity Active–Active)
+              * Multi-Site Active–Active (Full Capacity)
+
+      * **AWS Backup**
+          * AWS Backup is a centralized service to manage backup tasks. You can configure backup schedules, retention policies, and monitor backup activities for various AWS resources, including:
+              * Amazon EBS
+              * Amazon EC2
+              * Amazon RDS databases
+              * DynamoDB
+              * Amazon EFS
+              * AWS Storage Gateway volumes
 
 ## Monday: 

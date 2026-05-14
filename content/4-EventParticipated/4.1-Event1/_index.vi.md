@@ -108,3 +108,7 @@ Tham gia sự kiện là một trải nghiệm rất bổ ích, giúp tôi có c
 - Prompt Engineering là kỹ năng quan trọng cần rèn luyện thường xuyên trong thời đại AI
 - Mindset và khả năng tự đánh giá năng lực quyết định rất lớn đến cơ hội nghề nghiệp
 - Luôn chủ động học hỏi, điều chỉnh suy nghĩ và áp dụng các phương pháp khoa học để phát triển bản thân
+
+#### Một số hình ảnh khi tham gia sự kiện
+* ![Even1](/images/Event1.jpeg)
+> Tổng thể, sự kiện không chỉ cung cấp kiến thức mà còn truyền cảm hứng mạnh mẽ, giúp tôi có thêm động lực và công cụ cụ thể để cải thiện bản thân trong học tập và công việc
