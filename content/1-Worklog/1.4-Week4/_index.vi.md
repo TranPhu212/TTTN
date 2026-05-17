@@ -8,16 +8,17 @@ pre: " <b> 1.4. </b> "
 
 ### Mục tiêu tuần 4:
 
-* 
+* Nắm vững các dịch vụ lưu trữ của AWS (Amazon S3 và các tính năng nâng cao, Storage Gateway, Snow Family, AWS Backup) cùng chiến lược Disaster Recovery
+* Thành thạo thiết kế và triển khai Amazon VPC theo best practices (Multi-AZ, bảo mật mạng, NAT Gateway, VPC Flow Logs, Session Manager)
+* Thiết lập kết nối Hybrid Cloud an toàn qua Site-to-Site VPN
+* Cấu hình Hybrid DNS hai chiều giữa môi trường AWS và On-premise sử dụng Route 53 Resolver (Inbound/Outbound Endpoints + Resolver Rules)
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --------- | ------------ | --------------- | -------------- |
-|  6  | - nội dung cần thay thế | 08/05/2026 | 08/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
-|  2  | - nội dung cần thay thế | 11/05/2026 | 11/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
-|  3  | - nội dung cần thay thế | 12/05/2026 | 12/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
-|  4  | - nội dung cần thay thế | 13/05/2026 | 13/08/2026 | <https://cloudjourney.awsstudygroup.com/> |
-|  5  | - nội dung cần thay thế | 14/05/2026 | 14/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+|  6  | - Học Amazon S3 (Storage Class, Access Point, Versioning, Static Website, CORS, Glacier), Snow Family, Storage Gateway, Disaster Recovery (RTO/RPO) và AWS Backup | 08/05/2026 | 08/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+|  2  | - Xây dựng VPC Multi-AZ, cấu hình bảo mật mạng (SG, NACLs), NAT Gateway, VPC Flow Logs, Session Manager và thiết lập kết nối Site-to-Site VPN | 11/05/2026 | 11/05/2026 | <https://000003.awsstudygroup.com/> |
+|  4  | - Cấu hình Hybrid DNS hai chiều giữa AWS và On-premise dùng Route 53 Resolver, Endpoints & Resolver Rules | 13/05/2026 | 13/08/2026 | <https://000010.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 4:
@@ -162,4 +163,502 @@ pre: " <b> 1.4. </b> "
           * Amazon EFS
           * AWS Storage Gateway volumes
 
-## Thứ 2: 
+## Thứ 2: Bắt đầu với Amazon Virtual Private Cloud (VPC) và AWS Site-to-Site VPN
+  * **Mô tả:** Workshop hướng dẫn xây dựng và quản lý Amazon VPC kết hợp AWS Site-to-Site VPN. Bạn sẽ thực hành thiết kế mạng ảo, triển khai EC2, cấu hình bảo mật và thiết lập kết nối VPN an toàn giữa on-premise và AWS Cloud.
+
+  * **Mục tiêu chính:**
+      * Thiết kế và triển khai VPC theo AWS Well-Architected Framework
+      * Cấu hình các thành phần bảo mật mạng (Security Groups, NACLs)
+      * Thiết lập kết nối an toàn giữa môi trường on-premise và AWS qua Site-to-Site VPN
+
+  * **Kiến thức thu được:**
+      * Thiết kế và triển khai VPC theo best practices
+      * Cấu hình bảo mật mạng đa tầng
+      * Thiết lập VPN kết nối Hybrid Cloud
+
+  * **Tính năng Production-Ready:**
+      * Multi-AZ NAT Gateways
+      * VPC Flow Logs
+      * CloudWatch monitoring & alerting
+      * Systems Manager Session Manager
+      * Infrastructure as Code (IaC) templates
+
+  * **Giới thiệu Amazon VPC**
+    * **Mô tả:** Amazon Virtual Private Cloud (Amazon VPC) là dịch vụ mạng ảo tùy chỉnh nằm trong AWS Cloud, cho phép tạo môi trường mạng riêng biệt hoàn toàn tách biệt với thế giới bên ngoài.
+
+    * **Tính năng chính:**
+        * Kiểm soát hoàn toàn môi trường mạng ảo
+        * Tùy chỉnh phạm vi địa chỉ IP (CIDR block)
+        * Cấu hình định tuyến và kết nối mạng linh hoạt
+        * Hỗ trợ đầy đủ IPv4 và IPv6
+
+    * **Kiến trúc:**
+        * Mỗi VPC thuộc một Region và chứa nhiều Availability Zones (AZ)
+        * CIDR block từ /16 đến /28
+        * CIDR block không thể thay đổi sau khi tạo
+        * Mỗi Region có VPC mặc định (172.31.0.0/16)
+
+  * **Tường lửa trong VPC (Network Security)**
+    * **Hai lớp bảo mật chính:**
+        * Security Groups (cấp Instance - Stateful)
+        * Network ACLs (cấp Subnet - Stateless)
+
+    * **Security Groups:**
+        * Tường lửa ảo cho từng EC2 instance
+        * Mỗi instance có thể gán tối đa 5 Security Groups
+        * Kiểm soát chi tiết inbound và outbound traffic
+
+    * **Mô hình bảo mật:**
+        * Kết hợp Security Groups + Network ACLs để tạo lớp bảo mật đa tầng
+
+  * **Chuẩn bị Môi trường (Prerequisite)**
+    * Xây dựng môi trường VPC hoàn chỉnh từ đầu
+    * Triển khai các thành phần mạng cơ bản của AWS
+    * Thiết lập cấu trúc mạng an toàn và có khả năng mở rộng
+
+  * **Các Thành phần Chính:**
+    * VPC - Môi trường mạng ảo riêng biệt
+    * Subnet - Phân đoạn mạng cho các tài nguyên
+    * Internet Gateway - Cổng kết nối internet
+    * Route Table - Bảng định tuyến lưu lượng mạng
+    * Security Group - Tường lửa cấp instance
+  
+  * **Tạo VPC**
+    * **Mục tiêu:**
+      * Tạo môi trường mạng ảo riêng biệt trong AWS
+      * Thiết lập không gian địa chỉ IP cho VPC
+      * Cấu hình các tính năng DNS cơ bản
+
+    * **Các bước thực hiện:**
+      * Truy cập **AWS Management Console** → Tìm kiếm và chọn **VPC**
+      * Trong **VPC Dashboard** → Chọn **Your VPCs** → Click **Create VPC**
+      * **Resources**: Chọn **VPC only**
+      * **Name tag**: `ASG`
+      * **IPv4 CIDR**: `10.10.0.0/16`
+      * Giữ **Tenancy** ở chế độ mặc định (Default)
+      * Click **Create VPC**
+
+    * **Cấu hình DNS (Quan trọng):**
+      * Chọn VPC vừa tạo → **Actions** → **Edit VPC settings**
+      * Bật **DNS hostnames** và **DNS resolution**
+      * Lưu thay đổi
+
+  * **Tạo Subnet**
+    * **Tổng quan:** Subnet là phân đoạn mạng con trong VPC, cho phép phân phối tài nguyên theo Availability Zone (AZ) và phân loại Public/Private
+
+    * **Các bước tạo Subnet:**
+      * **Public Subnet 1**
+        * Name: `Public Subnet 1`
+        * AZ: `ap-southeast-1a`
+        * CIDR: `10.10.1.0/24`
+
+      * **Public Subnet 2**
+        * Name: `Public Subnet 2`
+        * AZ: `ap-southeast-1b`
+        * CIDR: `10.10.2.0/24`
+
+      * **Private Subnet 1**
+        * Name: `Private Subnet 1`
+        * AZ: `ap-southeast-1a`
+        * CIDR: `10.10.3.0/24`
+
+      * **Private Subnet 2**
+        * Name: `Private Subnet 2`
+        * AZ: `ap-southeast-1b`
+        * CIDR: `10.10.4.0/24`
+
+    * **Cấu hình Auto-assign Public IP:**
+      * Bật tính năng này cho cả 2 Public Subnet (cho phép EC2 tự động nhận Public IP)
+
+  * **Tạo Internet Gateway**
+    * **Tổng quan:** Internet Gateway (IGW) cho phép tài nguyên trong VPC kết nối với internet hai chiều
+
+    * **Các bước thực hiện:**
+      * Vào **Internet Gateways** → **Create internet gateway**
+      * Name: `Internet Gateway`
+      * Click **Create**
+      * **Actions** → **Attach to VPC** → Chọn VPC `ASG`
+      * Xác nhận trạng thái **Attached**
+
+  * **Tạo Route Table**
+    * **Tổng quan:** Route Table định tuyến lưu lượng mạng trong VPC
+
+    * **Các bước thực hiện:**
+      * Vào **Route Tables** → **Create route table**
+      * Name: `Route table-Public`
+      * Chọn VPC `ASG`
+      * Tạo xong → **Edit routes** → Thêm route:
+        * Destination: `0.0.0.0/0`
+        * Target: Internet Gateway (IGW đã tạo)
+      * **Subnet associations** → Gắn 2 Public Subnet vào Route Table này
+
+  * **Tạo Security Group**
+    * **Public Subnet - SG**
+      * Name: `Public subnet - SG`
+      * Description: `Allow SSH and Ping for servers in public subnet`
+      * Inbound:
+        * SSH (port 22) → Source: My IP
+        * All ICMP - IPv4 → Anywhere (cho phép ping)
+
+    * **Private Subnet - SG**
+      * Name: `Private subnet - SG`
+      * Inbound:
+          * SSH → Source: Security Group của Public Subnet
+          * All ICMP - IPv4 → Anywhere
+
+    * **VPC-Endpoints-SG** (bổ sung)
+      * Name: `VPC-Endpoints-SG`
+      * Inbound: HTTPS từ CIDR VPC (`10.10.0.0/16`)
+
+  * **Kích hoạt VPC Flow Logs**
+    * **Mục đích:** Ghi lại lưu lượng IP để giám sát bảo mật, khắc phục sự cố và kiểm toán
+
+    * **Các bước thực hiện:**
+      * Chọn VPC `ASG` → Tab **Flow logs** → **Create flow log**
+      * Filter: **All**
+      * Maximum aggregation interval: **1 minute**
+      * Destination: **CloudWatch Logs**
+      * Log group: `/aws/vpc/flowlogs`
+      * IAM Role: Tạo mới
+      * Tạo Flow Log
+
+    * **Thông tin quan trọng:**
+      * Flow Logs ghi srcaddr, dstaddr, ports, protocol, action (ACCEPT/REJECT), bytes, packets...
+      * Có độ trễ vài phút
+      * Hữu ích cho production monitoring và security analysis
+
+  * **Triển khai Amazon EC2 Instances**
+    * **Tính năng Production-Ready:**
+      * Kiến trúc Multi-AZ
+      * NAT Gateways High-Availability
+      * Phương thức truy cập an toàn (SSH và Session Manager)
+      * Giám sát CloudWatch metrics và alerting
+      * VPC Reachability Analyzer
+
+    * **Tạo máy chủ EC2**
+      * **Tổng quan:** Tạo hai EC2 instances: một trong Public Subnet (có Public IP) và một trong Private Subnet (chỉ Private IP)
+
+      * **Tạo EC2 Public Instance:**
+        * Name: EC2 Public
+        * AMI: Amazon Linux 2
+        * Subnet: Public Subnet 1
+        * Auto-assign Public IP: Enable
+        * Security Group: Public subnet - SG
+        * Key Pair: aws-keypair (RSA .pem)
+
+      * **Tạo EC2 Private Instance:**
+        * Name: EC2 Private
+        * AMI: Amazon Linux 2
+        * Subnet: Private Subnet 2
+        * Auto-assign Public IP: Disable
+        * Security Group: Private subnet - SG
+        * Key Pair: aws-keypair
+
+    * **Kiểm tra kết nối**
+
+      * **Mô tả:** Kiểm tra khả năng kết nối đến các EC2 instances (SSH vào Public instance và ping giữa các instance)
+
+    * **Tạo NAT Gateway**
+      * **Tổng quan:** NAT Gateway cho phép instances trong Private Subnet kết nối ra internet một cách an toàn (outbound only)
+
+      * **Các bước tạo Elastic IP:**
+        * Vào EC2 Dashboard → Elastic IPs
+        * Allocate Elastic IP address (Amazon’s pool)
+
+      * **Tạo NAT Gateway:**
+        * Name: NAT gateway
+        * Subnet: Public Subnet 2
+        * Connectivity type: Public
+        * Gắn Elastic IP vừa tạo
+
+      * **Cấu hình Route Table Private:**
+        * Tạo Route Table mới: Route table - Private
+        * Gắn hai Private Subnets vào Route Table
+        * Thêm route: Destination 0.0.0.0/0 → Target: NAT Gateway
+
+      * **Kiểm tra:** Thực hiện ping test từ EC2 Private Instance ra internet
+
+    * **Sử dụng Reachability Analyzer**
+      * **Mô tả:** Công cụ phân tích khả năng kết nối mạng giữa các tài nguyên trong VPC (kiểm tra reachability giữa Public và Private instances)
+
+    * **Tạo EC2 Instance Connect Endpoint (Optional)**
+      * **Mô tả:** Cấu hình endpoint để kết nối EC2 mà không cần Public IP hoặc bastion host
+
+    * **AWS Systems Manager Session Manager**
+      * **Tổng quan:** Truy cập shell an toàn qua console mà không cần SSH key, không mở port inbound, và có khả năng audit đầy đủ
+
+      * **Lợi ích chính:**
+        * Không cần quản lý SSH keys
+        * Không cần mở port 22
+        * Tất cả session được ghi log và kiểm toán
+        * Kiểm soát truy cập qua IAM
+        * Giảm chi phí (không cần bastion host)
+
+      * **Điều kiện tiên quyết:**
+        * Tạo IAM Role EC2-SessionManager-Role với policy AmazonSSMManagedInstanceCore
+        * Gắn role này vào cả hai EC2 instances (Public và Private)
+
+      * **Tạo VPC Endpoints (cho Private Subnet):**
+        * SSM Endpoint
+        * SSM Messages Endpoint
+        * EC2 Messages Endpoint
+        * Sử dụng Security Group VPC-Endpoints-SG
+
+      * **Sử dụng Session Manager:**
+        * Vào Systems Manager → Session Manager → Start session
+        * Chọn instance và bắt đầu session shell trực tiếp trên browser
+
+    * **CloudWatch Monitoring & Alerting**
+      * **Mô tả:** Cấu hình giám sát metrics cho EC2 instances và thiết lập alarm khi có sự cố
+
+  * **Thiết lập AWS Site-to-Site VPN**
+    * Tạo kết nối bảo mật IPSec giữa data center on-premise và Amazon VPC
+    * Hỗ trợ cả thiết bị VPN phần cứng và phần mềm
+    * Mỗi kết nối bao gồm 2 IPSec tunnels để đảm bảo high availability
+
+    * **Thành phần chính**
+      * Virtual Private Gateway (VPG): Điểm cuối VPN phía AWS
+      * Customer Gateway (CGW): Đại diện cho thiết bị VPN phía khách hàng
+      * VPN Connection: Kết nối IPSec giữa VPG và CGW
+
+    * **Đặc điểm quan trọng**
+      * Mỗi kết nối có 2 tunnels cho tính sẵn sàng cao
+      * Hỗ trợ static routing và dynamic routing (BGP)
+      * Một VPG có thể kết nối với nhiều CGW
+      * AWS cung cấp file cấu hình chi tiết cho nhiều loại thiết bị
+
+    * **Tạo môi trường VPN (Tạo VPC mô phỏng Branch Office)**
+      * Tạo VPC mới tên ASG VPN
+      * Tạo các Subnet (Public/Private)
+      * Tạo Internet Gateway, Route Table
+      * Triển khai EC2 instance trong VPC mới
+      * Cấu hình Security Group và kiểm tra kết nối cơ bản
+
+    * **Cấu hình kết nối VPN (Phần chính)**
+      * **Tạo Virtual Private Gateway**
+        * Tạo VPG và attach vào VPC chính (ASG)
+
+      * **Tạo Customer Gateway**
+        * Tạo CGW với Public IP của thiết bị VPN phía khách hàng (hoặc VPC thứ hai)
+
+      * **Tạo kết nối VPN**
+        * Tạo VPN Connection giữa VPG và CGW
+        * Chọn static hoặc dynamic routing
+
+      * **Cấu hình Customer Gateway**
+        * Tải file cấu hình VPN từ AWS
+        * Áp dụng cấu hình cho thiết bị hoặc phần mềm VPN (strongSwan, Libreswan...)
+
+      * **Tùy chỉnh AWS VPN Tunnel**
+        * Chỉnh sửa tunnel options (IKE, IPsec parameters)
+        * Cấu hình Dead Peer Detection (DPD)
+        * Tối ưu hóa hiệu suất tunnel
+
+      * **Cấu hình VPN Nâng cao**
+        * Sử dụng strongSwan thay thế
+        * BGP dynamic routing cho automatic failover
+        * Cấu hình IKEv2 và bảo mật nâng cao
+
+      * **Hướng dẫn Troubleshooting VPN**
+        * Xử lý vấn đề trên Amazon Linux 2023
+        * Migration từ OpenSwan sang Libreswan
+        * Cập nhật service management
+
+      * **Hướng dẫn Troubleshooting Chính thức từ AWS**
+        * Framework theo thứ tự: IKE → IPsec → Tunnel → Routing
+        * Tích hợp CloudWatch monitoring
+        * Hướng dẫn cho các thiết bị Cisco, Juniper...
+
+    * **Cấu hình VPN bằng strongSwan với Transit Gateway (Tùy chọn)**
+      * Tạo Transit Gateway
+      * Tạo VPN Connection với Transit Gateway
+      * Cấu hình route propagation
+      * Sử dụng strongSwan trên EC2 làm Customer Gateway
+
+  * **Dọn dẹp Tài nguyên**
+    * **Thông tin quan trọng**
+      * Phải xóa tài nguyên theo thứ tự đúng để tránh lỗi phụ thuộc
+      * Một số tài nguyên như Elastic IP và NAT Gateway vẫn tính phí nếu không xóa
+
+    * **Terminate các EC2 Instance**
+      * **Các bước thực hiện**
+        * Truy cập EC2 Console
+        * Chọn tất cả Instances liên quan đến lab
+        * Chọn Instance state → Terminate instance
+        * Xác nhận terminate
+
+    * **Xóa NAT Gateway và Elastic IP Address**
+      * **Xóa NAT Gateway**
+        * Vào VPC Console → NAT Gateways
+        * Chọn NAT Gateway → Actions → Delete NAT Gateway
+        * Nhập “delete” để xác nhận
+
+      * **Xóa Elastic IP**
+        * Vào VPC Console → Elastic IPs
+        * Chọn EIP → Actions → Release Elastic IP address
+        * Xác nhận Release
+
+    * **Xóa VPC Endpoints**
+      * **Các bước**
+        * Vào VPC Console → Endpoints
+        * Chọn các Endpoints liên quan
+        * Chọn Action → Delete VPC endpoints
+        * Nhập “delete” để xác nhận
+
+    * **Xóa các tài nguyên VPN**
+      * **Thứ tự xóa khuyến nghị**
+        * Xóa VPN Site-to-Site Connection trước
+        * Xóa Virtual Private Gateway (detach khỏi VPC trước nếu cần)
+        * Xóa Customer Gateway
+
+      * **Xóa VPC**
+        * **Các bước**
+          * Xóa VPC ASG VPN (VPC mô phỏng branch office)
+          * Xóa VPC ASG (VPC chính)
+
+        * **Security Note**
+          * Xóa đúng thứ tự giúp tránh lỗi và đảm bảo dọn dẹp sạch sẽ
+
+  * **Infrastructure as Code Templates**
+    * **Infrastructure as Code (IaC) là gì?**
+      * Quản lý và cung cấp hạ tầng qua file code thay vì cấu hình thủ công
+
+    * **Lợi ích của IaC**
+      * Khả năng lặp lại (Repeatability)
+      * Kiểm soát phiên bản (Version Control)
+      * Tự động hóa, giảm lỗi con người
+      * Tài liệu sống (Living Documentation)
+      * Dễ dàng quản lý chi phí và môi trường
+      * Tăng cường bảo mật và tuân thủ
+
+    * **CloudFormation Template**
+      * **Template VPC Stack Hoàn chỉnh**
+        * Bao gồm VPC, Multi-AZ Subnets, Internet Gateway
+        * NAT Gateways High Availability
+        * Route Tables cho Public/Private
+        * Security Groups
+        * VPC Flow Logs
+
+      * **Các thành phần chính trong template**
+        * VPC với DNS hỗ trợ
+        * Public Subnets (Auto-assign Public IP)
+        * Private Subnets
+        * NAT Gateways + Elastic IPs
+        * Route Tables và Associations
+        * Security Groups (Public & Private)
+        * IAM Role cho VPC Flow Logs
+
+    * **Hướng dẫn Triển khai**
+      * **Triển khai CloudFormation**
+        * Sử dụng lệnh AWS CLI để create-stack
+        * Giám sát trạng thái stack
+
+      * **Các công cụ IaC khác**
+        * AWS CDK
+        * Terraform
+
+      * **Best Practices cho IaC**
+        * Sử dụng Parameter để tùy chỉnh môi trường
+        * Tagging nhất quán
+        * Lưu giá trị nhạy cảm trong Secrets Manager
+        * Áp dụng least privilege cho IAM
+        * Tách biệt môi trường (dev/staging/prod)
+        * Kiểm tra và validate template trước khi deploy
+
+## Thứ 4: Thiết lập Hybrid DNS với Route 53 Resolver
+  * **Giới thiệu**
+    * **Tổng quan**
+      * Hầu hết doanh nghiệp đều có hệ thống DNS on-premise riêng
+      * Khi di chuyển lên AWS, cần tích hợp DNS hai chiều giữa on-premise và AWS
+      * Workshop sử dụng AWS Managed Microsoft AD để mô phỏng DNS on-premise
+
+    * **Khả năng của Amazon Route 53**
+      * Đăng ký miền công cộng
+      * Tạo Private Hosted Zone
+      * DNS Hybrid Resolution
+      * Recursive DNS Resolver
+
+    * **Ba công cụ chính của Route 53 Resolver**
+      * **Outbound Endpoints**: Gửi truy vấn DNS từ AWS ra on-premise
+      * **Inbound Endpoints**: Nhận truy vấn DNS từ on-premise vào AWS
+      * **Resolver Rules**: Quy tắc forward DNS cho tên miền cụ thể
+
+  * **Kết nối đến RDGW (Remote Desktop Gateway)**
+    * **Mô tả**
+      * Kết nối RDP vào máy chủ Remote Desktop Gateway để quản trị
+
+    * **Các bước thực hiện chi tiết**
+      * Truy cập EC2 Console → Chọn instance RDGW
+      * Chọn Connect → RDP Client
+      * Tải file Remote Desktop
+      * Chọn Get Password → Upload key pair để decrypt password
+      * Mở file RDP và đăng nhập bằng password vừa lấy
+      * Xác nhận kết nối thành công
+
+  * **Triển khai Microsoft AD**
+    * **Mục tiêu**
+      * Triển khai AWS Managed Microsoft Active Directory để mô phỏng DNS on-premise
+
+    * **Các bước thực hiện**
+      * Truy cập Directory Service Console
+      * Chọn AWS Managed Microsoft AD → Create directory
+
+      * **Directory Information**
+          * Edition: Standard Edition
+          * Directory DNS name: onprem.example.com
+          * Directory NetBIOS name: onprem
+          * Description: This is to simulate the on-prem AD
+          * Admin Password: Nhập mật khẩu mạnh
+
+      * **VPC and subnets**
+          * Chọn VPC: Hybrid-DNS-VPCStack
+          * Chọn hai Private Subnets
+
+      * Tạo Directory (thời gian khoảng 20-40 phút)
+      * Ghi lại hai DNS IP của Domain Controllers
+
+  * **Thiết lập DNS**
+    * **Tổng quan**
+      * Sử dụng ba công cụ của Route 53 Resolver để thiết lập hybrid DNS hai chiều
+
+    * **Kiến trúc tổng thể**
+      * Mũi tên đỏ: Outbound Endpoint + Resolver Rule (AWS → On-prem)
+      * Mũi tên xanh dương: Inbound Endpoint (On-prem → AWS)
+      * Mũi tên xanh lá: EC2 sử dụng VPC DNS Resolver (VPC CIDR + 2)
+
+    * **Tạo Route 53 Outbound Endpoint**
+      * **Mô tả**
+        * Tạo điểm cuối để Route 53 Resolver forward query ra ngoài on-premise
+
+    * **Tạo Route 53 Resolver Rules**
+      * **Mô tả**
+        * Tạo rule forward truy vấn cho domain onprem.example.com đến DNS IP của Microsoft AD
+
+    * **Tạo Route 53 Inbound Endpoints**
+      * **Mô tả**
+        * Tạo điểm cuối để on-premise forward query vào AWS
+
+    * **Thử nghiệm kết quả**
+      * **Mô tả**
+        * Kiểm tra resolve tên miền hai chiều
+        * Ping và truy vấn DNS giữa AWS và mô phỏng on-premise
+
+  * **Dọn dẹp tài nguyên**
+    * **Thứ tự xóa quan trọng (phải theo đúng thứ tự)**
+
+      * **Xóa Inbound Endpoint**
+        * Route 53 Console → Inbound endpoints → Delete
+
+      * **Xóa Resolver Rule**
+        * Disassociate VPC trước
+        * Sau đó mới Delete rule
+
+      * **Xóa Outbound Endpoint**
+        * Route 53 Console → Outbound Endpoints → Delete
+
+      * **Xóa AWS Managed Microsoft AD**
+        * Directory Service → Delete directory
+
+      * **Xóa CloudFormation Stack**
+        * CloudFormation Console → Chọn stack HybridDNS → Delete
+        * Stack sẽ xóa toàn bộ hạ tầng mạng (VPC, Subnets, RDGW...)

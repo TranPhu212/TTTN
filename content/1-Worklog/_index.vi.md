@@ -16,7 +16,7 @@ Thông thường và cũng là tiêu chuẩn, một worklog được thực hi�
 
 **Tuần 3:** [Thực hành AWS Backup, CLI và CloudWatch](1.3-week3/)
 
-**Tuần 4:** [Làm công việc C...](1.4-week4/)
+**Tuần 4:** [Tìm hiểu AWS Storage, triển khai VPC & Site-to-Site VPN, cấu hình Hybrid DNS với Route 53 Resolver](1.4-week4/)
 
 **Tuần 5:** [Làm công việc D...](1.5-week5/)
 
