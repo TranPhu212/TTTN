@@ -18,7 +18,7 @@ Thông thường và cũng là tiêu chuẩn, một worklog được thực hi�
 
 **Tuần 4:** [Tìm hiểu AWS Storage, triển khai VPC & Site-to-Site VPN, cấu hình Hybrid DNS với Route 53 Resolver](1.4-week4/)
 
-**Tuần 5:** [Làm công việc D...](1.5-week5/)
+**Tuần 5:** [Frontend Dashboard, EC2 Windows/Linux, VPC Peering, Transit Gateway & AWS Security Services](1.5-week5/)
 
 **Tuần 6:** [Làm công việc E...](1.6-week6/)
 
