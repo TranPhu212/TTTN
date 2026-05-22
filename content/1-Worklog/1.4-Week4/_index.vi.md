@@ -16,7 +16,7 @@ pre: " <b> 1.4. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --------- | ------------ | --------------- | -------------- |
-|  6  | - Học Amazon S3 (Storage Class, Access Point, Versioning, Static Website, CORS, Glacier), Snow Family, Storage Gateway, Disaster Recovery (RTO/RPO) và AWS Backup | 08/05/2026 | 08/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+|  6  | - Học Amazon S3 (Storage Class, Access Point, Versioning, Static Website, CORS, Glacier), Snow Family, Storage Gateway, Disaster Recovery (RTO/RPO) và AWS Backup | 08/05/2026 | 08/05/2026 | <https://youtu.be/_yunukwcAwc> <br> <https://youtu.be/mPBjB6Ltl_Q> <br> <https://youtu.be/YXn8Q_Hpsu4> |
 |  2  | - Xây dựng VPC Multi-AZ, cấu hình bảo mật mạng (SG, NACLs), NAT Gateway, VPC Flow Logs, Session Manager và thiết lập kết nối Site-to-Site VPN | 11/05/2026 | 11/05/2026 | <https://000003.awsstudygroup.com/> |
 |  4  | - Cấu hình Hybrid DNS hai chiều giữa AWS và On-premise dùng Route 53 Resolver, Endpoints & Resolver Rules | 13/05/2026 | 13/08/2026 | <https://000010.awsstudygroup.com/> |
 
