@@ -20,7 +20,7 @@ Thông thường và cũng là tiêu chuẩn, một worklog được thực hi�
 
 **Tuần 5:** [Frontend Dashboard, EC2 Windows/Linux, VPC Peering, Transit Gateway & AWS Security Services](1.5-week5/)
 
-**Tuần 6:** [Làm công việc E...](1.6-week6/)
+**Tuần 6:** [Phát triển Frontend Dashboard và thực hành các dịch vụ quản trị, bảo mật AWS](1.6-week6/)
 
 **Tuần 7:** [Làm công việc G...](1.7-week7/)
 
