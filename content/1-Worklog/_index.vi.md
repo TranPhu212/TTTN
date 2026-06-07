@@ -22,7 +22,7 @@ Thông thường và cũng là tiêu chuẩn, một worklog được thực hi�
 
 **Tuần 6:** [Phát triển Frontend Dashboard và thực hành các dịch vụ quản trị, bảo mật AWS](1.6-week6/)
 
-**Tuần 7:** [Làm công việc G...](1.7-week7/)
+**Tuần 7:** [Tìm hiểu dịch vụ cơ sở dữ liệu, bảo mật AWS và mở rộng các module SOC Dashboard](1.7-week7/)
 
 **Tuần 8:** [Làm công việc H...](1.8-week8/)
 

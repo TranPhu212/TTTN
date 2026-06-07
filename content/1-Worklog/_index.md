@@ -22,7 +22,7 @@ Typically, and as a standard, a worklog is carried out over about 3 months (thro
 
 **Week 6:** [Frontend Dashboard, AWS Storage Gateway, VM Migration và Security Hub](1.6-week6/)
 
-**Week 7:** [Doing task G...](1.7-week7/)
+**Week 7:** [Studying AWS database services, cloud security, and expanding SOC Dashboard modules](1.7-week7/)
 
 **Week 8:** [Doing task H...](1.8-week8/)
 

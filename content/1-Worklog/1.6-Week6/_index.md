@@ -17,11 +17,11 @@ pre: " <b> 1.6. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | ---- | ---------- | --------------- | ------------------ |
-|  6  | - Frontend Dashboard | 11/08/2025 | 11/08/2025 | <https://cloudjourney.awsstudygroup.com/> |
-|  2  | - AWS Storage Gateway and File Shares Hands-on Lab | 12/08/2025 | 12/08/2025 | <https://cloudjourney.awsstudygroup.com/> |
-|  3  | - Virtual Machine Migration Guide | 13/08/2025 | 13/08/2025 | <https://cloudjourney.awsstudygroup.com/> |
-|  4  | - AWS Tags and Resource Group | 14/08/2025 | 15/08/2025 | <https://cloudjourney.awsstudygroup.com/> |
-|  5  | - Hands-on AWS Security Hub: Enable, Evaluate Security Standards, and Resource Cleanup | 15/08/2025 | 15/08/2025 | <https://cloudjourney.awsstudygroup.com/> |
+|  6  | - Frontend Dashboard | 11/08/2025 | 11/08/2025 |
+|  2  | - AWS Storage Gateway and File Shares Hands-on Lab | 12/08/2025 | 12/08/2025 | <https://000024.awsstudygroup.com/> |
+|  3  | - Virtual Machine Migration Guide | 13/08/2025 | 13/08/2025 | <https://000014.awsstudygroup.com/>> |
+|  4  | - AWS Tags and Resource Group | 14/08/2025 | 15/08/2025 | <https://000027.awsstudygroup.com/> |
+|  5  | - Hands-on AWS Security Hub: Enable, Evaluate Security Standards, and Resource Cleanup | 15/08/2025 | 15/08/2025 | <https://000018.awsstudygroup.com/> |
 
 ### Week 6 Achievements:
 

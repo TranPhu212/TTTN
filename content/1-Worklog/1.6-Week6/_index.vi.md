@@ -20,8 +20,8 @@ pre: " <b> 1.6. </b> "
 |  6  | - Frontend Dashboard | 22/05/2026 | 22/05/2026 |
 |  2  | - Thực hành triển khai AWS Storage Gateway và File Shares | 24/05/2026 | 24/05/2026 | <https://000024.awsstudygroup.com/> |
 |  3  | - Virtual Machine Migration Guide | 26/05/2026 | 26/05/2026 | <https://000014.awsstudygroup.com/> |
-|  4  | - AWS Tags và Resource Group | 27/05/2026 | 27/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
-|  5  | - Hands-on AWS Security Hub: Enable, Evaluate Security Standards, and Resource Cleanup | 28/05/2025 | 28/05/2025 | <https://cloudjourney.awsstudygroup.com/> |
+|  4  | - AWS Tags và Resource Group | 27/05/2026 | 27/05/2026 | <https://000027.awsstudygroup.com/> |
+|  5  | - Hands-on AWS Security Hub: Enable, Evaluate Security Standards, and Resource Cleanup | 28/05/2025 | 28/05/2025 | <https://000018.awsstudygroup.com/> |
 
 ### Kết quả đạt được tuần 6:
 
