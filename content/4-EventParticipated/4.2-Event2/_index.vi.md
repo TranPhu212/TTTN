@@ -6,120 +6,108 @@ chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+# Bài thu hoạch “AWS Vietnam Community Day 2026”
 
 ### Mục Đích Của Sự Kiện
-
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+- Chia sẻ các case study thực tế về việc xây dựng hệ thống AI/ML cấp doanh nghiệp
+- Giới thiệu kiến trúc Multi-Agent, tối ưu hóa GenAI và các best practices vận hành production
+- Thảo luận về non-determinism của LLM, bảo mật, performance và ROI khi áp dụng AI
+- Khuyến khích cộng đồng chia sẻ kinh nghiệm từ hackathon đến production-grade systems
 
 ### Danh Sách Diễn Giả
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+- **Vy Lam** - Senior Business Systems Analyst, VPBank
+- **Duc Dao** - Solution Architect, Cloud Kinetics
+- **Team VIB** - LotusHacks 2026 participants (UTMorpho project)
+- **Nguyen Tuan Thinh** - DevOps Engineer
+- **Pham Ng Hai Anh** - AWS Community Builder, G-AsiaPacific Vietnam
+- **Tinh Truong** - Platform Engineer, GoTymeX
 
 ### Nội Dung Nổi Bật
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+#### Enterprise-Grade Multi-Agent System – The Case of Startup Credit Scoring (Vy Lam)
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+- **Structural Mismatch**: Hệ thống tín dụng truyền thống không phù hợp với dữ liệu startup (thiếu lịch sử, tài sản vô hình, tăng trưởng không tuyến tính)
+- **Single Agent vs Multi-Agent**: Single agent gặp hạn chế về context, expertise dilution, thiếu checks & balances. Multi-agent hoạt động như **Virtual Credit Committee**
+- **Kiến trúc Multi-Agent**: Manager + Financial Analyst + Market Analyst + Team Evaluator + Risk Assessor + Compliance → Consensus output (Score, Risk Rating, Confidence, Audit Trail)
+- **Enterprise Pillars**: Security, Data Governance, Network, Operations, Human Factors, Compliance
+- **Guardrails & Deployment**: Bedrock, AgentCore, ECR, API Gateway, Terraform, Cognito, IAM
+- **ROI**: Giảm 95% thời gian và chi phí, tăng gấp đôi approval rate
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+#### Non-Determinism of “Deterministic” LLM Settings (Duc Dao)
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+- **Root Cause**: Floating-point non-associativity trên GPU + inference batching
+- **Thực tế**: Ngay cả temp=0 cũng không đảm bảo reproducible outputs. Accuracy biến động lên đến 15%, TARr@10 thường gần 0% trên task khó
+- **Mitigation**: Multiple runs + majority voting, structured output (JSON mode), self-hosted models, design for variance (temp=0.1 sweet spot)
+- **Key Takeaway**: Luôn test thoroughly và xây dựng hệ thống chịu được probabilistic nature của LLM
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+#### UTMorpho – LotusHacks 2026 Winning Project (Team VIB)
 
-#### Domain-Driven Design (DDD)
+- **Problem**: AI UI generators tạo output khó chỉnh sửa, drift khi re-prompt
+- **Solution**: Agent sinh UI + **inline WYSIWYG editing**, token-aware diffing, export React
+- **Key Learnings**: Real frustration → real idea, team chemistry > skill, token economy là design constraint, AI là teammate
+- **36-hour sprint**: Idea validation → core build → polish → pitch
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+#### CloudFront as Your Foundation (Nguyen Tuan Thinh)
 
-#### Event-Driven Architecture
+- **Cost Optimization**: Free DTO từ AWS origins, giảm chi phí Load Balancer & EC2, HTTP compression (giảm 80%+ size)
+- **Security**: Origin cloaking (VPC + OAC), Signed URL, mTLS, Geo restriction, WAF + Shield
+- **Performance & Reliability**: Multi-layer caching, HTTP/3 (QUIC), origin failover, edge computing (CloudFront Functions, Lambda@Edge)
+- **Use Cases**: Small sites, business apps, scaling workloads
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+#### Friendly AI Assistant with Amazon Quick (Pham Ng Hai Anh)
 
-#### Compute Evolution
+- **Agentic AI**: Kết hợp company data, world knowledge và actions trong một unified experience
+- **Use Cases**: PM Assistant (tự động tạo MoM, schedule meeting), research, automation
+- **Capabilities**: 40+ data connectors, Bedrock models, guardrails, governance
 
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
+#### Context Is Everything (Tinh Truong)
 
-#### Amazon Q Developer
-
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+- **Core Message**: AI mạnh nhưng output kém thường do **context yếu**
+- **Common Mistakes**: Internet Puller, redundant info, no goal/constraints
+- **Best Practices**: Goal + Relevant info + Constraints + Success criteria. Xây dựng “Second AI Brain” (memory + retrieval)
+- **Evolution**: Prompt → Context → Memory → AgentOps
 
 ### Những Gì Học Được
+#### Tư Duy Thiết Kế & Kiến Trúc
+- Multi-agent mang lại **specialized expertise**, checks & balances và auditability vượt trội so với single agent
+- Context quality quan trọng hơn context quantity. Phải design system chịu được variance của LLM
+- Enterprise-grade AI phải bắt đầu từ **security, guardrails, compliance và observability** ngay từ ngày đầu
+- Real pain points từ công việc hàng ngày là nguồn ý tưởng mạnh mẽ nhất (UTMorpho)
 
-#### Tư Duy Thiết Kế
+#### Kỹ Thuật & Công cụ
+- Sử dụng **Bedrock + AgentCore**, Terraform, Cognito, CloudFront để xây dựng production-ready system
+- CloudFront không chỉ là CDN mà còn là lớp security, cost optimization và performance mạnh mẽ
+- Context engineering và memory systems là kỹ năng cốt lõi tương lai
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
-
-#### Kiến Trúc Kỹ Thuật
-
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
-
-#### Chiến Lược Hiện Đại Hóa
-
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
+#### Business & ROI
+- Multi-agent credit scoring mang lại **200-300% ROI** trong 3 năm
+- Hackathon rèn luyện endurance, focus và khả năng cắt feature để bảo vệ demo
 
 ### Ứng Dụng Vào Công Việc
-
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
+- **Xây dựng Multi-Agent System** cho các use case nội bộ (credit assessment, customer support, document processing)
+- **Tối ưu prompt & context** khi dùng LLM, áp dụng structured output và majority voting cho production
+- **Triển khai CloudFront** để giảm chi phí, tăng security và performance cho các web/app hiện tại
+- **Xây dựng Second AI Brain** cá nhân/team để tăng productivity trong research và development
+- **Tham gia/ tổ chức hackathon** để test ý tưởng nhanh và rèn luyện team chemistry
+- Pilot **Amazon Quick** hoặc Bedrock Agents cho business users
 
 ### Trải nghiệm trong event
-
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
+Tham gia **AWS Vietnam Community Day 2026** là một ngày đầy cảm hứng và kiến thức thực tiễn. Các session không chỉ mang tính lý thuyết mà còn chia sẻ rất nhiều case study, thất bại, bài học và giải pháp production-grade
 
 #### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
+- Các anh/chị speaker đều chia sẻ chân thực từ kinh nghiệm thực chiến tại ngân hàng, hackathon, DevOps đến platform engineering
 
 #### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
-
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
+- Hiểu rõ cách xây dựng **Virtual Credit Committee** bằng multi-agent, cách xử lý non-determinism của LLM, và sức mạnh của context engineering
+- Thấy rõ hành trình từ ý tưởng hackathon 36 giờ thành sản phẩm có thể demo và mở rộng
 
 #### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
+- Cơ hội trao đổi với các anh/chị trong cộng đồng AWS, học hỏi cách áp dụng CloudFront, Agentic AI và modern architecture vào môi trường Việt Nam
 
 #### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
+- **Enterprise AI ≠ làm cho nó chạy**, mà là làm cho nó **chạy an toàn, đáng tin cậy và scalable**
+- Context thực sự là everything. Kiến trúc tốt + guardrails chặt chẽ + mindset production-first mới tạo ra giá trị bền vững
 
 #### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+* ![Event](images/Event2.png)
