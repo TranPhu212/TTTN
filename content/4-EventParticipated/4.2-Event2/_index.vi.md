@@ -110,4 +110,4 @@ Tham gia **AWS Vietnam Community Day 2026** là một ngày đầy cảm hứng 
 - Context thực sự là everything. Kiến trúc tốt + guardrails chặt chẽ + mindset production-first mới tạo ra giá trị bền vững
 
 #### Một số hình ảnh khi tham gia sự kiện
-* ![Event](images/Event2.png)
+* ![Event](/images/Event2.png)

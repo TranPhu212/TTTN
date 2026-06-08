@@ -104,4 +104,4 @@ Attending AWS Vietnam Community Day 2026 was an inspiring and highly practical e
 - Context truly is everything. Strong architecture + strict guardrails + production-first mindset create sustainable value
 
 #### Some event photos
-* ![Event](images/Event2.png)
+* ![Event](/images/Event2.png)
