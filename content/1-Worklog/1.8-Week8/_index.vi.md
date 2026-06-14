@@ -8,7 +8,11 @@ pre: " <b> 1.8. </b> "
 
 ### Mục tiêu tuần 8:
 
-* 
+* Tìm hiểu và thực hành quản lý dữ liệu NoSQL với Amazon DynamoDB
+* Triển khai hệ thống lưu trữ tệp dùng chung bằng Amazon FSx
+* Phân tích chi phí và mức sử dụng tài nguyên bằng AWS Glue và Athena
+* Xây dựng Data Lake và thực hành quy trình phân tích dữ liệu trên AWS
+* Refactor, hoàn thiện giao diện SOC Dashboard và chuẩn bị tích hợp realtime
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |

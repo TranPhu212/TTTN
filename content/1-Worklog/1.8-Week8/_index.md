@@ -8,7 +8,11 @@ pre: " <b> 1.8. </b> "
 
 ### Week 8 Objectives:
 
-* 
+* Learn and practice NoSQL database management with Amazon DynamoDB
+* Deploy and manage a shared file storage system using Amazon FSx
+* Analyze AWS costs and resource utilization with AWS Glue and Amazon Athena
+* Build a Data Lake and explore end-to-end data analytics workflows on AWS
+* Refactor and enhance the SOC Dashboard UI while preparing for real-time integration
 
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
