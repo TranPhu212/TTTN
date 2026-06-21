@@ -8,7 +8,11 @@ pre: " <b> 1.9. </b> "
 
 ### Mục tiêu tuần 9:
 
-* 
+* Thực hành sử dụng Amazon QuickSight để tạo dashboard và trực quan hóa dữ liệu phục vụ phân tích kinh doanh
+* Tìm hiểu Amazon DynamoDB, các kỹ thuật thiết kế dữ liệu NoSQL và các mô hình kiến trúc serverless hiện đại trên AWS
+* Thực hành xây dựng Data Lake Serverless trên AWS, từ thu thập, xử lý dữ liệu đến phân tích và trực quan hóa
+* Nghiên cứu quy trình triển khai hệ thống Data Lake bằng AWS Glue, Athena và QuickSight phục vụ phân tích dữ liệu
+* Xây dựng và tích hợp hệ thống Authentication cho frontend, bao gồm đăng nhập, đăng ký và quản lý phiên người dùng
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
@@ -17,7 +21,7 @@ pre: " <b> 1.9. </b> "
 |  2  | - Amazon DynamoDB: Thiết kế NoSQL, Mẫu Kiến trúc Nâng cao và Giải pháp Serverless | 15/06/2026 | 15/06/2026 | <https://000039.awsstudygroup.com/> |
 |  3  | - Xây dựng Data Lake Serverless trên AWS | 16/06/2026 | 16/06/2026 | <https://000070.awsstudygroup.com/> |
 |  4  | - Từ Data Lake đến Dashboard với AWS Glue, Athena và QuickSight | 17/06/2026 | 17/06/2026 | <https://000035.awsstudygroup.com/> |
-|  5  | - nội dung thay thế | 18/06/2026 | 18/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+|  5  | - Xây dựng và tích hợp hệ thống Authentication cho frontend, bao gồm đăng nhập, đăng ký, quản lý phiên đăng nhập, bảo vệ truy cập và hỗ trợ chuyển đổi giao diện người dùng | 18/06/2026 | 18/06/2026 |
 
 
 ### Kết quả đạt được tuần 9:

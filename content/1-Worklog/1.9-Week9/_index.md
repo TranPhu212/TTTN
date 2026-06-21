@@ -8,7 +8,11 @@ pre: " <b> 1.9. </b> "
 
 ### Week 9 Objectives:
 
-* 
+* Practice using Amazon QuickSight to create dashboards and visualize data for business analytics.
+* Explore Amazon DynamoDB, NoSQL data design techniques, and modern serverless architecture models on AWS.
+* Practice building a Serverless Data Lake on AWS, from data ingestion and processing to analytics and visualization.
+* Study the deployment process of a Data Lake system using AWS Glue, Athena, and QuickSight for data analysis.
+* Build and integrate an authentication system for the frontend, including login, registration, and user session management.
 
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
@@ -17,7 +21,7 @@ pre: " <b> 1.9. </b> "
 |  2  | - Amazon DynamoDB: NoSQL Design, Advanced Patterns, and Serverless Solutions | 15/06/2026 | 15/06/2026 | <https://000039.awsstudygroup.com/> |
 |  3  | - Building a Serverless Data Lake on AWS | 16/06/2026 | 16/06/2026 | <https://000070.awsstudygroup.com/> |
 |  4  | - From Data Lake to Dashboard with AWS Glue, Athena and QuickSight | 17/06/2026 | 17/06/2026 | <https://000035.awsstudygroup.com/> |
-|  5  | - nội dung thay thế | 18/06/2026 | 18/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+|  5  | - Developed and integrated the frontend Authentication system, including login, registration, session management, route protection, and user interface customization support | 18/06/2026 | 18/06/2026 |
 
 
 ### Week 9 Achievements:
