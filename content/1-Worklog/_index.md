@@ -24,9 +24,9 @@ Typically, and as a standard, a worklog is carried out over about 3 months (thro
 
 **Week 7:** [Studying AWS database services, cloud security, and expanding SOC Dashboard modules](1.7-week7/)
 
-**Week 8:** [Doing task H...](1.8-week8/)
+**Week 8:** [Practiced AWS storage and analytics services while refactoring and optimizing the SOC Dashboard frontend in preparation for real-time integration](1.8-week8/)
 
-**Week 9:** [Doing task I...](1.9-week9/)
+**Week 9:** [Focused on AWS data analytics and serverless solutions, covering Amazon QuickSight, DynamoDB, Data Lake architectures, and data visualization. Additionally, a complete frontend authentication system was developed, including user registration, login, session management, and access control](1.9-week9/)
 
 **Week 10:** [Doing task L...](1.10-week10/)
 

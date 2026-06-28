@@ -24,9 +24,9 @@ Thông thường và cũng là tiêu chuẩn, một worklog được thực hi�
 
 **Tuần 7:** [Tìm hiểu dịch vụ cơ sở dữ liệu, bảo mật AWS và mở rộng các module SOC Dashboard](1.7-week7/)
 
-**Tuần 8:** [Làm công việc H...](1.8-week8/)
+**Tuần 8:** [Thực hành các dịch vụ lưu trữ và phân tích dữ liệu AWS, đồng thời hoàn thiện và refactor giao diện SOC Dashboard để sẵn sàng tích hợp realtime](1.8-week8/)
 
-**Tuần 9:** [Làm công việc I...](1.9-week9/)
+**Tuần 9:** [Thực hiện các bài thực hành về phân tích dữ liệu và kiến trúc serverless trên AWS (QuickSight, DynamoDB, Data Lake), đồng thời hoàn thiện hệ thống Authentication cho frontend với các chức năng đăng nhập, đăng ký và quản lý phiên người dùng](1.9-week9/)
 
 **Tuần 10:** [Làm công việc L...](1.10-week10/)
 
