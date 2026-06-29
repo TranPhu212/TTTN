@@ -391,11 +391,12 @@ pre: " <b> 1.10. </b> "
 
   * **Testing**
     * Run the following curl command to simulate an XSS attack (it should be blocked):
-      * ```bash
-        curl -X POST <Your Juice Shop URL> -F "user='<script><alert>(Hello)></alert></script>'"
-        ```
+      ```bash
+      curl -X POST <Your Juice Shop URL> \
+      -F "user='<script><alert>(Hello)></alert></script>'"
+      ```
     * Run the following curl command to simulate a SQL Injection attack (it should be blocked):
-      * ```bash
+      ```bash
         curl -X POST <Your Juice Shop URL> -F "user='AND 1=1;"
         ```
 
