@@ -305,7 +305,7 @@ pre: " <b> 1.10. </b> "
 
   * Kiểm tra:
     * Chạy lệnh curl mô phỏng tấn công XSS (phải bị chặn):
-      * Bash curl -X POST <Your Juice Shop URL> -F "user='<script><alert>Hello></alert></script>'"
+      * Bash curl -X POST <Your Juice Shop URL> -F "user='<script><alert>(Hello)></alert></script>'"
       
     * Chạy lệnh curl mô phỏng SQL Injection (phải bị chặn):
       * Bash curl -X POST <Your Juice Shop URL> -F "user='AND 1=1;"
