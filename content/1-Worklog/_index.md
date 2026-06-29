@@ -28,7 +28,7 @@ Typically, and as a standard, a worklog is carried out over about 3 months (thro
 
 **Week 9:** [Focused on AWS data analytics and serverless solutions, covering Amazon QuickSight, DynamoDB, Data Lake architectures, and data visualization. Additionally, a complete frontend authentication system was developed, including user registration, login, session management, and access control](1.9-week9/)
 
-**Week 10:** [Doing task L...](1.10-week10/)
+**Week 10:** [Deploying Amazon RDS, AWS DMS, Amazon S3 Static Website, Grafana with CloudWatch, and AWS WAF](1.10-week10/)
 
 **Week 11:** [Doing task M...](1.11-week11/)
 

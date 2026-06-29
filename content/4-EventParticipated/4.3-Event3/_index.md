@@ -99,3 +99,6 @@ pre: " <b> 4.2. </b> "
 * Topics related to system architecture and solution design require more focused study
 * Effective teamwork can provide a significant advantage in knowledge-based competitions
 * Participating in real-world competitions is an excellent way to assess one's capabilities and identify future learning goals
+
+#### Some event photos
+* ![Event](/images/Event3.png)

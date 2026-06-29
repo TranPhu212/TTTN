@@ -99,3 +99,6 @@ pre: " <b> 4.2. </b> "
     - Các chủ đề liên quan đến kiến trúc hệ thống và thiết kế giải pháp cần được đầu tư học tập nhiều hơn
     - Làm việc nhóm hiệu quả có thể tạo ra lợi thế lớn trong các cuộc thi kiến thức
     - Việc tham gia các cuộc thi thực tế là cách tốt để đánh giá năng lực và xác định lộ trình học tập tiếp theo
+
+#### Một số hình ảnh khi tham gia sự kiện
+* ![Event](/images/Event3.png)
