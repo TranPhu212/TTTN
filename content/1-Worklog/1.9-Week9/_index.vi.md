@@ -17,16 +17,16 @@ pre: " <b> 1.9. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --------- | ------------ | --------------- | -------------- |
-|  6  | - Thực hành Trực quan hóa Dữ liệu bằng Amazon QuickSight | 12/06/2026 | 12/06/2026 | <https://000073.awsstudygroup.com/> |
-|  2  | - Amazon DynamoDB: Thiết kế NoSQL, Mẫu Kiến trúc Nâng cao và Giải pháp Serverless | 15/06/2026 | 15/06/2026 | <https://000039.awsstudygroup.com/> |
-|  3  | - Xây dựng Data Lake Serverless trên AWS | 16/06/2026 | 16/06/2026 | <https://000070.awsstudygroup.com/> |
-|  4  | - Từ Data Lake đến Dashboard với AWS Glue, Athena và QuickSight | 17/06/2026 | 17/06/2026 | <https://000035.awsstudygroup.com/> |
-|  5  | - Xây dựng và tích hợp hệ thống Authentication cho frontend, bao gồm đăng nhập, đăng ký, quản lý phiên đăng nhập, bảo vệ truy cập và hỗ trợ chuyển đổi giao diện người dùng | 18/06/2026 | 18/06/2026 |
+|  2  | - Thực hành Trực quan hóa Dữ liệu bằng Amazon QuickSight | 15/06/2026 | 15/06/2026 | <https://000073.awsstudygroup.com/> |
+|  3  | - Amazon DynamoDB: Thiết kế NoSQL, Mẫu Kiến trúc Nâng cao và Giải pháp Serverless | 16/06/2026 | 16/06/2026 | <https://000039.awsstudygroup.com/> |
+|  4  | - Xây dựng Data Lake Serverless trên AWS | 17/06/2026 | 17/06/2026 | <https://000070.awsstudygroup.com/> |
+|  5  | - Từ Data Lake đến Dashboard với AWS Glue, Athena và QuickSight | 18/06/2026 | 18/06/2026 | <https://000035.awsstudygroup.com/> |
+|  6  | - Xây dựng và tích hợp hệ thống Authentication cho frontend, bao gồm đăng nhập, đăng ký, quản lý phiên đăng nhập, bảo vệ truy cập và hỗ trợ chuyển đổi giao diện người dùng | 19/06/2026 | 19/06/2026 |
 
 
 ### Kết quả đạt được tuần 9:
 
-## Thứ 6: Thực hành Phân tích Dữ liệu và Dashboard trên AWS QuickSight
+## Thứ 2: Thực hành Phân tích Dữ liệu và Dashboard trên AWS QuickSight
 * Giới thiệu workshop "Getting Started with QuickSight". Nội dung chính là hướng dẫn xây dựng dashboard để trực quan hóa dữ liệu bán hàng (sales.csv) bằng Amazon QuickSight. Workshop sử dụng region Singapore (ap-southeast-1), tập trung vào phân tích dữ liệu và biểu diễn qua các visual
 
 * **Các khái niệm cơ bản:**
@@ -65,7 +65,7 @@ pre: " <b> 1.9. </b> "
 * **Clean up**
   * Hướng dẫn xóa tài khoản QuickSight (chuyển region về N. Virginia, Manage QuickSight → Delete Account) và dọn IAM roles liên quan để tránh chi phí
 
-## Thứ 2: Thực hành và Thiết kế Dữ liệu với Amazon DynamoDB
+## Thứ 3: Thực hành và Thiết kế Dữ liệu với Amazon DynamoDB
 * **Mô tả tổng quát**
   * DynamoDB là một cơ sở dữ liệu key-value và document cung cấp hiệu suất mili-giây đơn chữ số ở bất kỳ quy mô nào. Trang tập hợp nhiều workshop và lab thực hành nhằm giúp người dùng hiểu rõ các tính năng của DynamoDB cũng như best practices về mô hình hóa dữ liệu NoSQL
 
@@ -110,7 +110,7 @@ pre: " <b> 1.9. </b> "
   * **LDC: Design Challenges**
     * Liên kết tài liệu tham khảo NoSQL Design
 
-## Thứ 3: Xây dựng Data Lake Serverless trên AWS từ Thu thập Dữ liệu đến Trực quan hóa
+## Thứ 4: Xây dựng Data Lake Serverless trên AWS từ Thu thập Dữ liệu đến Trực quan hóa
 * **Mô tả tổng quát**
   * Đây là hướng dẫn xây dựng Data Lake serverless trên AWS sử dụng dữ liệu của chính bạn. Workshop tập trung vào việc xây dựng một pipeline dữ liệu hoàn chỉnh: từ chuẩn bị dữ liệu thô → làm sạch → ingestion → query → visualization, mà không cần quản lý server
 
@@ -159,7 +159,7 @@ pre: " <b> 1.9. </b> "
   * **Resource Cleanup**
     * Hướng dẫn dọn dẹp tài nguyên để tránh phát sinh chi phí
 
-## Thứ 4: Triển khai Hệ thống Data Lake trên AWS với Glue, Athena và QuickSight
+## Thứ 5: Triển khai Hệ thống Data Lake trên AWS với Glue, Athena và QuickSight
 * **Tổng quan**
   * Data Lake được định nghĩa là kho lưu trữ dữ liệu thô (raw data) chưa qua xử lý, dùng để phân tích và rút ra insights sau này
   
@@ -211,7 +211,7 @@ pre: " <b> 1.9. </b> "
     * Empty & Delete S3 bucket
     * Xóa CloudFormation stack (nếu có)
 
-## Thứ 5: Triển khai Authentication (Đăng nhập/Đăng ký) cho Frontend
+## Thứ 6: Triển khai Authentication (Đăng nhập/Đăng ký) cho Frontend
 * **Mô tả tổng quát**
   * Cập nhật này thêm hoàn chỉnh hệ thống Authentication (Đăng nhập / Đăng ký) cho frontend React + Vite. Đây là bước quan trọng để bảo vệ dashboard SOC, hỗ trợ quản lý phiên đăng nhập, redirect tự động và cải thiện UX auth
 

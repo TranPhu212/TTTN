@@ -16,11 +16,11 @@ pre: " <b> 1.5. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --------- | ------------ | --------------- | -------------- |
-|  6  | - Devphu Frontend Dashboard Progress Update | 15/05/2026 | 15/05/2026 |
-|  2  | - Windows Server 2025 & Amazon Linux 2023 (VPC, SG, Launch, Connect, Node.js App, Custom AMI, IAM Policy) | 18/05/2026 | 18/05/2026 | <https://000004.awsstudygroup.com/> |
-|  3  | - Thiết lập và Cấu hình bảo mật mạng VPC Peering | 19/05/2026 | 19/08/2026 | <https://000019.awsstudygroup.com/> |
-|  4  | - Tổng quan về AWS Transit Gateway | 20/05/2026 | 20/08/2026 | https://000020.awsstudygroup.com/vi/ |
-|  5  | - Dịch vụ bảo mật AWS - Shared Responsibility Model, IAM, Cognito, Organizations, Identity Center (SSO), KMS | 21/05/2026 | 21/08/2026 | <https://youtu.be/tsobAlSg19g> <br> <https://youtu.be/N_vlJGAqZxo> <br> <https://youtu.be/pZ2fgEFK3Vs> <br> <https://youtu.be/5oQY8Rogz9Y> <br> <https://youtu.be/NW1xrMkNMjU> <br> <https://youtu.be/GMihNQojhZc> <br> <https://youtu.be/clj2E0rNBEs> <br> <https://youtu.be/0SdpD2GPYz4> |
+|  2  | - Devphu Frontend Dashboard Progress Update | 18/05/2026 | 18/05/2026 |
+|  3  | - Windows Server 2025 & Amazon Linux 2023 (VPC, SG, Launch, Connect, Node.js App, Custom AMI, IAM Policy) | 19/05/2026 | 19/05/2026 | <https://000004.awsstudygroup.com/> |
+|  4  | - Thiết lập và Cấu hình bảo mật mạng VPC Peering | 20/05/2026 | 20/05/2026 | <https://000019.awsstudygroup.com/> |
+|  5  | - Tổng quan về AWS Transit Gateway | 21/05/2026 | 21/05/2026 | https://000020.awsstudygroup.com/vi/ |
+|  6  | - Dịch vụ bảo mật AWS - Shared Responsibility Model, IAM, Cognito, Organizations, Identity Center (SSO), KMS | 22/05/2026 | 22/05/2026 | <https://youtu.be/tsobAlSg19g> <br> <https://youtu.be/N_vlJGAqZxo> <br> <https://youtu.be/pZ2fgEFK3Vs> <br> <https://youtu.be/5oQY8Rogz9Y> <br> <https://youtu.be/NW1xrMkNMjU> <br> <https://youtu.be/GMihNQojhZc> <br> <https://youtu.be/clj2E0rNBEs> <br> <https://youtu.be/0SdpD2GPYz4> |
 
 
 ### Kết quả đạt được tuần 5:

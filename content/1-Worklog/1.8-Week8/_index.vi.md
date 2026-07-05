@@ -17,16 +17,16 @@ pre: " <b> 1.8. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --------- | ------------ | --------------- | -------------- |
-|  6  | - Amazon DynamoDB - Quản lý và truy vấn cơ sở dữ liệu NoSQL | 05/06/2026 | 05/06/2026 | <https://000060.awsstudygroup.com/> |
-|  2  | - Triển khai Amazon FSx for Windows File Server | 08/06/2026 | 08/06/2026 | <https://000025.awsstudygroup.com/> |
-|  3  | - Sử dụng AWS Glue và Amazon Athena để phân tích chi phí và mức độ sử dụng tài nguyên | 09/06/2026 | 09/06/2026 | <https://000040.awsstudygroup.com/> |
-|  4  | - Thực hành AWS Analytics: Data Lake, ETL và Phân tích Dữ liệu | 10/06/2026 | 10/06/2026 | <https://000072.awsstudygroup.com/> |
-|  5  | - Refactor & Hoàn Thiện Giao Diện SOC Dashboard | 11/06/2026 | 11/06/2026 |
+|  2  | - Amazon DynamoDB - Quản lý và truy vấn cơ sở dữ liệu NoSQL | 08/06/2026 | 08/06/2026 | <https://000060.awsstudygroup.com/> |
+|  3  | - Triển khai Amazon FSx for Windows File Server | 09/06/2026 | 09/06/2026 | <https://000025.awsstudygroup.com/> |
+|  4  | - Sử dụng AWS Glue và Amazon Athena để phân tích chi phí và mức độ sử dụng tài nguyên | 10/06/2026 | 10/06/2026 | <https://000040.awsstudygroup.com/> |
+|  5  | - Thực hành AWS Analytics: Data Lake, ETL và Phân tích Dữ liệu | 11/06/2026 | 11/06/2026 | <https://000072.awsstudygroup.com/> |
+|  6  | - Refactor & Hoàn Thiện Giao Diện SOC Dashboard | 12/06/2026 | 12/06/2026 |
 
 
 ### Kết quả đạt được tuần 8:
 
-## Thứ 6: Amazon DynamoDB – Quản lý và truy vấn cơ sở dữ liệu NoSQL trên AWS
+## Thứ 2: Amazon DynamoDB – Quản lý và truy vấn cơ sở dữ liệu NoSQL trên AWS
 * **Làm việc với Amazon DynamoDB**
   * **Giới thiệu**
     * Amazon DynamoDB là một dịch vụ cơ sở dữ liệu NoSQL được quản lý hoàn toàn, cung cấp hiệu suất nhanh và có thể dự đoán được với khả năng mở rộng liền mạch. DynamoDB cho phép giảm bớt gánh nặng quản trị của việc vận hành và mở rộng cơ sở dữ liệu phân tán, cung cấp phần cứng, thiết lập và cấu hình, sao chép, vá lỗi phần mềm hoặc mở rộng cụm. DynamoDB cũng cung cấp mã hóa ở trạng thái nghỉ
@@ -237,7 +237,7 @@ pre: " <b> 1.8. </b> "
   * **Dọn dẹp tài nguyên**
     * Xóa table và các tài nguyên liên quan để tránh phát sinh chi phí
 
-## Thứ 2: Xây dựng hệ thống lưu trữ tệp dùng chung với Amazon FSx
+## Thứ 3: Xây dựng hệ thống lưu trữ tệp dùng chung với Amazon FSx
 * **Triển khai FSx trên Windows**
   * **Giới thiệu tổng quát**
     * Amazon FSx for Windows File Server cung cấp bộ lưu trữ file dùng chung được quản lý hoàn toàn, tích hợp đầy đủ với Windows Server và hỗ trợ nhiều tính năng quản trị, quản lý dữ liệu
@@ -436,7 +436,7 @@ pre: " <b> 1.8. </b> "
     * Xóa file system Multi-AZ
     * Xóa CloudFormation stack để dọn dẹp toàn bộ môi trường
 
-## Thứ 3: Phân tích Chi phí và Hiệu năng AWS với Glue và Athena
+## Thứ 4: Phân tích Chi phí và Hiệu năng AWS với Glue và Athena
 * **Giới thiệu**
   * Phần này cung cấp kiến thức nền tảng về hai dịch vụ cốt lõi sẽ sử dụng trong bài thực hành:
     * AWS Glue: Là dịch vụ chuẩn bị dữ liệu hỗ trợ quá trình ETL (Extract - Transform - Load). Tài liệu giải thích cách thức hoạt động cơ bản của Glue từ việc trích xuất dữ liệu thô từ các nguồn như Amazon S3, chuyển đổi định dạng (ví dụ: sang tối ưu như Parquet), rồi đẩy vào kho dữ liệu
@@ -459,7 +459,7 @@ pre: " <b> 1.8. </b> "
 * **Dọn dẹp tài nguyên**
   * Phần cuối cùng hướng dẫn người học cách xóa bỏ các tài nguyên AWS đã tạo ra trong suốt quá trình làm Lab (như xóa S3 bucket kết quả, xóa Glue database/crawler, xóa lịch sử truy vấn Athena). Bước này vô cùng quan trọng nhằm giúp tài khoản AWS của người học không phát sinh chi phí ngoài ý muốn sau khi hoàn thành bài học
 
-## Thứ 4: Xây dựng Data Lake và Quy trình Phân tích Dữ liệu End-to-End trên AWS
+## Thứ 5: Xây dựng Data Lake và Quy trình Phân tích Dữ liệu End-to-End trên AWS
 * **Giới thiệu & Chuẩn bị**
   * Giới thiệu: Tổng quan về các dịch vụ phân tích trong danh mục AWS Analytics. Các mục tiêu học tập cốt lõi bao gồm xây dựng Data Lake với S3, xử lý dữ liệu thời gian thực, quản lý siêu dữ liệu (metadata) và tối ưu hóa truy vấn
   * Các bước chuẩn bị: Hướng dẫn thiết lập môi trường lab, khởi tạo cơ sở dữ liệu ban đầu (Amazon RDS) để làm nguồn dữ liệu mẫu
@@ -490,7 +490,7 @@ pre: " <b> 1.8. </b> "
   * Visualize in QuickSight: Kết nối công cụ Amazon QuickSight vào nguồn dữ liệu (Athena/Redshift) để xây dựng các biểu đồ, bảng điều khiển (Dashboard) trực quan hóa dữ liệu phục vụ báo cáo doanh nghiệp
   * Clean up: Hướng dẫn chi tiết cách xóa bỏ toàn bộ tài nguyên (S3, Redshift, EMR, Glue, RDS...)
 
-## Thứ 5: Refactor Toàn Diện và Chuẩn Bị Tích Hợp Realtime
+## Thứ 6: Refactor Toàn Diện và Chuẩn Bị Tích Hợp Realtime
 * **Tóm tắt tiến độ tuần này**
   * Tuần này tập trung mạnh vào **refactor & hoàn thiện giao diện các trang chính** của SOC Dashboard. 
     - Hoàn tất refactor nhiều module quan trọng: Settings, Reports, Dashboard, Cloud, Threat Intel, Attack Surface...

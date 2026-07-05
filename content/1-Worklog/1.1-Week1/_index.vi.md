@@ -16,16 +16,16 @@ pre: " <b> 1.1. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --------- | ------------ | --------------- | -------------- |
-| 6 | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định của chương trình thực tập <br> - Tạo tài khoản AWS Free Tier | 17/04/2026 | 17/04/2026 | <https://000001.awsstudygroup.com/> |
-| 2 | - Thiết lập AWS Budgets để quản lý chi phí | 20/04/2026 | 20/04/2026 | <https://000007.awsstudygroup.com/>  |
-| 3 | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br> - Học về Access Management với AWS IAM (User, Group, Policy, Role) | 21/04/2026 | 21/04/2026 | <https://000002.awsstudygroup.com/> |
-| 4 | - Học Networking với Amazon VPC | 22/04/2026 | 22/04/2026 | <https://000003.awsstudygroup.com/> |
-| 5 | - Introduction to AWS <br> - Management Console | 23/04/2026 | 23/04/2026 | <https://www.youtube.com/watch?v=qVCF7UjYC5s&t=146s> <br> <https://www.youtube.com/watch?v=95quNuhvMT0> |
+| 2 | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định của chương trình thực tập <br> - Tạo tài khoản AWS Free Tier | 20/04/2026 | 20/04/2026 | <https://000001.awsstudygroup.com/> |
+| 3 | - Thiết lập AWS Budgets để quản lý chi phí | 21/04/2026 | 21/04/2026 | <https://000007.awsstudygroup.com/>  |
+| 4 | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br> - Học về Access Management với AWS IAM (User, Group, Policy, Role) | 22/04/2026 | 22/04/2026 | <https://000002.awsstudygroup.com/> |
+| 5 | - Học Networking với Amazon VPC | 23/04/2026 | 23/04/2026 | <https://000003.awsstudygroup.com/> |
+| 6 | - Introduction to AWS <br> - Management Console | 24/04/2026 | 24/04/2026 | <https://www.youtube.com/watch?v=qVCF7UjYC5s&t=146s> <br> <https://www.youtube.com/watch?v=95quNuhvMT0> |
 
 
 ### Kết quả đạt được tuần 1:
 
-## Thứ 6: Khởi tạo hạ tầng & Làm quen môi trường
+## Thứ 2: Khởi tạo hạ tầng & Làm quen môi trường
 
 * **Hòa nhập môi trường:** 
     * Kết nối đội ngũ: Kết nối và làm quen với các thành viên trong cộng đồng First Cloud Journey (FCJ).
@@ -55,7 +55,7 @@ pre: " <b> 1.1. </b> "
     * NAT Gateway: Không nằm trong danh mục Free Tier. Phí duy trì khoảng $0.045/giờ (rất dễ làm cạn kiệt số dư tài khoản nếu quên xóa)
     * EBS Volumes: Chỉ miễn phí tối đa 30GB tổng dung lượng. Nếu tạo nhiều ổ đĩa thừa sẽ bị tính phí lưu trữ
 
-## Thứ 2: Quản lý chi phí với AWS Budgets
+## Thứ 3: Quản lý chi phí với AWS Budgets
 
 * **Quản lý chi phí (AWS Budgets - Cơ sở kiến thức)**
     * Mô hình Trách nhiệm dùng chung về Chi phí: AWS cung cấp công cụ, nhưng người dùng chịu trách nhiệm theo dõi và thiết lập các giới hạn để tránh lãng phí tài nguyên
@@ -165,7 +165,7 @@ pre: " <b> 1.1. </b> "
         * Trong hộp thoại xác nhận, nhấn Delete để hoàn tất việc xóa budget
         * Lặp lại các bước trên với tất cả các Budget còn lại mà bạn đã tạo trong quá trình thực hành
 
-## Thứ 3: Quản trị định danh và Truy cập (AWS IAM)
+## Thứ 4: Quản trị định danh và Truy cập (AWS IAM)
 
 * **Tổng quan các nhóm dịch vụ cốt lõi (Global Infrastructure & Core Services):**
     * Compute (Dịch vụ tính toán - "Bộ não")
@@ -332,7 +332,7 @@ pre: " <b> 1.1. </b> "
     * Kiểm tra kỹ thông tin group sẽ xóa
     * Click Delete để hoàn tất
 
-## Thứ 4: Hạ tầng Mạng Chuyên sâu AMAZON VPC
+## Thứ 5: Hạ tầng Mạng Chuyên sâu AMAZON VPC
 
 ### Tổng quan về Amazon VPC
 **Amazon Virtual Private Cloud (VPC)** là một mạng ảo dành riêng cho tài khoản AWS của bạn. Nó cho phép bạn khởi tạo các tài nguyên AWS trong một mạng ảo được cách ly logic, mang lại sự kiểm soát toàn diện đối với môi trường mạng
@@ -383,7 +383,7 @@ pre: " <b> 1.1. </b> "
     * Tại mỗi AZ, thiết lập các cặp Public/Private Subnet tương ứng
     * Sử dụng các dịch vụ có tính sẵn sàng cao của AWS như **ELB (Elastic Load Balancing)** để điều phối lưu lượng
 
-## Thứ 5: Tổng quan về Điện toán đám mây và Cơ sở hạ tầng AWS
+## Thứ 6: Tổng quan về Điện toán đám mây và Cơ sở hạ tầng AWS
 * **Introduction to AWS:**
     * Giới thiệu về dịch vụ mới và sự xuất hiện của agent AI trong học tập và công việc
     * **Cloud Computing**

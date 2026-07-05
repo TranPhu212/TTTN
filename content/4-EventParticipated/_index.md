@@ -49,3 +49,14 @@ During my internship, I participated in two events. Each one was a memorable exp
 &emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
 
 &emsp;**Role:** Participant in the struggle  
+
+---
+
+### [Event 4](4.4-Event4/)  
+&emsp;**Event Name:** AWS Vietnam Community Day 2026 workshop  
+
+&emsp;**Date & Time:** 09:00, June 27, 2026  
+
+&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
+
+&emsp;**Role:** Attendee  

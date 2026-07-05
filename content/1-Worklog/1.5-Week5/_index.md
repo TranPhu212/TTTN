@@ -16,11 +16,11 @@ pre: " <b> 1.5. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | ---- | ---------- | --------------- | ------------------ |
-|  6  | - Devphu Frontend Dashboard Progress Update | 15/05/2026 | 15/05/2026 |
-|  2  | - Windows Server 2025 & Amazon Linux 2023 (VPC, SG, Launch, Connect, Node.js App, Custom AMI, IAM Policy) | 18/05/2026 | 18/05/2026 | <https://000004.awsstudygroup.com/> |
-|  3  | - Configuring VPC Peering & Cross-Peer DNS | 19/05/2026 | 19/08/2026 | <https://000010.awsstudygroup.com/> |
-|  4  | - Overview of AWS Transit Gateway | 20/05/2026 | 20/08/2026 | <https://000010.awsstudygroup.com/> |
-|  5  | - AWS Security Services - Shared Responsibility Model, IAM, Cognito, Organizations, Identity Center (SSO), KMS | 21/05/2026 | 21/08/2026 | <https://youtu.be/tsobAlSg19g> <br> <https://youtu.be/N_vlJGAqZxo> <br> <https://youtu.be/pZ2fgEFK3Vs> <br> <https://youtu.be/5oQY8Rogz9Y> <br> <https://youtu.be/NW1xrMkNMjU> <br> <https://youtu.be/GMihNQojhZc> <br> <https://youtu.be/clj2E0rNBEs> <br> <https://youtu.be/0SdpD2GPYz4> |
+|  2  | - Devphu Frontend Dashboard Progress Update | 18/05/2026 | 18/05/2026 |
+|  3  | - Windows Server 2025 & Amazon Linux 2023 (VPC, SG, Launch, Connect, Node.js App, Custom AMI, IAM Policy) | 19/05/2026 | 19/05/2026 | <https://000004.awsstudygroup.com/> |
+|  4  | - Configuring VPC Peering & Cross-Peer DNS | 20/05/2026 | 20/05/2026 | <https://000010.awsstudygroup.com/> |
+|  5  | - Overview of AWS Transit Gateway | 21/05/2026 | 21/05/2026 | <https://000010.awsstudygroup.com/> |
+|  6  | - AWS Security Services - Shared Responsibility Model, IAM, Cognito, Organizations, Identity Center (SSO), KMS | 22/05/2026 | 22/05/2026 | <https://youtu.be/tsobAlSg19g> <br> <https://youtu.be/N_vlJGAqZxo> <br> <https://youtu.be/pZ2fgEFK3Vs> <br> <https://youtu.be/5oQY8Rogz9Y> <br> <https://youtu.be/NW1xrMkNMjU> <br> <https://youtu.be/GMihNQojhZc> <br> <https://youtu.be/clj2E0rNBEs> <br> <https://youtu.be/0SdpD2GPYz4> |
 
 
 ### Week 5 Achievements:

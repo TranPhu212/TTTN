@@ -16,14 +16,14 @@ pre: " <b> 1.2. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | ---- | ---------- | --------------- | ------------------ |
-|  6  | - Agentic AI Development (Kiro) & AWS Cost Optimization | 24/04/2026 | 24/04/2026 | <https://www.youtube.com/watch?v=uAQCm4sm_1c&t=2s> <br> <https://www.youtube.com/watch?v=UIw8UxGZCHA&t=3s> |
-|  2  | - VPC Deep Dive, Hybrid Connectivity & Elastic Load Balancing (ELB) | 27/04/2026 | 27/04/2026 | <https://youtu.be/O9Ac_vGHquM> <br> <https://youtu.be/BPuD1l2hEQ4> <br> <https://youtu.be/CXU8D3kyxIc> |
-|  3  | - EC2 Fundamentals, Storage & Auto Scaling | 28/04/2026 | 28/04/2026 | <https://youtu.be/-t5h4N6vfBs> <br> <https://youtu.be/e7XeKdOVq40> <br> <https://youtu.be/yAR6QRT3N1k> <br> <https://youtu.be/hKr_TfGP7NY> <br> <https://youtu.be/6IHNDJ85aoQ> <br> <https://youtu.be/_v_43Wi7zjo> <br> <https://youtu.be/Ew3QRaKJQSA> <br> <https://youtu.be/bbLcPitXJSY> |
-|  4  | - EC2 Pricing, Lightsail, EFS, FSx & MGN | 29/04/2026 | 29/04/2026 | <https://youtu.be/O9Ac_vGHquM> |
+|  2  | - Agentic AI Development (Kiro) & AWS Cost Optimization | 27/04/2026 | 27/04/2026 | <https://www.youtube.com/watch?v=uAQCm4sm_1c&t=2s> <br> <https://www.youtube.com/watch?v=UIw8UxGZCHA&t=3s> |
+|  3  | - VPC Deep Dive, Hybrid Connectivity & Elastic Load Balancing (ELB) | 28/04/2026 | 28/04/2026 | <https://youtu.be/O9Ac_vGHquM> <br> <https://youtu.be/BPuD1l2hEQ4> <br> <https://youtu.be/CXU8D3kyxIc> |
+|  4  | - EC2 Fundamentals, Storage & Auto Scaling | 29/04/2026 | 29/04/2026 | <https://youtu.be/-t5h4N6vfBs> <br> <https://youtu.be/e7XeKdOVq40> <br> <https://youtu.be/yAR6QRT3N1k> <br> <https://youtu.be/hKr_TfGP7NY> <br> <https://youtu.be/6IHNDJ85aoQ> <br> <https://youtu.be/_v_43Wi7zjo> <br> <https://youtu.be/Ew3QRaKJQSA> <br> <https://youtu.be/bbLcPitXJSY> |
+|  5  | - EC2 Pricing, Lightsail, EFS, FSx & MGN | 30/04/2026 | 30/04/2026 | <https://youtu.be/O9Ac_vGHquM> |
 
 ### Week 2 Achievements:
 
-## Friday: Gen AI on AWS & Cost Optimization with Kiro
+## Monday: Gen AI on AWS & Cost Optimization with Kiro
 
 ### Gen AI on AWS - Kiro
   * **Agentic changing the SDLC**
@@ -192,7 +192,7 @@ pre: " <b> 1.2. </b> "
       * We use the Framework by answering questions, so you know how your architecture aligns with recommended best practices
       * Additionally, when you use the AWS Well-Architected Framework integration tool on the AWS Management Console, you will receive guidance to improve your current architecture
 
-## Monday: Networking & Content Delivery trên AWS
+## Tuesday: Networking & Content Delivery trên AWS
   * Amazon Virtual Private Cloud (VPC)
   * VPC Peering & Transit Gateway
   * VPN & Direct Connect
@@ -379,7 +379,7 @@ pre: " <b> 1.2. </b> "
         * Create Route 53 Resolver Rule
         * Create Inbound Endpoint
 
-## Tuesday: AWS Compute Services: EC2, Instance Storage, and Auto Scaling
+## Wednesday: AWS Compute Services: EC2, Instance Storage, and Auto Scaling
   * Amazon Elastic Compute Cloud (EC2)
   * Amazon Lightsail
   * Amazon EFS / FSx
@@ -451,7 +451,7 @@ pre: " <b> 1.2. </b> "
       * EC2 Auto Scaling operates across multiple AWS Availability Zones
       * EC2 Auto Scaling can support various Pricing options
 
-## wednesday: AWS Compute, Storage & Migration Services
+## Thursday: AWS Compute, Storage & Migration Services
 * **Amazon Elastic Compute Cloud (EC2) – Pricing options**
   * EC2 includes 4 pricing options
     * **On-demand**: Pay by the hour / minute / second, pay as you go, most expensive. Suitable for workloads running up to 6 hours per day

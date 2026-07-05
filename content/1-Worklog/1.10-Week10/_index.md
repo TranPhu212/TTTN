@@ -17,16 +17,16 @@ pre: " <b> 1.10. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | ---- | ---------- | --------------- | ------------------ |
-|  6  | - Building a Web Application with Amazon RDS on AWS | 19/06/2026 | 19/06/2026 | <https://000005.awsstudygroup.com/> |
-|  2  | - Hands-on Schema Conversion, Data Migration, and Troubleshooting with AWS Database Migration Service | 22/06/2026 | 22/06/2026 | <https://000043.awsstudygroup.com/> |
-|  3  | - Object Storage and Static Website Hosting with Amazon S3 | 23/06/2026 | 23/06/2026 | <https://000057.awsstudygroup.com/> |
-|  4  | - Deploying Grafana and Building AWS CloudWatch Monitoring Dashboards | 24/06/2026 | 24/06/2026 | <https://000029.awsstudygroup.com/> |
-|  5  | - Deploying and Configuring AWS Web Application Firewall (AWS WAF) | 25/06/2026 | 25/06/2026 | <https://000026.awsstudygroup.com/> |
+|  2  | - Building a Web Application with Amazon RDS on AWS | 2/06/2026 | 22/06/2026 | <https://000005.awsstudygroup.com/> |
+|  3  | - Hands-on Schema Conversion, Data Migration, and Troubleshooting with AWS Database Migration Service | 23/06/2026 | 23/06/2026 | <https://000043.awsstudygroup.com/> |
+|  4  | - Object Storage and Static Website Hosting with Amazon S3 | 24/06/2026 | 24/06/2026 | <https://000057.awsstudygroup.com/> |
+|  5  | - Deploying Grafana and Building AWS CloudWatch Monitoring Dashboards | 25/06/2026 | 25/06/2026 | <https://000029.awsstudygroup.com/> |
+|  6  | - Deploying and Configuring AWS Web Application Firewall (AWS WAF) | 26/06/2026 | 26/06/2026 | <https://000026.awsstudygroup.com/> |
 
 
 ### Week 10 Achievements:
 
-## Friday: Building a Web Application with Amazon RDS on AWS
+## Monday: Building a Web Application with Amazon RDS on AWS
 * **Introduction**
   * Explain that Amazon RDS is a managed service that enables users to deploy and manage relational databases on AWS.
   * Suitable for OLTP (Online Transaction Processing) workloads and structured data.
@@ -120,7 +120,7 @@ pre: " <b> 1.10. </b> "
   * Terminate the EC2 instance.
   * Highlight best practices to avoid unexpected AWS charges.
 
-## Monday: Schema Conversion and Database Migration with AWS DMS
+## Tuesday: Schema Conversion and Database Migration with AWS DMS
 * **Overview**
   * This page provides an overview of the two most important processes involved in heterogeneous database migration and modernization to the AWS Cloud:
     * **Schema Conversion:** Introduces the AWS Schema Conversion Tool (AWS SCT) and the Schema Conversion & Migration feature available directly in the AWS DMS console, announced at AWS re:Invent.
@@ -205,7 +205,7 @@ pre: " <b> 1.10. </b> "
     * Delete the CloudFormation Stack.
     * Delete the Amazon S3 Bucket and IAM Roles.
 
-## Tuesday: Amazon S3 and Static Website Hosting
+## Wednesday: Amazon S3 and Static Website Hosting
 * **Introduction to Amazon S3**
   * This section explains in detail that Amazon S3 is an object storage service that provides virtually unlimited scalability, high availability, strong security, and excellent performance.
   * Emphasize its durability of **99.999999999% (11 nines)**.
@@ -251,7 +251,7 @@ pre: " <b> 1.10. </b> "
 * **Clean Up Resources**
   * Provide instructions for removing all resources after completing the lab: Empty each bucket before deleting it, then disable and delete the CloudFront distribution to avoid unnecessary charges.
 
-## Wednesday: Deploying Grafana and Building AWS CloudWatch Monitoring Dashboards
+## Thursday: Deploying Grafana and Building AWS CloudWatch Monitoring Dashboards
 * **Introduction to Grafana**
   * Grafana is an open-source tool used for data visualization and analysis.
   * It helps collect metrics from multiple data sources, create customizable dashboards, run queries, visualize data, set up alerts, and explore metrics regardless of where the data is stored.
@@ -349,7 +349,7 @@ pre: " <b> 1.10. </b> "
     * Terminate the **Grafana-Server** instance from the **EC2 Console**.
     * Delete the VPC from the **VPC Console**.
 
-## Thursday: Securing Web Applications with AWS Web Application Firewall (AWS WAF)
+## Friday: Securing Web Applications with AWS Web Application Firewall (AWS WAF)
 * **Introduction to AWS Web Application Firewall**
   * AWS WAF (AWS Web Application Firewall) is a web application firewall service.
   * It helps protect your web applications or APIs from common web exploits that could affect availability, compromise security, or consume excessive resources.

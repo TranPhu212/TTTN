@@ -30,6 +30,6 @@ Typically, and as a standard, a worklog is carried out over about 3 months (thro
 
 **Week 10:** [Deploying Amazon RDS, AWS DMS, Amazon S3 Static Website, Grafana with CloudWatch, and AWS WAF](1.10-week10/)
 
-**Week 11:** [Doing task M...](1.11-week11/)
+**Week 11:** [Implemented AWS security and serverless solutions while enhancing the SOC Console's realtime data architecture](1.11-week11/)
 
 **Week 12:** [Doing task N...](1.12-week12/)

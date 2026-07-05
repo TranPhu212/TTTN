@@ -17,15 +17,15 @@ pre: " <b> 1.6. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | ---- | ---------- | --------------- | ------------------ |
-|  6  | - Frontend Dashboard | 11/08/2025 | 11/08/2025 |
-|  2  | - AWS Storage Gateway and File Shares Hands-on Lab | 12/08/2025 | 12/08/2025 | <https://000024.awsstudygroup.com/> |
-|  3  | - Virtual Machine Migration Guide | 13/08/2025 | 13/08/2025 | <https://000014.awsstudygroup.com/>> |
-|  4  | - AWS Tags and Resource Group | 14/08/2025 | 15/08/2025 | <https://000027.awsstudygroup.com/> |
-|  5  | - Hands-on AWS Security Hub: Enable, Evaluate Security Standards, and Resource Cleanup | 15/08/2025 | 15/08/2025 | <https://000018.awsstudygroup.com/> |
+|  2  | - Frontend Dashboard | 25/05/2026 | 25/05/2026 |
+|  3  | - AWS Storage Gateway and File Shares Hands-on Lab | 26/05/2026 | 26/05/2026 | <https://000024.awsstudygroup.com/> |
+|  4  | - Virtual Machine Migration Guide | 27/05/2026 | 27/05/2026 | <https://000014.awsstudygroup.com/> |
+|  5  | - AWS Tags and Resource Group | 28/05/2026 | 15/05/2026 | <https://000027.awsstudygroup.com/> |
+|  6  | - Hands-on AWS Security Hub: Enable, Evaluate Security Standards, and Resource Cleanup | 29/05/2026 | 29/05/2026 | <https://000018.awsstudygroup.com/> |
 
 ### Week 6 Achievements:
 
-## Friday: Frontend Dashboard (Track B)
+## Monday: Frontend Dashboard (Track B)
   * **Overview of the devphu branch**
     * The devphu branch is the main development branch for Track B (Real-time & UX Dashboard). This week focused heavily on UI/UX polishing, feature expansion, user experience improvements, and adding new pages
     * The frontend has now moved into the advanced implementation + refinement phase, still using high-quality mock data while being well-prepared for future backend integration
@@ -99,7 +99,7 @@ pnpm install
 cp .env.example .env
 pnpm dev
 
-## Monday: AWS Storage Gateway and File Shares Hands-on Lab
+## Tuesday: AWS Storage Gateway and File Shares Hands-on Lab
 * **Overview**
   * This workshop helps learners understand and practice:
     * How to initialize Storage Gateway
@@ -274,7 +274,7 @@ pnpm dev
 
     * Enter the bucket name and click Delete bucket to remove the S3 bucket
 
-## Tuesday: Virtual Machine Migration Guide (AWS VM Import/Export)
+## Wednesday: Virtual Machine Migration Guide (AWS VM Import/Export)
 * **Overview**
   * **Core Concepts:**
     * **VM Import/Export:** A feature that allows you to migrate virtual machine images from your on-premises environment to Amazon EC2, and vice versa (exporting from EC2 back to on-premises). This feature helps you to:
@@ -476,7 +476,7 @@ pnpm dev
   * **Testing Deployment of the Exported Virtual Machine**
     * After downloading the VHD virtual disk file to your on-premises system, you can attempt to deploy the virtual machine using this VHD file on the corresponding virtualization platform
 
-## Wednesday:Hands-on Lab – AWS Tags and Resource Groups
+## Thursday:Hands-on Lab – AWS Tags and Resource Groups
 * **Overview & Concepts**
   * **Tag:** Labels (entered as Key–Value pairs) assigned to AWS resources to classify them by purpose, owner, or environment, helping users easily search for and manage resources when the number of resources grows large.
   * **AWS Resource Groups:** A feature that helps manage and automate operations across multiple resources at once by grouping them based on Tags (Tag-based) or by CloudFormation stacks.
@@ -622,7 +622,7 @@ pnpm dev
     * Select the Resource Group related to this lab (**MarketingBU**).
     * Click **Delete**, then click **Delete** again to confirm the deletion.
 
-## Thursday: AWS Security Hub Hands-on Lab
+## Friday: AWS Security Hub Hands-on Lab
 * **Overview of AWS Security Hub**
   * AWS Security Hub is a service that provides you with a comprehensive view of high-priority security alerts and compliance status across all your AWS accounts.
   * Problem it solves: Organizations typically use many different security tools (such as firewalls, endpoint protection solutions, and vulnerability scanners). As a result, security teams often need to switch between multiple tools to manage hundreds or even thousands of alerts every day.

@@ -16,8 +16,8 @@ pre: " <b> 1.4. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | ---- | ---------- | --------------- | ------------------ |
-|  6  | - Amazon S3 Core Features, Storage Classes, Glacier, Snow Family, Storage Gateway, DR Strategies (RTO/RPO) and AWS Backup | 08/05/2026 | 08/05/2026 | <https://youtu.be/_yunukwcAwc/> <br> <https://youtu.be/mPBjB6Ltl_Q> <br> <https://youtu.be/YXn8Q_Hpsu4> |
-|  2  | - Build Multi-AZ VPC, network security (SG + NACLs), NAT Gateway, Flow Logs, Session Manager and configure AWS Site-to-Site VPN for Hybrid Cloud | 11/05/2026 | 11/05/2026 | <https://000003.awsstudygroup.com/> |
+|  2  | - Amazon S3 Core Features, Storage Classes, Glacier, Snow Family, Storage Gateway, DR Strategies (RTO/RPO) and AWS Backup | 11/05/2026 | 11/05/2026 | <https://youtu.be/_yunukwcAwc/> <br> <https://youtu.be/mPBjB6Ltl_Q> <br> <https://youtu.be/YXn8Q_Hpsu4> |
+|  3  | - Build Multi-AZ VPC, network security (SG + NACLs), NAT Gateway, Flow Logs, Session Manager and configure AWS Site-to-Site VPN for Hybrid Cloud | 12/05/2026 | 12/05/2026 | <https://000003.awsstudygroup.com/> |
 |  4  | - Configure bidirectional Hybrid DNS between AWS and On-premise using Route 53 Resolver | 13/05/2026 | 13/08/2026 | <https://000010.awsstudygroup.com/> |
 
 ### Week 4 Achievements:

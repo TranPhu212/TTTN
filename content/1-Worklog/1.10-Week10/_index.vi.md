@@ -17,11 +17,11 @@ pre: " <b> 1.10. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --------- | ------------ | --------------- | -------------- |
-|  6  | - Xây dựng Ứng dụng Web với Amazon RDS trên AWS | 19/06/2026 | 19/06/2026 | <https://000005.awsstudygroup.com/> |
-|  2  | - Thực hành chuyển đổi lược đồ, di chuyển dữ liệu và xử lý sự cố với AWS Database Migration Service | 22/06/2026 | 22/06/2026 | <https://000043.awsstudygroup.com/> |
-|  3  | - Lưu trữ đối tượng và Hosting Website Tĩnh với Amazon S3 | 23/06/2026 | 23/06/2026 | <https://000057.awsstudygroup.com/> |
-|  4  | - Triển khai Grafana và Xây dựng Dashboard Giám sát AWS CloudWatch | 24/06/2026 | 24/06/2026 | <https://000029.awsstudygroup.com/> |
-|  5  | - Triển khai và cấu hình AWS Web Application Firewall (AWS WAF) | 25/06/2026 | 25/06/2026 | <https://000026.awsstudygroup.com/> |
+|  2  | - Xây dựng Ứng dụng Web với Amazon RDS trên AWS | 22/06/2026 | 22/06/2026 | <https://000005.awsstudygroup.com/> |
+|  3  | - Thực hành chuyển đổi lược đồ, di chuyển dữ liệu và xử lý sự cố với AWS Database Migration Service | 23/06/2026 | 23/06/2026 | <https://000043.awsstudygroup.com/> |
+|  4  | - Lưu trữ đối tượng và Hosting Website Tĩnh với Amazon S3 | 24/06/2026 | 24/06/2026 | <https://000057.awsstudygroup.com/> |
+|  5  | - Triển khai Grafana và Xây dựng Dashboard Giám sát AWS CloudWatch | 25/06/2026 | 25/06/2026 | <https://000029.awsstudygroup.com/> |
+|  6  | - Triển khai và cấu hình AWS Web Application Firewall (AWS WAF) | 26/06/2026 | 26/06/2026 | <https://000026.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 10:

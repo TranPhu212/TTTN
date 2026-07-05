@@ -17,16 +17,16 @@ pre: " <b> 1.7. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --------- | ------------ | --------------- | -------------- |
-|  6  | - Tổng Quan về Cơ Sở Dữ Liệu và Các Dịch Vụ Cơ Sở Dữ Liệu AWS | 29/05/2026 | 29/05/2026 | <https://youtu.be/OOD2RwWuLRw> <br> <https://youtu.be/qbrobQZrokY> <br> <https://youtu.be/UvdiRW34aNI> |
-|  2  | - Thực hành AWS IAM, EC2 Instance Role và các cơ chế kiểm soát truy cập bảo mật | 01/06/2026 | 01/06/2026 | <https://000048.awsstudygroup.com/> <br> <https://000044.awsstudygroup.com/> |
-|  3  | - Thực hành quản lý quyền AWS IAM bằng Permission Boundary, IAM Role và Resource Tag | 02/06/2026 | 02/06/2026 | <https://000030.awsstudygroup.com/> <br> <https://000028.awsstudygroup.com/> |
-|  4  | - Xây dựng giải pháp bảo vệ dữ liệu trên Amazon S3 bằng AWS KMS kết hợp giám sát nhật ký và tối ưu chi phí vận hành EC2 | 03/06/2026 | 03/06/2026 | <https://000033.awsstudygroup.com/> <br> <https://000022.awsstudygroup.com/> |
-|  5  | - Mở rộng hệ thống Routing, cập nhật Sidebar Navigation và tích hợp các trang chuyên sâu (AI Threat Detection, Attack Surface, MITRE ATT&CK, Case Management) | 04/06/2026 | 04/06/2026 |
+|  2  | - Tổng Quan về Cơ Sở Dữ Liệu và Các Dịch Vụ Cơ Sở Dữ Liệu AWS | 01/06/2026 | 01/06/2026 | <https://youtu.be/OOD2RwWuLRw> <br> <https://youtu.be/qbrobQZrokY> <br> <https://youtu.be/UvdiRW34aNI> |
+|  3  | - Thực hành AWS IAM, EC2 Instance Role và các cơ chế kiểm soát truy cập bảo mật | 02/06/2026 | 02/06/2026 | <https://000048.awsstudygroup.com/> <br> <https://000044.awsstudygroup.com/> |
+|  4  | - Thực hành quản lý quyền AWS IAM bằng Permission Boundary, IAM Role và Resource Tag | 03/06/2026 | 03/06/2026 | <https://000030.awsstudygroup.com/> <br> <https://000028.awsstudygroup.com/> |
+|  5  | - Xây dựng giải pháp bảo vệ dữ liệu trên Amazon S3 bằng AWS KMS kết hợp giám sát nhật ký và tối ưu chi phí vận hành EC2 | 04/06/2026 | 04/06/2026 | <https://000033.awsstudygroup.com/> <br> <https://000022.awsstudygroup.com/> |
+|  6  | - Mở rộng hệ thống Routing, cập nhật Sidebar Navigation và tích hợp các trang chuyên sâu (AI Threat Detection, Attack Surface, MITRE ATT&CK, Case Management) | 05/06/2026 | 05/06/2026 |
 
 
 ### Kết quả đạt được tuần 7:
 
-## Thứ 6: Tổng Quan về Cơ Sở Dữ Liệu và Các Dịch Vụ Cơ Sở Dữ Liệu AWS
+## Thứ 2: Tổng Quan về Cơ Sở Dữ Liệu và Các Dịch Vụ Cơ Sở Dữ Liệu AWS
 * **Database Concepts**
   * Database / Cơ sở dữ liệu là một hệ thống các thông tin có cấu trúc / bán cấu trúc, được lưu trữ trên các thiết bị lưu trữ nhằm thỏa mãn yêu cầu khai thác thông tin đồng thời của nhiều người sử dụng hay nhiều chương trình ứng dụng chạy cùng một lúc với những mục đích khác nhau
 	* Session / Phiên là khoảng thời gian tính từ thời gian bắt đầu kết nối vào hệ thống CSDL (time start) và thời gian kết thúc (time end) là khoảng thời gian bạn ngắt kết nối
@@ -85,7 +85,7 @@ pre: " <b> 1.7. </b> "
   * Với các workload và ứng dụng mới, ưu tiên sử dụng Redis. (tính năng đa dạng, hiệu năng tốt)
   * Sử dụng ElastiCache yêu cầu phải viết và quản lý caching logic trên ứng dụng
 
-## Thứ 2: AWS IAM – Quản lý truy cập, IAM Role và Bảo mật phân quyền
+## Thứ 3: AWS IAM – Quản lý truy cập, IAM Role và Bảo mật phân quyền
 * **Tổng quan**
   * Mục tiêu của bài học nhằm giúp người dùng:
     * Biết cách cấp quyền cho ứng dụng thông qua Access Key / Secret Access Key và hiểu lý do tại sao không nên sử dụng phương pháp này trong môi trường thực tế (vì lý do bảo mật)
@@ -374,7 +374,7 @@ pre: " <b> 1.7. </b> "
   * Tick vào user group liên quan tới bài lab
   * Chọn Delete
 
-## Thứ 3: Quản lý quyền IAM với Permission Boundary và Resource Tag
+## Thứ 4: Quản lý quyền IAM với Permission Boundary và Resource Tag
 * **Tổng quan & Khái niệm**
   * IAM Permission Boundary là gì? Là một tính năng nâng cao trong AWS IAM giúp thiết lập số quyền hạn tối đa (maximum permissions) mà một IAM User hoặc Role có thể đạt được. Ngay cả khi người dùng đó được gán một chính sách (Policy) có quyền cao hơn, họ cũng không thể vượt qua ranh giới được định sẵn bởi Permission Boundary. Quyền hạn thực tế của người dùng sẽ là phần giao (độ giao thoa) giữa Identity-based policy và Permission Boundary
   * Tại sao cần sử dụng? Khi số lượng người dùng tăng lên, việc quản lý các chính sách riêng lẻ trở nên phức tạp, dễ dẫn đến lỗ hổng leo thang đặc quyền (privilege escalation). Sử dụng Permission Boundary giúp đơn giản hóa việc quản lý và ngăn chặn lỗ hổng này một cách nhanh chóng và đồng loạt
@@ -658,7 +658,7 @@ pre: " <b> 1.7. </b> "
     * ec2-run-instances
     * ec2-manage-instances
 
-## Thứ 4: Xây dựng giải pháp bảo vệ dữ liệu trên Amazon S3 bằng AWS KMS kết hợp giám sát nhật ký và tối ưu chi phí vận hành EC2
+## Thứ 5: Xây dựng giải pháp bảo vệ dữ liệu trên Amazon S3 bằng AWS KMS kết hợp giám sát nhật ký và tối ưu chi phí vận hành EC2
 * **Giới thiệu**
   * Tổng quan về kiến trúc hệ thống và luồng đi của dữ liệu: Mã hóa các đối tượng (Object) trên S3 bằng khóa KMS, cấu hình Amazon CloudTrail để ghi lại toàn bộ nhật ký (logs) tương tác, và sử dụng Amazon Athena để truy vấn các tệp log đó
 
@@ -1336,7 +1336,7 @@ pre: " <b> 1.7. </b> "
       * Chọn Actions
       * Chọn Delete
 
-## Thứ 5: Cập nhật Routing, Navigation và Các Trang SOC Mới
+## Thứ 6: Cập nhật Routing, Navigation và Các Trang SOC Mới
 * **Mô tả tổng quát**
   * Tập trung vào việc mở rộng và hoàn thiện routing + tích hợp các trang chuyên sâu mới cho phần Frontend SOC Dashboard.
   * Đây là bước quan trọng để nâng cao khả năng điều hướng và chuẩn bị cho các module AI Threat Intelligence, Attack Surface Management, MITRE ATT&CK Framework và Case Management.

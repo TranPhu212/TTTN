@@ -17,16 +17,16 @@ pre: " <b> 1.7. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | ---- | ---------- | --------------- | ------------------ |
-|  6  | - Database Fundamentals and AWS Database Services Overview | 29/05/2026 | 29/05/2026 | <https://youtu.be/OOD2RwWuLRw> <br> <https://youtu.be/qbrobQZrokY> <br> <https://youtu.be/UvdiRW34aNI> |
-|  2  | - Hands-on AWS IAM, EC2 Instance Roles, and secure access control mechanisms | 01/06/2026 | 01/06/2026 | <https://000048.awsstudygroup.com/> <br> <https://000044.awsstudygroup.com/> |
-|  3  | - Practiced AWS IAM access management using Permission Boundaries, IAM Roles, and Resource Tags | 02/06/2026 | 02/06/2026 | <https://000030.awsstudygroup.com/> <br> <https://000028.awsstudygroup.com/> |
-|  4  | - Building a Secure Data Protection and Cost Optimization Solution on AWS Using KMS, CloudTrail, Athena, and Lambda | 03/06/2026 | 03/06/2026 | <https://000033.awsstudygroup.com/> <br> <https://000022.awsstudygroup.com/> |
-|  5  | - Expanded the routing system, updated Sidebar Navigation, and integrated advanced pages (AI Threat Detection, Attack Surface, MITRE ATT&CK, and Case Management) | 04/06/2026 | 04/06/2026 |
+|  2  | - Database Fundamentals and AWS Database Services Overview | 01/06/2026 | 01/06/2026 | <https://youtu.be/OOD2RwWuLRw> <br> <https://youtu.be/qbrobQZrokY> <br> <https://youtu.be/UvdiRW34aNI> |
+|  3  | - Hands-on AWS IAM, EC2 Instance Roles, and secure access control mechanisms | 02/06/2026 | 02/06/2026 | <https://000048.awsstudygroup.com/> <br> <https://000044.awsstudygroup.com/> |
+|  4  | - Practiced AWS IAM access management using Permission Boundaries, IAM Roles, and Resource Tags | 03/06/2026 | 03/06/2026 | <https://000030.awsstudygroup.com/> <br> <https://000028.awsstudygroup.com/> |
+|  5  | - Building a Secure Data Protection and Cost Optimization Solution on AWS Using KMS, CloudTrail, Athena, and Lambda | 04/06/2026 | 04/06/2026 | <https://000033.awsstudygroup.com/> <br> <https://000022.awsstudygroup.com/> |
+|  6  | - Expanded the routing system, updated Sidebar Navigation, and integrated advanced pages (AI Threat Detection, Attack Surface, MITRE ATT&CK, and Case Management) | 05/06/2026 | 05/06/2026 |
 
 
 ### Week 7 Achievements:
 
-## Friday: Database Fundamentals and AWS Database Services Overview
+## Monday: Database Fundamentals and AWS Database Services Overview
 * **Database Concepts**
   * **Database** is a system of structured/semi-structured information stored on storage devices to satisfy the concurrent information access requirements of multiple users or multiple application programs running at the same time for different purposes.
   * **Session** is the period from the time a connection to the database system is established (start time) until the connection is terminated (end time).
@@ -85,7 +85,7 @@ pre: " <b> 1.7. </b> "
   * For new workloads and applications, **Redis** is generally recommended due to its richer feature set and better performance.
   * Using ElastiCache requires implementing and managing caching logic within the application.
 
-## Monday: Identity and Access Management (IAM) – User, Group, Role và Access Control trên AWS
+## Tueday: Identity and Access Management (IAM) – User, Group, Role và Access Control trên AWS
 * **Overview**
   * The objective of this lesson is to help users:
     * Understand how to grant permissions to an application using Access Key / Secret Access Key and understand why this method should not be used in real-world environments (for security reasons)
@@ -397,7 +397,7 @@ pre: " <b> 1.7. </b> "
     * Select the user group created for the lab.
     * Click **Delete**
 
-## Tueday: IAM Permission Management with Permission Boundaries and Resource Tags
+## Wednesday: IAM Permission Management with Permission Boundaries and Resource Tags
 * **Overview & Concepts**
   * **What is IAM Permission Boundary?** IAM Permission Boundary is an advanced AWS IAM feature that defines the maximum permissions an IAM User or Role can have. Even if the user is attached to a policy granting broader permissions, they cannot exceed the limits defined by the Permission Boundary. The user's effective permissions are the intersection of the Identity-based Policy and the Permission Boundary.
   * **Why use it?** As the number of users grows, managing individual policies becomes more complex and increases the risk of privilege escalation vulnerabilities. Using Permission Boundaries simplifies permission management and provides a quick, centralized way to prevent privilege escalation.
@@ -626,7 +626,7 @@ pre: " <b> 1.7. </b> "
   * When accessing the dashboard, you will only encounter a single **API Error** related to Load Balancing.
     * This confirms that the first validation test has passed because **us-east-1** is an allowed AWS Region.
 
-## Wednesday: Building a Secure Data Protection and Cost Optimization Solution on AWS Using KMS, CloudTrail, Athena, and Lambda
+## Thursday: Building a Secure Data Protection and Cost Optimization Solution on AWS Using KMS, CloudTrail, Athena, and Lambda
 * **Introduction**
   * Overview of the system architecture and data flow: Encrypt objects on S3 using KMS keys, configure Amazon CloudTrail to record all interaction logs, and use Amazon Athena to query those log files.
 
@@ -1281,7 +1281,7 @@ pre: " <b> 1.7. </b> "
       * Click Actions
       * Click Delete
 
-## Thursday: Routing, Navigation, and New SOC Pages Update
+## Friday: Routing, Navigation, and New SOC Pages Update
 * **Overall Description**
   * Focused on extending and completing routing functionality while integrating new advanced pages into the Frontend SOC Dashboard.
   * This is a critical step toward improving navigation capabilities and preparing for future modules such as AI Threat Intelligence, Attack Surface Management, MITRE ATT&CK Framework, and Case Management.

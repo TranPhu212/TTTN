@@ -16,14 +16,14 @@ pre: " <b> 1.2. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --------- | ------------ | --------------- | -------------- |
-|  6  | - Phát triển phần mềm bằng Agentic AI (Kiro) & Tối ưu chi phí AWS | 24/04/2026 | 24/04/2026 | <https://www.youtube.com/watch?v=uAQCm4sm_1c&t=2s> <br> <https://www.youtube.com/watch?v=UIw8UxGZCHA&t=3s> |
-|  2  | - Quản trị Mạng chuyên sâu (VPC), Kết nối Hybrid & Cân bằng tải (ELB) | 27/04/2026 | 27/04/2026 | <https://youtu.be/O9Ac_vGHquM> <br> <https://youtu.be/BPuD1l2hEQ4> <br> <https://youtu.be/CXU8D3kyxIc> |
-|  3  | - AWS Compute: EC2, Storage & Auto Scaling | 28/04/2026 | 28/04/2026 | <https://youtu.be/-t5h4N6vfBs> <br> <https://youtu.be/e7XeKdOVq40> <br> <https://youtu.be/yAR6QRT3N1k> <br> <https://youtu.be/hKr_TfGP7NY> <br> <https://youtu.be/6IHNDJ85aoQ> <br> <https://youtu.be/_v_43Wi7zjo> <br> <https://youtu.be/Ew3QRaKJQSA> <br> <https://youtu.be/bbLcPitXJSY> |
-|  4  | - EC2 Pricing, Lightsail, EFS, FSx & MGN | 29/04/2026 | 29/04/2026 | <https://youtu.be/-t5h4N6vfBs> |
+|  2  | - Phát triển phần mềm bằng Agentic AI (Kiro) & Tối ưu chi phí AWS | 27/04/2026 | 27/04/2026 | <https://www.youtube.com/watch?v=uAQCm4sm_1c&t=2s> <br> <https://www.youtube.com/watch?v=UIw8UxGZCHA&t=3s> |
+|  3  | - Quản trị Mạng chuyên sâu (VPC), Kết nối Hybrid & Cân bằng tải (ELB) | 28/04/2026 | 28/04/2026 | <https://youtu.be/O9Ac_vGHquM> <br> <https://youtu.be/BPuD1l2hEQ4> <br> <https://youtu.be/CXU8D3kyxIc> |
+|  4  | - AWS Compute: EC2, Storage & Auto Scaling | 29/04/2026 | 29/04/2026 | <https://youtu.be/-t5h4N6vfBs> <br> <https://youtu.be/e7XeKdOVq40> <br> <https://youtu.be/yAR6QRT3N1k> <br> <https://youtu.be/hKr_TfGP7NY> <br> <https://youtu.be/6IHNDJ85aoQ> <br> <https://youtu.be/_v_43Wi7zjo> <br> <https://youtu.be/Ew3QRaKJQSA> <br> <https://youtu.be/bbLcPitXJSY> |
+|  5  | - EC2 Pricing, Lightsail, EFS, FSx & MGN | 30/04/2026 | 30/04/2026 | <https://youtu.be/-t5h4N6vfBs> |
 
 ### Kết quả đạt được tuần 2:
 
-## Thứ 6: Gen AI trên AWS & Tối ưu hóa chi phí với Kiro
+## Thứ 2: Gen AI trên AWS & Tối ưu hóa chi phí với Kiro
 
 ### Gen AI on AWS - Kiro
   * **Agentic changing the SDLC**
@@ -191,7 +191,7 @@ pre: " <b> 1.2. </b> "
       * Chúng ta sử dụng Khung này bằng cách trả lời các câu hỏi, từ đó bạn biết được kiến trúc của mình phù hợp như thế nào với các thực hành tốt nhất được khuyến nghị
       * Ngoài ra, khi sử dụng công cụ tích hợp AWS Well-Architected Framework trên Bảng điều khiển quản trị (AWS Management Console), bạn sẽ nhận được các hướng dẫn để cải thiện kiến trúc hiện tại của mình
 
-## Thứ 2: Networking & Content Delivery trên AWS (Mạng và Truyền tải nội dung)
+## Thứ 3: Networking & Content Delivery trên AWS (Mạng và Truyền tải nội dung)
   * Mạng đám mây riêng ảo của Amazon (VPC)
   * Kết nối ngang hàng VPC & Cổng chuyển tiếp
   * Mạng riêng ảo & Kết nối trực tiếp
@@ -378,7 +378,7 @@ pre: " <b> 1.2. </b> "
         * Tạo Route 53 Resolver Rule
         * Tạo Inbound Endpoint
 
-## Thứ 3: Dịch vụ Máy chủ ảo EC2 và Cơ sở hạ tầng tính toán (Compute & Storage)
+## Thứ 4: Dịch vụ Máy chủ ảo EC2 và Cơ sở hạ tầng tính toán (Compute & Storage)
 * Amazon Elastic Compute Cloud (EC2)
 * Amazon Lightsail
 * Amazon EFS / FSx
@@ -450,7 +450,7 @@ pre: " <b> 1.2. </b> "
     * EC2 Auto Scaling hoạt động trên nhiều AWS Availability Zone
     * EC2 Auto Scaling có thể hỗ trợ nhiều Pricing options khác nhau
 
-## Thứ 4: AWS Compute, Storage & Migration Services
+## Thứ 5: AWS Compute, Storage & Migration Services
 * **Amazon Elastic Compute Cloud (EC2) – Các tùy chọn về giá**
   * EC2 bao gồm 4 tùy chọn giá
     * **On-demand** (Theo yêu cầu): Trả theo giờ / phút / giây, xài bao nhiêu tính bấy nhiêu, chi phí cao nhất. Phù hợp cho các khối lượng công việc (workloads) chạy lên tới 6 tiếng 1 ngày

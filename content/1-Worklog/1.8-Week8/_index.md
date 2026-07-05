@@ -17,16 +17,16 @@ pre: " <b> 1.8. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | ---- | ---------- | --------------- | ------------------ |
-|  6  | - Amazon DynamoDB - Managing and Querying NoSQL Databases | 05/06/2026 | 05/06/2026 | <https://000060.awsstudygroup.com/> |
-|  2  | - Deploying Amazon FSx for Windows File Server | 08/06/2026 | 08/06/2026 | <https://000025.awsstudygroup.com/>> |
-|  3  | - Preparing Data with AWS Glue and Analyzing Cost & Resource Utilization Using Amazon Athena | 09/06/2026 | 09/06/2026 | <https://000040.awsstudygroup.com/> |
-|  4  | - AWS Analytics Lab: Data Lake, ETL and Data Analytics | 10/06/2026 | 10/06/2026 | <https://000072.awsstudygroup.com/> |
-|  5  | - SOC Dashboard Refactoring & UI Enhancement | 11/06/2026 | 11/06/2026 |
+|  2  | - Amazon DynamoDB - Managing and Querying NoSQL Databases | 08/06/2026 | 08/06/2026 | <https://000060.awsstudygroup.com/> |
+|  3  | - Deploying Amazon FSx for Windows File Server | 09/06/2026 | 09/06/2026 | <https://000025.awsstudygroup.com/>> |
+|  4  | - Preparing Data with AWS Glue and Analyzing Cost & Resource Utilization Using Amazon Athena | 10/06/2026 | 10/06/2026 | <https://000040.awsstudygroup.com/> |
+|  5  | - AWS Analytics Lab: Data Lake, ETL and Data Analytics | 11/06/2026 | 11/06/2026 | <https://000072.awsstudygroup.com/> |
+|  6  | - SOC Dashboard Refactoring & UI Enhancement | 12/06/2026 | 12/06/2026 |
 
 
 ### Week 8 Achievements:
 
-## Friday: Friday: Building and Managing NoSQL Solutions with Amazon DynamoDB
+## Monday: Building and Managing NoSQL Solutions with Amazon DynamoDB
 * **Working with Amazon DynamoDB**
   * **Introduction**
     * Amazon DynamoDB is a fully managed NoSQL database service that delivers fast and predictable performance with seamless scalability. DynamoDB relieves the administrative burden of operating and scaling a distributed database, providing hardware provisioning, setup and configuration, replication, software patching, or cluster scaling. DynamoDB also provides encryption at rest.
@@ -452,7 +452,7 @@ pre: " <b> 1.8. </b> "
     * Delete Multi-AZ file system
     * Delete the CloudFormation stack to clean up the entire environment
 
-## Tuesday: AWS Cost and Performance Analysis with Glue and Athena
+## Wednesday: AWS Cost and Performance Analysis with Glue and Athena
 * **Introduction**
   * This section provides foundational knowledge about the two core services used in this lab:
     * **AWS Glue:** A data preparation service that supports the ETL (Extract - Transform - Load) process. The material explains the basic workflow of Glue, from extracting raw data from sources such as Amazon S3, transforming it into optimized formats (e.g., Parquet), and loading it into a data warehouse.
@@ -475,7 +475,7 @@ pre: " <b> 1.8. </b> "
 * **Resource Cleanup**
   * The final section explains how to remove all AWS resources created during the lab, such as deleting result S3 buckets, removing Glue databases and crawlers, and clearing Athena query history. This step is extremely important to ensure that learners' AWS accounts do not incur unexpected charges after completing the lab.
 
-## Wednesday: Building an End-to-End Data Lake and Analytics Platform on AWS
+## Thursday: Building an End-to-End Data Lake and Analytics Platform on AWS
 * **Introduction & Preparation**
   * **Introduction:** Overview of services within the AWS Analytics portfolio. Core learning objectives include building a Data Lake with Amazon S3, processing real-time data, managing metadata, and optimizing query performance.
   * **Preparation Steps:** Instructions for setting up the lab environment and initializing a sample data source using Amazon RDS.
@@ -506,7 +506,7 @@ pre: " <b> 1.8. </b> "
   * **Visualize in QuickSight:** Connect Amazon QuickSight to Athena or Redshift data sources to create dashboards, charts, and business intelligence reports.
   * **Clean Up:** Detailed instructions for removing all deployed resources, including Amazon S3, Amazon Redshift, Amazon EMR, AWS Glue, Amazon RDS, and related services.
 
-## Thursday: Frontend Consolidation and Real-Time Integration Preparation
+## Friday: Frontend Consolidation and Real-Time Integration Preparation
 * **Weekly Progress Summary**
   * This week focused heavily on **refactoring and enhancing the UI of the main SOC Dashboard pages**.
     * Completed refactoring of several critical modules: Settings, Reports, Dashboard, Cloud, Threat Intel, Attack Surface, and more.

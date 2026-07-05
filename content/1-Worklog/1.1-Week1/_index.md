@@ -16,15 +16,15 @@ pre: " <b> 1.1. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | ---- | ---------- | --------------- | ------------------ |
-| 6 | - Get acquainted with FCJ members <br> - Read and note the internship program rules and regulations <br> - Create an AWS Free Tier account | 17/04/2026 | 17/04/2026 | <https://000001.awsstudygroup.com/> |
-| 2 | - Set up AWS Budgets for cost management | 20/04/2026 | 20/04/2026 | <https://000007.awsstudygroup.com/> |
-| 3 | - Learn about AWS and service categories: <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br> - Study Access Management with AWS IAM (User, Group, Policy, Role) | 21/04/2026 | 21/04/2026 | <https://000002.awsstudygroup.com/> |
-| 4 | - Learn Networking with Amazon VPC | 22/04/2026 | 22/04/2026 | <https://000003.awsstudygroup.com/> |
-| 5 | - **Practice:** <br>&emsp; + Practice basic AWS CLI commands | 23/04/2026 | 23/04/2026 | <https://000003.awsstudygroup.com/> |
+| 2 | - Get acquainted with FCJ members <br> - Read and note the internship program rules and regulations <br> - Create an AWS Free Tier account | 20/04/2026 | 20/04/2026 | <https://000001.awsstudygroup.com/> |
+| 3 | - Set up AWS Budgets for cost management | 21/04/2026 | 21/04/2026 | <https://000007.awsstudygroup.com/> |
+| 4 | - Learn about AWS and service categories: <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br> - Study Access Management with AWS IAM (User, Group, Policy, Role) | 22/04/2026 | 22/04/2026 | <https://000002.awsstudygroup.com/> |
+| 5 | - Learn Networking with Amazon VPC | 23/04/2026 | 23/04/2026 | <https://000003.awsstudygroup.com/> |
+| 6 | - **Practice:** <br>&emsp; + Practice basic AWS CLI commands | 24/04/2026 | 24/04/2026 | <https://000003.awsstudygroup.com/> |
 
 ### Week 1 Achievements:
 
-## Friday: Infrastructure Initialization & Environment Onboarding
+## Monday: Infrastructure Initialization & Environment Onboarding
 
 * **Environmental Integration:**
     * **Team Connection:** Connect and get acquainted with the members of the First Cloud Journey (FCJ) community
@@ -55,7 +55,7 @@ pre: " <b> 1.1. </b> "
     * **NAT Gateway:** Not included in the Free Tier. Maintenance fees are approximately $0.045/hour (can quickly drain your account balance if you forget to delete it)
     * **EBS Volumes:** Only a total of 30GB capacity is free. Creating excessive redundant volumes will result in storage charges
 
-## Monday: Cost Management with AWS Budgets
+## Tuesday: Cost Management with AWS Budgets
 
 * **Cost Management (AWS Budgets - Knowledge Base)**
     * **Shared Responsibility Model for Cost:** AWS provides the tools, but the user is responsible for monitoring and setting limits to avoid resource wastage
@@ -165,7 +165,7 @@ pre: " <b> 1.1. </b> "
         * In the confirmation dialog, click "Delete" to finalize the budget removal
         * Repeat the above steps for all remaining Budgets created during the practice session
 
-## Tuesday: Identity and Access Management (AWS IAM)
+## Wednesday: Identity and Access Management (AWS IAM)
 
 * **Overview of Core Service Groups (Global Infrastructure & Core Services):**
     * **Compute (The "Brain"):**
@@ -333,7 +333,7 @@ pre: " <b> 1.1. </b> "
     * Carefully check the group information to be deleted
     * Click Delete to complete
 
-## Wednesday: Advanced Network Infrastructure - AMAZON VPC
+## Thursday: Advanced Network Infrastructure - AMAZON VPC
 
 ### Amazon VPC Overview
 **Amazon Virtual Private Cloud (VPC)** is a private virtual network dedicated to your AWS account. It allows you to launch AWS resources in a logically isolated virtual network, providing complete control over your networking environment
@@ -384,7 +384,7 @@ pre: " <b> 1.1. </b> "
     * In each AZ, set up corresponding pairs of Public/Private Subnets
     * Utilize high-availability AWS services like **ELB (Elastic Load Balancing)** to distribute traffic
 
-## Thursday: Overview of Cloud Computing and AWS Infrastructure
+## Friday: Overview of Cloud Computing and AWS Infrastructure
 
 * **Introduction to AWS**
     * **The New Era of Services:** Introduction to emerging services and the rise of **AI Agents** in learning and professional environments.

@@ -17,16 +17,16 @@ pre: " <b> 1.9. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | ---- | ---------- | --------------- | ------------------ |
-|  6  | - Hands-on Data Visualization with Amazon QuickSight | 12/06/2026 | 12/06/2026 | <https://000073.awsstudygroup.com/> |
-|  2  | - Amazon DynamoDB: NoSQL Design, Advanced Patterns, and Serverless Solutions | 15/06/2026 | 15/06/2026 | <https://000039.awsstudygroup.com/> |
-|  3  | - Building a Serverless Data Lake on AWS | 16/06/2026 | 16/06/2026 | <https://000070.awsstudygroup.com/> |
-|  4  | - From Data Lake to Dashboard with AWS Glue, Athena and QuickSight | 17/06/2026 | 17/06/2026 | <https://000035.awsstudygroup.com/> |
-|  5  | - Developed and integrated the frontend Authentication system, including login, registration, session management, route protection, and user interface customization support | 18/06/2026 | 18/06/2026 |
+|  2  | - Hands-on Data Visualization with Amazon QuickSight | 15/06/2026 | 15/06/2026 | <https://000073.awsstudygroup.com/> |
+|  3  | - Amazon DynamoDB: NoSQL Design, Advanced Patterns, and Serverless Solutions | 16/06/2026 | 16/06/2026 | <https://000039.awsstudygroup.com/> |
+|  4  | - Building a Serverless Data Lake on AWS | 17/06/2026 | 17/06/2026 | <https://000070.awsstudygroup.com/> |
+|  5  | - From Data Lake to Dashboard with AWS Glue, Athena and QuickSight | 18/06/2026 | 18/06/2026 | <https://000035.awsstudygroup.com/> |
+|  6  | - Developed and integrated the frontend Authentication system, including login, registration, session management, route protection, and user interface customization support | 19/06/2026 | 19/06/2026 |
 
 
 ### Week 9 Achievements:
 
-## Friday: Hands-on Data Analysis and Dashboard Creation with AWS QuickSight
+## Monday: Hands-on Data Analysis and Dashboard Creation with AWS QuickSight
 * Introduction to the **"Getting Started with QuickSight"** workshop. The main objective was to build a dashboard for visualizing sales data (sales.csv) using Amazon QuickSight. The workshop used the Singapore region (ap-southeast-1) and focused on data analysis and visualization through various charts and visuals.
 
 * **Basic Concepts:**
@@ -65,7 +65,7 @@ pre: " <b> 1.9. </b> "
 * **Clean Up**
   * Instructions for deleting the QuickSight account (switch to the N. Virginia region, navigate to **Manage QuickSight → Delete Account**) and removing related IAM roles to avoid unnecessary charges.
 
-## Monday: Hands-on Labs and Data Modeling with Amazon DynamoDB
+## Tuesday: Hands-on Labs and Data Modeling with Amazon DynamoDB
 * **General Overview**
   * Amazon DynamoDB is a key-value and document database that delivers single-digit millisecond performance at any scale. This page consolidates workshops and hands-on labs to help users understand DynamoDB features and NoSQL data modeling best practices.
 
@@ -109,7 +109,7 @@ pre: " <b> 1.9. </b> "
     * LDC: Design Challenges
     * References to NoSQL Design documentation and resources.
 
-## Tuesday: Building a Serverless Data Lake on AWS from Data Preparation to Visualization
+## Wednesday: Building a Serverless Data Lake on AWS from Data Preparation to Visualization
 * **Overview**
   * This workshop provides a guide to building a serverless Data Lake on AWS using your own data. It focuses on creating a complete data pipeline: from raw data preparation → data cleansing → ingestion → querying → visualization, without the need to manage servers.
 
@@ -158,7 +158,7 @@ pre: " <b> 1.9. </b> "
   * **Resource Cleanup**
     * Guidelines for cleaning up AWS resources to avoid unnecessary charges.
 
-## Wednesday: Implementing an AWS Data Lake with Glue, Athena, and QuickSight
+## Thursday: Implementing an AWS Data Lake with Glue, Athena, and QuickSight
 * **Overview**
   * A Data Lake is defined as a storage repository for raw, unprocessed data that can be analyzed later to generate insights.
   * Key characteristics of a Data Lake:
@@ -215,7 +215,7 @@ pre: " <b> 1.9. </b> "
     * Empty and delete the S3 bucket.
     * Delete the CloudFormation stack (if applicable).
 
-## Thursday: Frontend Authentication Implementation (Login/Register)
+## Friday: Frontend Authentication Implementation (Login/Register)
 * **General Description**
   * This update completes the Authentication system (Login / Register) for the React + Vite frontend. It is a key milestone in securing the SOC dashboard, supporting session management, automatic redirection, and improving the overall authentication user experience.
 

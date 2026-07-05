@@ -17,15 +17,15 @@ pre: " <b> 1.6. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --------- | ------------ | --------------- | -------------- |
-|  6  | - Frontend Dashboard | 22/05/2026 | 22/05/2026 |
-|  2  | - Thực hành triển khai AWS Storage Gateway và File Shares | 24/05/2026 | 24/05/2026 | <https://000024.awsstudygroup.com/> |
-|  3  | - Virtual Machine Migration Guide | 26/05/2026 | 26/05/2026 | <https://000014.awsstudygroup.com/> |
-|  4  | - AWS Tags và Resource Group | 27/05/2026 | 27/05/2026 | <https://000027.awsstudygroup.com/> |
-|  5  | - Hands-on AWS Security Hub: Enable, Evaluate Security Standards, and Resource Cleanup | 28/05/2025 | 28/05/2025 | <https://000018.awsstudygroup.com/> |
+|  2  | - Frontend Dashboard | 25/05/2026 | 25/05/2026 |
+|  3  | - Thực hành triển khai AWS Storage Gateway và File Shares | 26/05/2026 | 26/05/2026 | <https://000024.awsstudygroup.com/> |
+|  4  | - Virtual Machine Migration Guide | 27/05/2026 | 27/05/2026 | <https://000014.awsstudygroup.com/>> |
+|  5  | - AWS Tags và Resource Group | 28/05/2026 | 28/05/2026 | <https://000027.awsstudygroup.com/> |
+|  6  | - Hands-on AWS Security Hub: Enable, Evaluate Security Standards, and Resource Cleanup | 29/05/2026 | 29/05/2026 | <https://000018.awsstudygroup.com/> |
 
 ### Kết quả đạt được tuần 6:
 
-## Thứ 6: Frontend Dashboard (Track B)
+## Thứ 2: Frontend Dashboard (Track B)
   * **Tổng quan về branch devphu**
     * Branch devphu là nhánh phát triển chính cho Track B (Real-time & UX Dashboard). Tuần này tập trung mạnh vào polish UI/UX, mở rộng tính năng, cải thiện trải nghiệm người dùng và bổ sung các trang mới
     * Frontend đã chuyển sang giai đoạn triển khai nâng cao + tinh chỉnh chi tiết, vẫn dùng mock data chất lượng cao nhưng đã chuẩn bị rất tốt cho việc tích hợp backend sau này
@@ -99,7 +99,7 @@ pnpm install
 cp .env.example .env
 pnpm dev
 
-## Thứ 2: Thực hành triển khai AWS Storage Gateway và File Shares
+## Thứ 3: Thực hành triển khai AWS Storage Gateway và File Shares
 * **Tổng quan**
   * Workshop giúp người đọc tìm hiểu và thực hành:
     * Cách khởi tạo Storage Gateway
@@ -274,7 +274,7 @@ pnpm dev
 
     * Điền tên bucket sau đó click Delete bucket để xóa S3 bucket
 
-## Thứ 3: Virtual Machine Migration Guide (AWS VM Import/Export)
+## Thứ 4: Virtual Machine Migration Guide (AWS VM Import/Export)
 * **Tổng quan**
   * **Khái niệm cốt lõi:**
     * **VM Import/Export:** Là tính năng cho phép di chuyển các hình ảnh máy ảo từ môi trường on-premises lên Amazon EC2 và ngược lại, xuất từ EC2 về lại on-premises. Tính năng này giúp:
@@ -476,7 +476,7 @@ pnpm dev
   * **Thử nghiệm triển khai máy ảo đã export**
     * Sau khi tải tập tin đĩa ảo VHD về hệ thống on-premises, bạn có thể thử triển khai máy ảo sử dụng tập tin VHD này trên nền tảng ảo hóa tương ứng
 
-## Thứ 4: Thực hành Gắn Thẻ (Tags) và Nhóm Tài Nguyên (Resource Groups) trên AWS
+## Thứ 5: Thực hành Gắn Thẻ (Tags) và Nhóm Tài Nguyên (Resource Groups) trên AWS
 * **Tổng quan & Khái niệm**
   * **Tag (Thẻ):** Là các nhãn (nhập dưới dạng cặp Key - Khóa và Value - Giá trị) được gán vào tài nguyên AWS nhằm phân loại chúng theo mục đích, chủ sở hữu hoặc môi trường, giúp người dùng dễ dàng tìm kiếm và quản lý khi số lượng tài nguyên lớn
   * **AWS Resource Groups:** Là tính năng giúp quản lý và tự động hóa các thao tác trên nhiều tài nguyên cùng một lúc thông qua việc gom nhóm dựa trên Tag (Tag-based) hoặc theo CloudFormation stack
@@ -622,7 +622,7 @@ pnpm dev
     * Click vào tên Resource Group liên quan tới bài lab ( MarketingBU )
     * Click Delete, sau đó click Delete một lần nữa để xác nhận xóa Resource Group
 
-## Thứ 5: Thực hành AWS Security Hub
+## Thứ 6: Thực hành AWS Security Hub
 * **Tổng quan về AWS Security Hub**
   * AWS Security Hub là dịch vụ cung cấp cho bạn một cái nhìn toàn diện về các cảnh báo bảo mật có mức độ ưu tiên cao và trạng thái tuân thủ (compliance status) trên toàn bộ các tài khoản AWS của bạn
   * Vấn đề giải quyết: Thông thường, các doanh nghiệp sử dụng rất nhiều công cụ bảo mật khác nhau (từ tường lửa, ứng dụng bảo vệ điểm cuối đến quét lỗ hổng bảo mật). Việc này khiến đội ngũ quản trị phải liên tục chuyển đổi qua lại giữa các công cụ để xử lý hàng trăm, hàng ngàn cảnh báo mỗi ngày
