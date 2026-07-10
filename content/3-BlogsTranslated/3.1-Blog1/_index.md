@@ -10,7 +10,7 @@ pre: " <b> 3.1. </b> "
 
 When enterprises use multiple AWS accounts and many cloud services, cost control is no longer as simple as just looking at end-of-month reports. To solve this problem, AWS introduces the FinOps Agent built on Amazon Bedrock AgentCore, helping users query AWS cost data in natural language, receive analysis on cost drivers, budgets, anomalies, and resource optimization recommendations. In my opinion, the strength of this solution is that the Agent does not replace tools like Cost Explorer or Compute Optimizer, but instead plays the role of aggregating data, interpreting results, and supporting faster cost optimization actions.
 
-![FinOps Agent Architecture on Amazon Bedrock AgentCore](/images/blog1.jpg)
+![FinOps Agent Architecture on Amazon Bedrock AgentCore](/images/3-BlogsTranslated/blog1.jpg)
 
 ---
 

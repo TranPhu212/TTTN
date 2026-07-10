@@ -8,7 +8,7 @@ pre: " <b> 3.3. </b> "
 
 # AI NỘI BỘ CHO DOANH NGHIỆP: KHI NHÂN VIÊN KHÔNG CẦN LỤC TỪNG FOLDER ĐỂ TÌM THÔNG TIN
 
-![Kiến trúc AI Assistant nội bộ với Amazon Bedrock](/images/blog3.jpg)
+![Kiến trúc AI Assistant nội bộ với Amazon Bedrock](/images/3-BlogsTranslated/blog3.jpg)
 
 Dữ liệu trong doanh nghiệp thường không nằm ở một nơi duy nhất. Một phần có thể nằm trong Google Drive. Một phần nằm trong SharePoint. Một phần nằm trong CRM, ERP. Quy trình nội bộ có thể nằm trong file PDF. FAQ khách hàng có thể nằm trong ticket system. Một số thông tin khác lại nằm trong email, file Excel hoặc folder riêng của từng phòng ban.
 

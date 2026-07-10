@@ -106,5 +106,5 @@ Participating in the event was a highly valuable experience that gave me a more 
 - Always proactively learn, adjust your thinking, and apply scientific methods for self-development
 
 #### Some event photos
-* ![Even1](/images/Event1.jpeg)
+* ![Even1](/images/4-EventParticipated/Event1.jpeg)
 > Overall, the event not only provided valuable knowledge but also strongly inspired me. It gave me additional motivation and practical tools to improve myself in both learning and work

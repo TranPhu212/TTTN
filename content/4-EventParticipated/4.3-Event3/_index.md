@@ -101,4 +101,4 @@ pre: " <b> 4.3. </b> "
 * Participating in real-world competitions is an excellent way to assess one's capabilities and identify future learning goals
 
 #### Some event photos
-* ![Event](/images/Event3.png)
+* ![Event](/images/4-EventParticipated/Event3.png)

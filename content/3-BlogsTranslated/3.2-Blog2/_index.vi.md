@@ -10,7 +10,7 @@ pre: " <b> 3.2. </b> "
 
 Trong bối cảnh Generative AI và AI Agent ngày càng phát triển, mình thấy một trong những bài toán thực tế nhất mà doanh nghiệp đang gặp phải chính là: phân tích dữ liệu quảng cáo thủ công quá chậm, không theo kịp tốc độ ra quyết định.
 
-![Kiến trúc hệ thống Lumos của CLICKFORCE](/images/blog2.jpg)
+![Kiến trúc hệ thống Lumos của CLICKFORCE](/images/3-BlogsTranslated/blog2.jpg)
 
 CLICKFORCE — công ty quảng cáo kỹ thuật số hàng đầu Đài Loan — từng cần đến 2–6 tuần chỉ để tạo một báo cáo phân tích ngành, vì phải thu thập dữ liệu, xử lý, phân tích và tổng hợp insight qua nhiều bước thủ công.
 

@@ -10,7 +10,7 @@ pre: " <b> 3.2. </b> "
 
 In the context of the growing development of Generative AI and AI Agents, I find that one of the most practical problems businesses are facing is: manual ad data analysis is too slow and can't keep up with decision-making speed.
 
-![CLICKFORCE Lumos System Architecture](/images/blog2.jpg)
+![CLICKFORCE Lumos System Architecture](/images/3-BlogsTranslated/blog2.jpg)
 
 CLICKFORCE — a leading digital advertising company in Taiwan — used to need 2–6 weeks just to create an industry analysis report, because they had to collect data, process, analyze and synthesize insights through many manual steps.
 

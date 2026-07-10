@@ -6,34 +6,43 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
+During my participation in the **First Cloud Journey** program, I had the opportunity to learn, practice, and organize my AWS Cloud knowledge through weekly labs, worklogs, and the development of the **FCAJ Hybrid SOC/AWS** workshop. The internship covered important areas such as IAM, VPC, EC2, S3, CloudFront, WAF, SQS, RDS, CloudWatch, Security Hub, serverless architecture, and technical evidence documentation.
 
-During my internship at **[Company/Organization Name]** from **[start date]** to **[end date]**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
-I participated in **[briefly describe the main project or task]**, through which I improved my skills in **[list skills: programming, analysis, reporting, communication, etc.]**.  
+Through this process, I not only strengthened my foundation in cloud computing but also improved my ability to analyze requirements, implement tasks step by step, validate results, record issues, and present outcomes in a structured report. In particular, while building the Hybrid SOC/AWS workshop, I learned how to connect security concepts with cloud architecture, from local security evidence and backend event processing to AWS data storage and dashboard-based alert monitoring.
 
-In terms of work ethic, I always strived to complete tasks well, complied with workplace regulations, and actively engaged with colleagues to improve work efficiency.
+Regarding my work attitude, I always tried to complete tasks on schedule, read documentation before asking for support, take notes on issues, and revise my work based on feedback. Although there are still areas I need to improve, I can clearly see progress in my self-learning ability, system thinking, and technical documentation skills.
 
-To objectively reflect on my internship period, I would like to evaluate myself based on the following criteria:
+To reflect on my internship objectively, I evaluate myself based on the following criteria:
 
-| No. | Criteria                            | Description                                                                                      | Good | Fair | Average |
-| --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | ---- | ---- | ------- |
-| 1   | **Professional knowledge & skills** | Understanding of the field, applying knowledge in practice, proficiency with tools, work quality | ✅    | ☐    | ☐       |
-| 2   | **Ability to learn**                | Ability to absorb new knowledge and learn quickly                                                | ☐    | ✅    | ☐       |
-| 3   | **Proactiveness**                   | Taking initiative, seeking out tasks without waiting for instructions                            | ✅    | ☐    | ☐       |
-| 4   | **Sense of responsibility**         | Completing tasks on time and ensuring quality                                                    | ✅    | ☐    | ☐       |
-| 5   | **Discipline**                      | Adhering to schedules, rules, and work processes                                                 | ☐    | ☐    | ✅       |
-| 6   | **Progressive mindset**             | Willingness to receive feedback and improve oneself                                              | ☐    | ✅    | ☐       |
-| 7   | **Communication**                   | Presenting ideas and reporting work clearly                                                      | ☐    | ✅    | ☐       |
-| 8   | **Teamwork**                        | Working effectively with colleagues and participating in teams                                   | ✅    | ☐    | ☐       |
-| 9   | **Professional conduct**            | Respecting colleagues, partners, and the work environment                                        | ✅    | ☐    | ☐       |
-| 10  | **Problem-solving skills**          | Identifying problems, proposing solutions, and showing creativity                                | ☐    | ✅    | ☐       |
-| 11  | **Contribution to project/team**    | Work effectiveness, innovative ideas, recognition from the team                                  | ✅    | ☐    | ☐       |
-| 12  | **Overall**                         | General evaluation of the entire internship period                                               | ✅    | ☐    | ☐       |
+| No. | Criteria                            | Description                                                                                       | Good | Fair | Average |
+| --- | ----------------------------------- | ------------------------------------------------------------------------------------------------- | ---- | ---- | ------- |
+| 1   | **Professional knowledge & skills** | Understanding and applying AWS, cloud architecture, security, and service deployment in labs/workshop | ✅    | ☐    | ☐       |
+| 2   | **Ability to learn**                | Reading documentation proactively, absorbing new knowledge, and applying it throughout the internship | ✅    | ☐    | ☐       |
+| 3   | **Proactiveness**                   | Investigating problems, preparing worklog/workshop content, and proposing solutions when issues occur | ✅    | ☐    | ☐       |
+| 4   | **Sense of responsibility**         | Completing assigned tasks, updating progress, and maintaining content quality                      | ✅    | ☐    | ☐       |
+| 5   | **Discipline**                      | Following the internship plan, maintaining weekly notes, and tracking deadlines                    | ☐    | ✅    | ☐       |
+| 6   | **Progressive mindset**             | Being open to mentor feedback and improving the report/workshop content                           | ✅    | ☐    | ☐       |
+| 7   | **Communication**                   | Discussing issues, reporting progress, and presenting difficulties during implementation           | ☐    | ✅    | ☐       |
+| 8   | **Teamwork**                        | Collaborating with teammates on workshop sections, evidence, and implementation scope              | ✅    | ☐    | ☐       |
+| 9   | **Professional conduct**            | Respecting mentors and teammates while maintaining a serious working attitude                      | ✅    | ☐    | ☐       |
+| 10  | **Problem-solving skills**          | Analyzing errors, comparing with documentation, validating evidence, and choosing suitable fixes    | ☐    | ✅    | ☐       |
+| 11  | **Contribution to project/team**    | Contributing to the report, worklogs, and the FCAJ Hybrid SOC/AWS workshop                         | ✅    | ☐    | ☐       |
+| 12  | **Overall**                         | General evaluation of the entire internship period                                                | ✅    | ☐    | ☐       |
 
-### Needs Improvement
+### Strengths
 
-* Strengthen discipline and strictly comply with the rules and regulations of the company or any organization  
-* Improve problem-solving thinking  
-* Enhance communication skills in both daily interactions and professional contexts, including handling situations effectively
+* Good self-learning mindset and willingness to explore AWS documentation and retry implementation steps.
+* Ability to collect evidence, summarize results, and present technical content clearly.
+* Ability to connect academic knowledge with practical cloud, security, and backend/dashboard scenarios.
+* Responsible attitude toward assigned tasks and willingness to revise work based on mentor or team feedback.
+
+### Areas for Improvement
+
+* Improve time management to avoid concentrating too much work near the final stage.
+* Communicate more proactively when facing difficult issues, especially when confirming scope or evidence.
+* Build a more structured troubleshooting process: identify causes, validate assumptions, document fixes, and record lessons learned.
+* Practice more technical English writing to produce clearer and more professional documentation.
+
+### Conclusion
+
+Overall, this internship helped me grow in both technical knowledge and professional working habits. I now have a better understanding of how a cloud system is designed, deployed, secured, monitored, and documented with evidence. This is an important foundation for my future development toward roles such as Cloud Engineer, DevOps Engineer, or Security Engineer.

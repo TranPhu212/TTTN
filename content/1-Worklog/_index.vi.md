@@ -32,4 +32,4 @@ Thông thường và cũng là tiêu chuẩn, một worklog được thực hi�
 
 **Tuần 11:** [Triển khai các dịch vụ AWS về bảo mật, serverless và cải tiến kiến trúc dữ liệu realtime cho SOC Console](1.11-week11/)
 
-**Tuần 12:** [Làm công việc N...](1.12-week12/)
+**Tuần 12:** [Viết và hoàn thiện báo cáo workshop FCAJ Hybrid SOC/AWS](1.12-week12/)

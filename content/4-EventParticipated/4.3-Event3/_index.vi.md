@@ -101,4 +101,4 @@ pre: " <b> 4.3. </b> "
     - Việc tham gia các cuộc thi thực tế là cách tốt để đánh giá năng lực và xác định lộ trình học tập tiếp theo
 
 #### Một số hình ảnh khi tham gia sự kiện
-* ![Event](/images/Event3.png)
+* ![Event](/images/4-EventParticipated/Event3.png)

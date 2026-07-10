@@ -32,4 +32,4 @@ Typically, and as a standard, a worklog is carried out over about 3 months (thro
 
 **Week 11:** [Implemented AWS security and serverless solutions while enhancing the SOC Console's realtime data architecture](1.11-week11/)
 
-**Week 12:** [Doing task N...](1.12-week12/)
+**Week 12:** [Writing and completing the FCAJ Hybrid SOC/AWS workshop report](1.12-week12/)
