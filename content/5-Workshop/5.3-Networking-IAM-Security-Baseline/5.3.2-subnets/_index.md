@@ -20,7 +20,7 @@ On the AWS Console, open the **VPC** service, select **Subnets** from the left m
 
 Then select **Create subnet** to start creating a new subnet.
 
-![Create Subnet Button](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-02-01-create-subnet-button.jpg)
+![Create Subnet Button](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-02-01-create-subnet-button.jpg)
 
 
 ## Step 2: Select VPC for the subnet
@@ -42,7 +42,7 @@ All subnets in this section must be created in the same VPC `socai-dev-vpc`.
 
 Do not use subnets with CIDR `172.31.x.x` because those are subnets of the default VPC, not the project VPC.
 
-![Select VPC for Subnet](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-02-02-setting-subnet.jpg)
+![Select VPC for Subnet](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-02-02-setting-subnet.jpg)
 
 
 ## Step 3: Check Public Subnets
@@ -70,7 +70,7 @@ Destination: 0.0.0.0/0
 Target: Internet Gateway
 ```
 
-![Public Subnets](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-02-03-public-subnet-settings.jpg)
+![Public Subnets](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-02-03-public-subnet-settings.jpg)
 
 
 ## Step 4: Check Private App Subnets
@@ -93,7 +93,7 @@ IPv4 CIDR: 10.20.144.0/20
 
 Backend EC2 in private subnets should not receive traffic directly from the Internet. If public access is needed, requests should go through ALB or CloudFront depending on the final architecture.
 
-![Private App Subnets](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-02-04-private-app-subnet-settings.jpg)
+![Private App Subnets](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-02-04-private-app-subnet-settings.jpg)
 
 
 ## Step 5: Check Private DB Subnets
@@ -116,7 +116,7 @@ IPv4 CIDR: 10.20.33.0/24
 
 RDS usually needs a DB subnet group consisting of at least two subnets in two different Availability Zones. However, if the project is demonstrating Single-AZ to reduce costs, record the actual state correctly and do not claim Multi-AZ if it is not enabled.
 
-![Private DB Subnets](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-02-05-private-db-subnet-settings.jpg)
+![Private DB Subnets](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-02-05-private-db-subnet-settings.jpg)
 
 
 ## Step 6: Check Subnet List
@@ -149,7 +149,7 @@ Available
 
 Subnets with CIDR `172.31.x.x` belong to the default VPC and should not be used in this project.
 
-![Subnet List](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-02-06-subnet-list.jpg)
+![Subnet List](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-02-06-subnet-list.jpg)
 
 
 ## Step 7: Check Private App Subnet Details
@@ -171,7 +171,7 @@ Route table: socai-dev-rt-private-a
 
 Private app subnets are used for Backend EC2 or Worker. In a production-style architecture, this subnet should not be directly exposed to the Internet.
 
-![Private App Subnet Detail](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-02-07-private-app-subnet-detail.jpg)
+![Private App Subnet Detail](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-02-07-private-app-subnet-detail.jpg)
 
 
 ## Step 8: Check Private DB Subnet Details
@@ -193,7 +193,7 @@ Route table: socai-dev-rt-db
 
 Private DB subnets are used for RDS PostgreSQL. Database subnets should be kept private to avoid public exposure.
 
-![DB Subnet Detail](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-02-08-db-subnet-detail.jpg)
+![DB Subnet Detail](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-02-08-db-subnet-detail.jpg)
 
 
 ## Role of subnets in the workshop

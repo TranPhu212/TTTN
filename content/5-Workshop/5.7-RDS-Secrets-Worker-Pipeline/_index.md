@@ -31,21 +31,21 @@ RDS PostgreSQL is configured for private access. The database does not allow pub
 
 RDS PostgreSQL is available and running in Single-AZ mode to reduce demo cost.
 
-![RDS PostgreSQL Single-AZ summary](/fcaj-internship-report/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.1.png)
+![RDS PostgreSQL Single-AZ summary](/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.1.png)
 
 RDS uses private connectivity, public access is disabled, and the endpoint listens on port 5432.
 
-![RDS private connectivity and endpoint](/fcaj-internship-report/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.2.png)
+![RDS private connectivity and endpoint](/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.2.png)
 
 The Security Group allows only the backend/worker to access PostgreSQL on port 5432.
 
-![RDS security group inbound rule](/fcaj-internship-report/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.3.png)
+![RDS security group inbound rule](/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.3.png)
 
 #### Secrets Manager
 
 The RDS credential is stored in AWS Secrets Manager. When capturing screenshots, do not show secret values, passwords, or connection strings that include passwords.
 
-![RDS secret stored in Secrets Manager with value redacted](/fcaj-internship-report/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.4.png)
+![RDS secret stored in Secrets Manager with value ](/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.4.png)
 
 #### Test connectivity from EC2/Worker to RDS
 
@@ -57,13 +57,13 @@ timeout 5 bash -c '</dev/tcp/<RDS_ENDPOINT>/5432' \
   || echo "RDS port 5432 is not reachable"
 ```
 
-If you use `psql`, keep connection details as placeholders and do not include a real password in the markdown.
+If you use `psql`, keep connection details as s and do not include a real password in the markdown.
 
 ```bash
 psql "host=<RDS_ENDPOINT> port=5432 dbname=<DB_NAME> user=<DB_USER> sslmode=require"
 ```
 
-![RDS connectivity test from EC2 or worker](/fcaj-internship-report/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.5.png)
+![RDS connectivity test from EC2 or worker](/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.5.png)
 
 #### Check the final alerts table
 
@@ -80,7 +80,7 @@ LIMIT 5;
 
 If the actual table is `alerts`, replace `final_alerts` with `alerts`.
 
-![Final alerts table in PostgreSQL](/fcaj-internship-report/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.6.png)
+![Final alerts table in PostgreSQL](/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.6.png)
 
 #### Check the worker service
 
@@ -90,7 +90,7 @@ The AI Worker runs as a systemd service on the EC2 worker instance. The worker r
 sudo systemctl status socai-ai-worker --no-pager
 ```
 
-![AI worker systemd service status](/fcaj-internship-report/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.7.png)
+![AI worker systemd service status](/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.7.png)
 
 #### Worker processed message
 
@@ -101,7 +101,7 @@ echo "Screenshot: 5.7.8"
 sudo journalctl -u socai-ai-worker --no-pager | grep "processed message" | tail -n 5
 ```
 
-![AI worker processed SQS message](/fcaj-internship-report/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.8.png)
+![AI worker processed SQS message](/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.8.png)
 
 #### RDS final alert row
 
@@ -123,7 +123,7 @@ ORDER BY created_at DESC
 LIMIT 5;
 ```
 
-![Final alert row stored in RDS](/fcaj-internship-report/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.9.png)
+![Final alert row stored in RDS](/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.9.png)
 
 #### API latest alert
 
@@ -133,11 +133,11 @@ Finally, check the backend API to confirm that the alert can be read back from R
 curl -s http://127.0.0.1:8000/api/alerts/latest | python3 -m json.tool
 ```
 
-![Latest alert returned by backend API](/fcaj-internship-report/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.10.png)
+![Latest alert returned by backend API](/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.10.png)
 
 #### Security note
 
-> Do not include DB passwords, secret values, access keys, `.pem` files, tokens, or unredacted `.env` files in screenshots or workshop content.
+> Do not include DB passwords, secret values, access keys, `.pem` files, tokens, or un `.env` files in screenshots or workshop content.
 
 #### Troubleshooting
 

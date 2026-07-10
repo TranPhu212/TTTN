@@ -50,7 +50,7 @@ AWS Console
 
 The image below confirms that the AWS Console is set to the correct region **Asia Pacific (Singapore) - ap-southeast-1**.
 
-<img src="/fcaj-internship-report/images/5-Workshop/5.2-Prerequisites-and-Naming/w-trang-01-aws-region.jpg" alt="AWS Region" style="max-width: 500px !important; width: auto !important; height: auto !important; display: block !important; margin: 1.5rem auto !important;">
+<img src="/images/5-Workshop/5.2-Prerequisites-and-Naming/w-trang-01-aws-region.jpg" alt="AWS Region" style="max-width: 500px !important; width: auto !important; height: auto !important; display: block !important; margin: 1.5rem auto !important;">
 
 
 ## IAM Permission Check
@@ -84,7 +84,7 @@ This role will be attached to the EC2 Backend so the backend can call S3, SQS, a
 
 The image below shows the IAM Dashboard.
 
-![IAM Dashboard](/fcaj-internship-report/images/5-Workshop/5.2-Prerequisites-and-Naming/w-trang-02-iam-dashboard.jpg)
+![IAM Dashboard](/images/5-Workshop/5.2-Prerequisites-and-Naming/w-trang-02-iam-dashboard.jpg)
 
 
 ## Local Tools
@@ -118,7 +118,7 @@ git version 2.54.0.windows.1
 
 The image below demonstrates that the local machine has all the basic tools to continue the workshop.
 
-![Local Tools Version](/fcaj-internship-report/images/5-Workshop/5.2-Prerequisites-and-Naming/w-trang-03-local-tools-version.jpg)
+![Local Tools Version](/images/5-Workshop/5.2-Prerequisites-and-Naming/w-trang-03-local-tools-version.jpg)
 
 
 ## Naming Convention
@@ -140,11 +140,11 @@ The workshop uses a unified naming convention to easily manage resources in the 
 This convention helps the team easily find resources, hand over information, and avoid confusion between components like EC2 Backend, S3 bucket, SQS queue, and RDS database.
 
 
-## Placeholder Convention
+##  Convention
 
-Do not put real values or real secrets in the workshop. Values that change by environment should be written as placeholders.
+Do not put real values or real secrets in the workshop. Values that change by environment should be written as s.
 
-Main placeholders:
+Main s:
 
 ```text
 <AWS_REGION>
@@ -183,16 +183,16 @@ Do not put the following information in the workshop:
 - Private key `.pem`
 - Token or API key
 - Secret value
-- Unredacted `.env` content
+- Un `.env` content
 - Full account ID if not needed
 
-If you need to illustrate configuration, only use redacted form:
+If you need to illustrate configuration, only use  form:
 
 ```text
-DATABASE_URL=<redacted>
-SQS_QUEUE_URL=<redacted>
+DATABASE_URL=<>
+SQS_QUEUE_URL=<>
 S3_DATA_BUCKET=socai-data-bucket-...
-RDS_SECRET_ID=<redacted>
+RDS_SECRET_ID=<>
 ```
 
 

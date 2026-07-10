@@ -12,21 +12,21 @@ Gắn AWS WAF vào CloudFront entrypoint. WAF bảo vệ edge layer của dashbo
 
 Màn hình create Web ACL ghi lại cấu hình WAF ban đầu cho CloudFront scope.
 
-![Create WAF Web ACL](/fcaj-internship-report/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-30-waf-create-web-acl.png)
+![Create WAF Web ACL](/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-30-waf-create-web-acl.png)
 
 Associated resource evidence xác nhận Web ACL đã gắn với CloudFront distribution.
 
-![WAF associated CloudFront resource](/fcaj-internship-report/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-31-waf-associated-cloudfront.png)
+![WAF associated CloudFront resource](/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-31-waf-associated-cloudfront.png)
 
 Rules list cho thấy các protection đang bật cho edge entrypoint.
 
-![WAF rules list](/fcaj-internship-report/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-32-waf-rules-list.png)
+![WAF rules list](/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-32-waf-rules-list.png)
 
 Rule scope note rất quan trọng với project này: payload SQL injection hoặc XSS có thể là SOC input hợp lệ, nên WAF cần bảo vệ dashboard mà không phá demo ingestion.
 
-![WAF rule scope note](/fcaj-internship-report/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-33-waf-rule-scope-note.png)
+![WAF rule scope note](/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-33-waf-rule-scope-note.png)
 
-Nếu WAF logging chưa cấu hình đầy đủ, giữ wording là placeholder thay vì claim centralized WAF logging.
+Nếu WAF logging chưa cấu hình đầy đủ, giữ wording là  thay vì claim centralized WAF logging.
 
-![WAF metrics and logging placeholder](/fcaj-internship-report/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-34-waf-metrics-logging-placeholder.png)
+![WAF metrics and logging ](/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-34-waf-metrics-logging.png)
 

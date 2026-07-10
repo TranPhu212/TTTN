@@ -21,21 +21,21 @@ Cấu hình khuyến nghị:
 
 Màn hình create bucket ghi lại cấu hình bucket dùng cho frontend static assets.
 
-![Create S3 static bucket](/fcaj-internship-report/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-05-s3-static-create-bucket.png)
+![Create S3 static bucket](/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-05-s3-static-create-bucket.png)
 
 Bucket overview xác nhận static frontend bucket đã tồn tại trong AWS Region đã chọn.
 
-![S3 static bucket overview](/fcaj-internship-report/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-06-s3-static-bucket-overview.png)
+![S3 static bucket overview](/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-06-s3-static-bucket-overview.png)
 
 Block Public Access vẫn bật vì CloudFront đọc bucket qua OAC, không dùng public S3 website hosting.
 
-![S3 block public access](/fcaj-internship-report/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-07-s3-static-block-public-access.png)
+![S3 block public access](/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-07-s3-static-block-public-access.png)
 
 Default encryption bảo vệ frontend objects khi lưu trữ.
 
-![S3 default encryption](/fcaj-internship-report/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-08-s3-static-encryption.png)
+![S3 default encryption](/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-08-s3-static-encryption.png)
 
 Tags giúp phân biệt frontend delivery resources với backend data pipeline resources.
 
-![S3 static bucket tags](/fcaj-internship-report/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-09-s3-static-tags.png)
+![S3 static bucket tags](/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-09-s3-static-tags.png)
 

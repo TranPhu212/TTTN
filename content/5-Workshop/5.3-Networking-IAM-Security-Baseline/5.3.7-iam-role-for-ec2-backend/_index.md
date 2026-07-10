@@ -23,7 +23,7 @@ socai-backend-role
 
 If the actual role name on AWS is different, you need to write the exact real name from the console.
 
-![IAM Backend Role Summary](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-07-01-iam-backend-role-summary.jpg)
+![IAM Backend Role Summary](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-07-01-iam-backend-role-summary.jpg)
 
 ## Step 2: Check Role Summary
 
@@ -68,7 +68,7 @@ logs:PutLogEvents
 kms:Decrypt
 ```
 
-![IAM Backend Permissions](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-07-02-iam-backend-permissions.jpg)
+![IAM Backend Permissions](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-07-02-iam-backend-permissions.jpg)
 
 ## Step 4: Check Trust Relationship
 
@@ -97,7 +97,7 @@ Example trust policy:
 }
 ```
 
-![IAM Trust Policy EC2](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-07-03-iam-trust-policy-ec2.jpg)
+![IAM Trust Policy EC2](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-07-03-iam-trust-policy-ec2.jpg)
 
 ## Step 5: Check if the Role is Attached to EC2 Backend
 
@@ -147,7 +147,7 @@ Do not include the following information in screenshots or markdown:
 - DB password.
 - Private key `.pem`.
 - Token or API key.
-- Unredacted `.env` content.
+- Un `.env` content.
 
 If the policy has a resource ARN containing an account ID, you can crop or redact the account ID if not necessary.
 

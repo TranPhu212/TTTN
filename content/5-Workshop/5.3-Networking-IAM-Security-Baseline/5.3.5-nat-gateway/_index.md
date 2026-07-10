@@ -24,7 +24,7 @@ socai-dev-nat-a
 
 The image below shows that the NAT Gateway is in `Available` state.
 
-![NAT Gateway List](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-05-01-nat-gateway-list.jpg)
+![NAT Gateway List](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-05-01-nat-gateway-list.jpg)
 
 ## Step 2: Check NAT Gateway details
 
@@ -47,7 +47,7 @@ Primary Public IPv4: 47.131.186.17
 
 NAT Gateway is located in public subnet `social-dev-public-subnet-a`, this is the correct configuration because NAT Gateway needs a path to the Internet via Internet Gateway.
 
-![NAT Gateway Detail](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-05-02-nat-gateway-detail.jpg)
+![NAT Gateway Detail](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-05-02-nat-gateway-detail.jpg)
 
 ## Step 3: Identify private subnets using NAT Gateway
 
@@ -71,7 +71,7 @@ Target: nat-0a7e6ff8f16b60be7
 
 The image below shows the private app subnets belonging to VPC `socai-dev-vpc`.
 
-![Private App Subnets](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-05-03-private-app-subnets.jpg)
+![Private App Subnets](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-05-03-private-app-subnets.jpg)
 
 ## Role of NAT Gateway in the workshop
 

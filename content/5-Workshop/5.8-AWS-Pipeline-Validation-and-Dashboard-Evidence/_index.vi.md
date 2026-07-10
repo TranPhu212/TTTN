@@ -64,7 +64,7 @@ Expected response có thể chứa:
 }
 ```
 
-![SQS and S3 evidence for AWS pipeline](/fcaj-internship-report/images/5-Workshop/5.8-AWS-Pipeline-Validation-and-Dashboard-Evidence/5.8.1.png)
+![SQS and S3 evidence for AWS pipeline](/images/5-Workshop/5.8-AWS-Pipeline-Validation-and-Dashboard-Evidence/5.8.1.png)
 
 #### Kiểm tra Worker/RDS evidence
 
@@ -86,7 +86,7 @@ LIMIT 5;
 
 Nếu table thực tế là `alerts`, thay `final_alerts` bằng `alerts`.
 
-![Worker processed event and RDS validation](/fcaj-internship-report/images/5-Workshop/5.8-AWS-Pipeline-Validation-and-Dashboard-Evidence/5.8.2.png)
+![Worker processed event and RDS validation](/images/5-Workshop/5.8-AWS-Pipeline-Validation-and-Dashboard-Evidence/5.8.2.png)
 
 #### Kiểm tra API/Dashboard alert
 
@@ -107,7 +107,7 @@ echo "Screenshot: 5.8.3"
 curl -s http://127.0.0.1:8000/api/alerts/latest | python3 -m json.tool
 ```
 
-![Latest alert with AI analysis and MITRE mapping](/fcaj-internship-report/images/5-Workshop/5.8-AWS-Pipeline-Validation-and-Dashboard-Evidence/5.8.3.png)
+![Latest alert with AI analysis and MITRE mapping](/images/5-Workshop/5.8-AWS-Pipeline-Validation-and-Dashboard-Evidence/5.8.3.png)
 
 #### Troubleshooting
 
@@ -128,4 +128,4 @@ Kết quả validation cho thấy pipeline AWS đã hoạt động theo thin-sli
 
 Phần này không claim Local Lab hoặc production HA. Auto Scaling, CloudTrail và SNS email notification là các phần mở rộng/section riêng do thành viên khác hoàn thiện.
 
-> Không đưa DB password, secret value, access key, account ID, ARN đầy đủ, endpoint private, IP nội bộ thật, `.pem`, token hoặc file `.env` chưa redacted vào screenshot/workshop.
+> Không đưa DB password, secret value, access key, account ID, ARN đầy đủ, endpoint private, IP nội bộ thật, `.pem`, token hoặc file `.env` chưa  vào screenshot/workshop.

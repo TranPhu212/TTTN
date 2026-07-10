@@ -15,7 +15,7 @@ Document the Fusion schema and how model signals should become a final alert con
 
 Fusion combines AI outputs and security evidence into one final alert object with fields such as event ID, model results, severity, risk score, confidence score, reason, and downstream storage target.
 
-![Fusion schema](/fcaj-internship-report/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-tin-21-fusion-schema.png)
+![Fusion schema](/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-tin-21-fusion-schema.png)
 
 ## Decision flow
 

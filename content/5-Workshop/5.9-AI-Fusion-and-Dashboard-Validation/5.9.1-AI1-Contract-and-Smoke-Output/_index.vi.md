@@ -32,4 +32,4 @@ AI1 nên trả về model name, input type, prediction, anomaly score, confidenc
 
 Screenshot dưới đây chứng minh shape của example output. Ảnh này không claim production model integration.
 
-![AI1 output example](/fcaj-internship-report/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-tin-20-ai1-output-example.png)
+![AI1 output example](/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-tin-20-ai1-output-example.png)

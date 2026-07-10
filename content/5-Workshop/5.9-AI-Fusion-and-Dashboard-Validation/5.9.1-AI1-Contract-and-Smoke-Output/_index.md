@@ -32,4 +32,4 @@ AI1 should return model name, input type, prediction, anomaly score, confidence 
 
 The screenshot below proves the example output shape. It does not claim production model integration.
 
-![AI1 output example](/fcaj-internship-report/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-tin-20-ai1-output-example.png)
+![AI1 output example](/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-tin-20-ai1-output-example.png)

@@ -15,13 +15,13 @@ Validate SQS và S3 thủ công trước khi có backend integration evidence.
 
 Dùng SQS console hoặc CloudShell để gửi test message vào `socai-dev-normalized-zeek-events-queue`. Bước này chứng minh queue nhận được message, nhưng không chứng minh backend integration.
 
-![Manual SQS test](/fcaj-internship-report/images/5-Workshop/5.6-SQS-DLQ-and-S3-Data-Bucket/w-tin-12-sqs-manual-test.png)
+![Manual SQS test](/images/5-Workshop/5.6-SQS-DLQ-and-S3-Data-Bucket/w-tin-12-sqs-manual-test.png)
 
 ## Bước 2: Upload manual S3 object
 
 Upload test object vào đúng Zeek HTTP prefix trong `socai-dev-data-************`. Bước này chứng minh bucket và prefix dùng được, nhưng không chứng minh backend đã gọi `put_object`.
 
-![Manual S3 object test](/fcaj-internship-report/images/5-Workshop/5.6-SQS-DLQ-and-S3-Data-Bucket/w-tin-13-s3-manual-object-test.png)
+![Manual S3 object test](/images/5-Workshop/5.6-SQS-DLQ-and-S3-Data-Bucket/w-tin-13-s3-manual-object-test.png)
 
 ## Kết quả
 

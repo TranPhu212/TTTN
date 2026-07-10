@@ -10,11 +10,11 @@ pre : " <b> 5.10.4. </b> "
 
 DevTools screenshots giúp tách lỗi frontend delivery khỏi lỗi backend hoặc pipeline.
 
-![DevTools static assets 200](/fcaj-internship-report/images/5-Workshop/5.10-Monitoring-Audit-Notification/w-phu-57-devtools-static-assets-200.png)
+![DevTools static assets 200](/images/5-Workshop/5.10-Monitoring-Audit-Notification/w-phu-57-devtools-static-assets-200.png)
 
-![DevTools API call mock or real](/fcaj-internship-report/images/5-Workshop/5.10-Monitoring-Audit-Notification/w-phu-58-devtools-api-call-mock-or-real.png)
+![DevTools API call mock or real](/images/5-Workshop/5.10-Monitoring-Audit-Notification/w-phu-58-devtools-api-call-mock-or-real.png)
 
-![DevTools console warnings](/fcaj-internship-report/images/5-Workshop/5.10-Monitoring-Audit-Notification/w-phu-60-devtools-console-warnings.png)
+![DevTools console warnings](/images/5-Workshop/5.10-Monitoring-Audit-Notification/w-phu-60-devtools-console-warnings.png)
 
 ## Troubleshooting checklist
 

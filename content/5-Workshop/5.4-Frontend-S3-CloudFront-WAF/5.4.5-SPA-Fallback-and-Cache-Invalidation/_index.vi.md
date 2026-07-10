@@ -19,25 +19,25 @@ Với single-page application, cấu hình custom error response:
 
 Custom error response 403 giúp route refresh hoạt động khi S3 từ chối lookup trực tiếp frontend path.
 
-![CloudFront 403 SPA fallback](/fcaj-internship-report/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-23-cloudfront-error-page-403.png)
+![CloudFront 403 SPA fallback](/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-23-cloudfront-error-page-403.png)
 
 Custom error response 404 xử lý các frontend route không tồn tại dưới dạng object vật lý trong S3.
 
-![CloudFront 404 SPA fallback](/fcaj-internship-report/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-24-cloudfront-error-page-404.png)
+![CloudFront 404 SPA fallback](/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-24-cloudfront-error-page-404.png)
 
 Browser evidence xác nhận refresh trực tiếp dashboard route vẫn load được ứng dụng.
 
-![Dashboard refresh route test](/fcaj-internship-report/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-25-dashboard-refresh-route-test.png)
+![Dashboard refresh route test](/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-25-dashboard-refresh-route-test.png)
 
 Sau khi upload build mới, tạo invalidation cho `/*` để người dùng nhận file mới nhất.
 
-![Create CloudFront invalidation](/fcaj-internship-report/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-35-cloudfront-create-invalidation.png)
+![Create CloudFront invalidation](/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-35-cloudfront-create-invalidation.png)
 
 Invalidation completed chứng minh CloudFront cache đã được refresh cho lần deploy.
 
-![CloudFront invalidation completed](/fcaj-internship-report/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-36-cloudfront-invalidation-completed.png)
+![CloudFront invalidation completed](/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-36-cloudfront-invalidation-completed.png)
 
 Dashboard evidence sau invalidation xác nhận build mới đã hiển thị qua CloudFront.
 
-![Dashboard after invalidation](/fcaj-internship-report/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-37-dashboard-after-invalidation.png)
+![Dashboard after invalidation](/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-37-dashboard-after-invalidation.png)
 

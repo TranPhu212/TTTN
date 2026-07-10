@@ -192,7 +192,7 @@ If CloudWatch Logs is configured, backend logs can be pushed to CloudWatch for c
 
 ## Architect
 
-![Hybrid SOC Architecture](/fcaj-internship-report/images/5-Workshop/5.1-Overview-and-Architecture/w-trang-01-architecture-overview.jpg)
+![Hybrid SOC Architecture](/images/5-Workshop/5.1-Overview-and-Architecture/w-trang-01-architecture-overview.jpg)
 
 ## Key Technologies
 
@@ -242,4 +242,4 @@ Local Lab
 
 Components like ALB, Target Group, Auto Scaling Group, CloudTrail, and SNS should only be noted as extensions if there is no actual configuration evidence on AWS Console.
 
-The backend is currently being updated with source code to add boto3 integration for S3 and SQS. Therefore, the next section will focus on checking EC2 runtime, systemd service, `/health` endpoint, and placing a placeholder for the `/api/events/http/async` endpoint until the new source is ready.
+The backend is currently being updated with source code to add boto3 integration for S3 and SQS. Therefore, the next section will focus on checking EC2 runtime, systemd service, `/health` endpoint, and placing a  for the `/api/events/http/async` endpoint until the new source is ready.

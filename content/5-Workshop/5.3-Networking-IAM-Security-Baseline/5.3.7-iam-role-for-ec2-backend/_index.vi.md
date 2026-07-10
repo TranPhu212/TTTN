@@ -23,7 +23,7 @@ socai-backend-role
 
 Nếu role thực tế trên AWS đang dùng tên khác, cần ghi đúng theo tên thật trong console.
 
-![IAM Backend Role Summary](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-07-01-iam-backend-role-summary.jpg)
+![IAM Backend Role Summary](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-07-01-iam-backend-role-summary.jpg)
 
 ## Bước 2: Kiểm tra Role Summary
 
@@ -68,7 +68,7 @@ logs:PutLogEvents
 kms:Decrypt
 ```
 
-![IAM Backend Permissions](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-07-02-iam-backend-permissions.jpg)
+![IAM Backend Permissions](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-07-02-iam-backend-permissions.jpg)
 
 ## Bước 4: Kiểm tra Trust Relationship
 
@@ -97,7 +97,7 @@ Ví dụ trust policy:
 }
 ```
 
-![IAM Trust Policy EC2](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-07-03-iam-trust-policy-ec2.jpg)
+![IAM Trust Policy EC2](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-07-03-iam-trust-policy-ec2.jpg)
 
 ## Bước 5: Kiểm tra role đã gắn vào EC2 Backend
 

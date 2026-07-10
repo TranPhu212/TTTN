@@ -19,12 +19,12 @@ Trên AWS Console, mở dịch vụ **VPC**, sau đó chọn **Internet gateways
 
 Nếu chưa có Internet Gateway cho project, chọn **Create internet gateway**.
 
-![Create Internet Gateway](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-04-01-create-internet-gateway.jpg)
+![Create Internet Gateway](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-04-01-create-internet-gateway.jpg)
 
 ## Bước 2: Tạo Internet Gateway
 
 Ở màn hình tạo Internet Gateway, nhập tên:
-![Internet Gateway Settings](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-04-02-internet-gateway-settings.jpg)
+![Internet Gateway Settings](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-04-02-internet-gateway-settings.jpg)
 
 Sau đó chọn **Create internet gateway**.
 
@@ -55,7 +55,7 @@ VPC: socai-dev-vpc
 VPC ID: vpc-04c78e55ae4ceec8a
 ```
 
-![Internet Gateway Attached](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-04-03-internet-gateway-attached.jpg)
+![Internet Gateway Attached](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-04-03-internet-gateway-attached.jpg)
 
 
 ## Vai trò trong workshop

@@ -12,33 +12,33 @@ Document CloudTrail, SNS, and DLQ alarm evidence without over-claiming productio
 
 CloudTrail trail evidence has been captured, including logging and log delivery, but the production audit scope should be verified before claiming full operational coverage.
 
-![CloudTrail placeholder or status](/fcaj-internship-report/images/5-Workshop/5.10-Monitoring-Audit-Notification/w-phu-65-cloudtrail-placeholder.png)
+![CloudTrail  or status](/images/5-Workshop/5.10-Monitoring-Audit-Notification/w-phu-65-cloudtrail.png)
 
-![CloudTrail event history](/fcaj-internship-report/images/5-Workshop/5.10-Monitoring-Audit-Notification/w-phu-66-cloudtrail-event-history.png)
+![CloudTrail event history](/images/5-Workshop/5.10-Monitoring-Audit-Notification/w-phu-66-cloudtrail-event-history.png)
 
-![CloudTrail trail after config](/fcaj-internship-report/images/5-Workshop/5.10-Monitoring-Audit-Notification/w-phu-67-cloudtrail-trail-after-config.png)
+![CloudTrail trail after config](/images/5-Workshop/5.10-Monitoring-Audit-Notification/w-phu-67-cloudtrail-trail-after-config.png)
 
 Tin's supplementary CloudTrail screenshots can be used as configured AWS evidence when present.
 
-![CloudTrail trail detail](/fcaj-internship-report/images/5-Workshop/5.10-Monitoring-Audit-Notification/w-tin-22-cloudtrail-trail-detail.png)
+![CloudTrail trail detail](/images/5-Workshop/5.10-Monitoring-Audit-Notification/w-tin-22-cloudtrail-trail-detail.png)
 
-![CloudTrail S3 log object](/fcaj-internship-report/images/5-Workshop/5.10-Monitoring-Audit-Notification/w-tin-24-cloudtrail-s3-log-object.png)
+![CloudTrail S3 log object](/images/5-Workshop/5.10-Monitoring-Audit-Notification/w-tin-24-cloudtrail-s3-log-object.png)
 
 SNS subscription evidence shows a `Confirmed` email subscription, but alarm email delivery is not claimed without mailbox evidence.
 
-![SNS placeholder or status](/fcaj-internship-report/images/5-Workshop/5.10-Monitoring-Audit-Notification/w-phu-68-sns-placeholder.png)
+![SNS  or status](/images/5-Workshop/5.10-Monitoring-Audit-Notification/w-phu-68-sns.png)
 
-![SNS topic after config](/fcaj-internship-report/images/5-Workshop/5.10-Monitoring-Audit-Notification/w-phu-69-sns-topic-after-config.png)
+![SNS topic after config](/images/5-Workshop/5.10-Monitoring-Audit-Notification/w-phu-69-sns-topic-after-config.png)
 
-![SNS subscription after config](/fcaj-internship-report/images/5-Workshop/5.10-Monitoring-Audit-Notification/w-phu-70-sns-subscription-after-config.png)
+![SNS subscription after config](/images/5-Workshop/5.10-Monitoring-Audit-Notification/w-phu-70-sns-subscription-after-config.png)
 
-![SNS subscription confirmed](/fcaj-internship-report/images/5-Workshop/5.10-Monitoring-Audit-Notification/w-tin-25-sns-subscription-confirmed.png)
+![SNS subscription confirmed](/images/5-Workshop/5.10-Monitoring-Audit-Notification/w-tin-25-sns-subscription-confirmed.png)
 
 DLQ CloudWatch Alarm evidence shows the alarm state and enabled actions, but SNS action target and email delivery are not claimed unless visible in the captured evidence.
 
-![CloudWatch DLQ alarm detail](/fcaj-internship-report/images/5-Workshop/5.10-Monitoring-Audit-Notification/w-tin-26-cloudwatch-dlq-alarm-detail.png)
+![CloudWatch DLQ alarm detail](/images/5-Workshop/5.10-Monitoring-Audit-Notification/w-tin-26-cloudwatch-dlq-alarm-detail.png)
 
 The SNS test notification screenshot can be included only as evidence for the visible test scope.
 
-![SNS test notification](/fcaj-internship-report/images/5-Workshop/5.10-Monitoring-Audit-Notification/w-phu-71-sns-test-notification.png)
+![SNS test notification](/images/5-Workshop/5.10-Monitoring-Audit-Notification/w-phu-71-sns-test-notification.png)
 

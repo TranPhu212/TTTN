@@ -10,31 +10,31 @@ pre : " <b> 5.9.4. </b> "
 
 The dashboard overview confirms the main SOC interface can load and present analyst workflow sections.
 
-![Dashboard overview](/fcaj-internship-report/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-phu-48-dashboard-overview.png)
+![Dashboard overview](/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-phu-48-dashboard-overview.png)
 
 KPI and visual analytics evidence validates summary cards and chart layout.
 
-![Dashboard KPI detail](/fcaj-internship-report/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-phu-49-dashboard-kpi-detail.png)
+![Dashboard KPI detail](/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-phu-49-dashboard-kpi-detail.png)
 
-![Dashboard visual analytics](/fcaj-internship-report/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-phu-50-dashboard-visual-analytics.png)
+![Dashboard visual analytics](/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-phu-50-dashboard-visual-analytics.png)
 
 The alert table shows the list-oriented analyst workflow. If the data is mock or replay, keep that wording explicit.
 
-![Dashboard alert table](/fcaj-internship-report/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-phu-51-dashboard-alert-table.png)
+![Dashboard alert table](/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-phu-51-dashboard-alert-table.png)
 
 MITRE and event detail evidence show that an alert can be enriched with investigation context.
 
-![Dashboard MITRE badge](/fcaj-internship-report/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-phu-52-dashboard-mitre-badge.png)
+![Dashboard MITRE badge](/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-phu-52-dashboard-mitre-badge.png)
 
-![Dashboard event detail evidence](/fcaj-internship-report/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-phu-53-dashboard-event-detail-evidence.png)
+![Dashboard event detail evidence](/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-phu-53-dashboard-event-detail-evidence.png)
 
 The decision flow view explains how AI and evidence can be presented to the analyst.
 
-![Dashboard decision flow](/fcaj-internship-report/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-phu-54-dashboard-decision-flow.png)
+![Dashboard decision flow](/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-phu-54-dashboard-decision-flow.png)
 
 If real backend alert evidence is used, describe the validated path precisely.
 
-![Dashboard real alert after backend](/fcaj-internship-report/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-phu-56-dashboard-real-alert-after-backend.png)
+![Dashboard real alert after backend](/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-phu-56-dashboard-real-alert-after-backend.png)
 
 ## Limits
 

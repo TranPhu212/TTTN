@@ -18,7 +18,7 @@ In this section, we will check:
 - Python runtime and dependencies.
 - systemd service.
 - Health endpoint `/health`.
-- Placeholder for async endpoint after backend source is complete.
+-  for async endpoint after backend source is complete.
 
 ## Step 1: Check EC2 Instances List
 
@@ -38,7 +38,7 @@ socai-dev-ai-worker-01
 
 The image below shows the list of EC2 instances in the project.
 
-![EC2 Instance List](/fcaj-internship-report/images/5-Workshop/5.5-Backend-EC2-Runtime/w-trang-04-01-ec2-instance-list.jpg)
+![EC2 Instance List](/images/5-Workshop/5.5-Backend-EC2-Runtime/w-trang-04-01-ec2-instance-list.jpg)
 
 ## Step 2: Check Backend EC2 Status
 
@@ -59,7 +59,7 @@ Public IPv4 address: -
 
 Instance does not have Public IPv4, which means the backend is not directly exposed to the Internet. This is appropriate when the backend is in a private network and receives traffic through ALB or appropriate network layers.
 
-![EC2 Backend Summary](/fcaj-internship-report/images/5-Workshop/5.5-Backend-EC2-Runtime/w-trang-04-02-ec2-backend-summary.jpg)
+![EC2 Backend Summary](/images/5-Workshop/5.5-Backend-EC2-Runtime/w-trang-04-02-ec2-backend-summary.jpg)
 
 ## Step 3: Connect to EC2 Backend
 
@@ -81,7 +81,7 @@ sh-5.2$
 
 This proves that the implementer has connected to the backend server.
 
-![EC2 Connect Success](/fcaj-internship-report/images/5-Workshop/5.5-Backend-EC2-Runtime/w-trang-04-03-ec2-connect-success.jpg)
+![EC2 Connect Success](/images/5-Workshop/5.5-Backend-EC2-Runtime/w-trang-04-03-ec2-connect-success.jpg)
 
 ## Step 4: Check Basic Commands on EC2
 
@@ -94,7 +94,7 @@ ls -la
 
 The current result shows that commands have run successfully on EC2.
 
-![Basic Command Check](/fcaj-internship-report/images/5-Workshop/5.5-Backend-EC2-Runtime/w-trang-04-04-basic-command-check.jpg)
+![Basic Command Check](/images/5-Workshop/5.5-Backend-EC2-Runtime/w-trang-04-04-basic-command-check.jpg)
 
 Note: this image proves access and operations have been able to operate on EC2. If you need to go to the correct backend source directory and run additional commands to prove more detailed backend source:
 
@@ -124,7 +124,7 @@ Where:
 - `fastapi`: framework used to build backend API.
 - `uvicorn`: ASGI server used to run FastAPI.
 
-![Runtime FastAPI Uvicorn](/fcaj-internship-report/images/5-Workshop/5.5-Backend-EC2-Runtime/w-trang-04-05-runtime-fastapi-uvicorn.jpg)
+![Runtime FastAPI Uvicorn](/images/5-Workshop/5.5-Backend-EC2-Runtime/w-trang-04-05-runtime-fastapi-uvicorn.jpg)
 
 ## Step 6: Check boto3 and botocore Dependencies
 
@@ -152,7 +152,7 @@ Where:
 
 `boto3` and `botocore` are needed for the backend to integrate with S3 and SQS.
 
-![Backend Dependencies Boto3](/fcaj-internship-report/images/5-Workshop/5.5-Backend-EC2-Runtime/w-trang-04-06-backend-dependencies-boto3.jpg)
+![Backend Dependencies Boto3](/images/5-Workshop/5.5-Backend-EC2-Runtime/w-trang-04-06-backend-dependencies-boto3.jpg)
 
 ## Step 7: Check systemd service
 
@@ -179,7 +179,7 @@ Active: active (running)
 
 This proves that the backend service is running stably on EC2. The systemd logs also show that the backend receives `/health` request and returns `200 OK`.
 
-![Systemctl Backend Active](/fcaj-internship-report/images/5-Workshop/5.5-Backend-EC2-Runtime/w-trang-04-07-systemctl-backend-active.jpg)
+![Systemctl Backend Active](/images/5-Workshop/5.5-Backend-EC2-Runtime/w-trang-04-07-systemctl-backend-active.jpg)
 
 ## Step 8: Test health endpoint
 
@@ -201,7 +201,7 @@ content-type: application/json
 
 This proves that the `socai-backend` service is running successfully on EC2.
 
-![Health Local Response](/fcaj-internship-report/images/5-Workshop/5.5-Backend-EC2-Runtime/w-trang-04-08-health-local-response.jpg)
+![Health Local Response](/images/5-Workshop/5.5-Backend-EC2-Runtime/w-trang-04-08-health-local-response.jpg)
 
 Since the backend instance currently does not have Public IPv4, so health check is tested locally within EC2. If later the backend is exposed via ALB or CloudFront, you can test:
 
@@ -210,7 +210,7 @@ curl -i http://<ALB_DNS_NAME>/health
 curl -i https://<CLOUDFRONT_DOMAIN>/health
 ```
 
-## Step 9: Placeholder for async ingestion endpoint
+## Step 9:  for async ingestion endpoint
 
 The `/api/events/http/async endpoint receives HTTP evidence from the collector or tailer.
 

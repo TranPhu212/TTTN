@@ -15,7 +15,7 @@ Ghi lại Fusion schema và cách model signals được chuyển thành final a
 
 Fusion kết hợp AI outputs và security evidence thành một final alert object với các field như event ID, model results, severity, risk score, confidence score, reason và downstream storage target.
 
-![Fusion schema](/fcaj-internship-report/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-tin-21-fusion-schema.png)
+![Fusion schema](/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-tin-21-fusion-schema.png)
 
 ## Decision flow
 

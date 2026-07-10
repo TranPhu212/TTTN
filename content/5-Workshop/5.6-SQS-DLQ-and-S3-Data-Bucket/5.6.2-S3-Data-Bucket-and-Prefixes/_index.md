@@ -15,7 +15,7 @@ Verify the S3 Data Bucket and document the prefix convention used for raw eviden
 
 Open Amazon S3 and select `socai-dev-data-************`. This bucket is for SOC data, not static website hosting.
 
-![S3 data bucket overview](/fcaj-internship-report/images/5-Workshop/5.6-SQS-DLQ-and-S3-Data-Bucket/w-tin-05-s3-data-bucket-overview.png)
+![S3 data bucket overview](/images/5-Workshop/5.6-SQS-DLQ-and-S3-Data-Bucket/w-tin-05-s3-data-bucket-overview.png)
 
 ## Step 2: Review top-level prefixes
 
@@ -28,7 +28,7 @@ reports/
 exports/
 ```
 
-![S3 prefix structure](/fcaj-internship-report/images/5-Workshop/5.6-SQS-DLQ-and-S3-Data-Bucket/w-tin-07-s3-prefix-structure.png)
+![S3 prefix structure](/images/5-Workshop/5.6-SQS-DLQ-and-S3-Data-Bucket/w-tin-07-s3-prefix-structure.png)
 
 ## Step 3: Review Zeek prefixes
 
@@ -39,4 +39,4 @@ raw/zeek/http/
 raw/zeek/conn/
 ```
 
-![S3 Zeek prefixes](/fcaj-internship-report/images/5-Workshop/5.6-SQS-DLQ-and-S3-Data-Bucket/w-tin-08-s3-zeek-prefixes.png)
+![S3 Zeek prefixes](/images/5-Workshop/5.6-SQS-DLQ-and-S3-Data-Bucket/w-tin-08-s3-zeek-prefixes.png)

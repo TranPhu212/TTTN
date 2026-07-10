@@ -15,7 +15,7 @@ Xác minh S3 Data Bucket và ghi lại prefix convention dùng cho raw evidence,
 
 Mở Amazon S3 và chọn `socai-dev-data-************`. Bucket này dùng cho SOC data, không phải static website hosting.
 
-![S3 data bucket overview](/fcaj-internship-report/images/5-Workshop/5.6-SQS-DLQ-and-S3-Data-Bucket/w-tin-05-s3-data-bucket-overview.png)
+![S3 data bucket overview](/images/5-Workshop/5.6-SQS-DLQ-and-S3-Data-Bucket/w-tin-05-s3-data-bucket-overview.png)
 
 ## Bước 2: Kiểm tra top-level prefixes
 
@@ -28,7 +28,7 @@ reports/
 exports/
 ```
 
-![S3 prefix structure](/fcaj-internship-report/images/5-Workshop/5.6-SQS-DLQ-and-S3-Data-Bucket/w-tin-07-s3-prefix-structure.png)
+![S3 prefix structure](/images/5-Workshop/5.6-SQS-DLQ-and-S3-Data-Bucket/w-tin-07-s3-prefix-structure.png)
 
 ## Bước 3: Kiểm tra Zeek prefixes
 
@@ -39,4 +39,4 @@ raw/zeek/http/
 raw/zeek/conn/
 ```
 
-![S3 Zeek prefixes](/fcaj-internship-report/images/5-Workshop/5.6-SQS-DLQ-and-S3-Data-Bucket/w-tin-08-s3-zeek-prefixes.png)
+![S3 Zeek prefixes](/images/5-Workshop/5.6-SQS-DLQ-and-S3-Data-Bucket/w-tin-08-s3-zeek-prefixes.png)

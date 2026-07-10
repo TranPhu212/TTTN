@@ -28,17 +28,17 @@ Trước khi build, kiểm tra file môi trường production và redact giá tr
 
 Ảnh source folder cho thấy project dashboard và input dùng để build trong workshop.
 
-![Frontend source folder](/fcaj-internship-report/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-01-frontend-folder.png)
+![Frontend source folder](/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-01-frontend-folder.png)
 
 Ảnh môi trường giải thích frontend nhận API và WebSocket configuration như thế nào. Endpoint hoặc token nhạy cảm phải được redact.
 
-![Frontend environment redacted](/fcaj-internship-report/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-02-frontend-env-redacted.png)
+![Frontend environment ](/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-02-frontend-env.png)
 
 Build output xác nhận frontend compile thành công.
 
-![Frontend build success](/fcaj-internship-report/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-03-frontend-build-success.png)
+![Frontend build success](/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-03-frontend-build-success.png)
 
 Thư mục `dist/` là artifact sẽ được upload lên S3 Static Frontend Bucket.
 
-![Frontend dist folder](/fcaj-internship-report/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-04-frontend-dist-folder.png)
+![Frontend dist folder](/images/5-Workshop/5.4-Frontend-S3-CloudFront-WAF/w-phu-04-frontend-dist-folder.png)
 

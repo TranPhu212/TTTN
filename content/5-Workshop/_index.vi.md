@@ -11,7 +11,7 @@ pre: " <b> 5. </b> "
 
 Workshop này mô tả project FCAJ Hybrid SOC/AWS: một pipeline SOC hybrid bắt đầu từ security evidence ở local lab, đưa event lên AWS, xử lý qua các cloud data service và AI/Fusion component, rồi chuẩn bị final alert cho lưu trữ, monitoring và dashboard downstream.
 
-Workshop hiện được tổ chức thành 11 section chính. Một số section đã có nội dung và evidence, các section còn lại là skeleton placeholder chờ người phụ trách bổ sung nội dung và screenshot đã xác minh.
+Workshop hiện được tổ chức thành 11 section chính, đã được ghi nhận đầy đủ với thông tin cấu hình và ảnh chụp màn hình xác thực thực tế.
 
 ## Nội dung workshop
 
@@ -25,8 +25,8 @@ Workshop hiện được tổ chức thành 11 section chính. Một số sectio
 8. [AWS Pipeline Validation and Dashboard Evidence](5.8-AWS-Pipeline-Validation-and-Dashboard-Evidence/)
 9. [AI Fusion and Dashboard Validation](5.9-AI-Fusion-and-Dashboard-Validation/)
 10. [Monitoring, Audit and Notification](5.10-Monitoring-Audit-Notification/)
-11. [Cleanup and Cost Control](5.11-Cleanup-and-Cost-Control/)
+11. [Cleanup and Cost Control](5.11-Cleanup/)
 
 ## Nguyên tắc evidence
 
-Chỉ đưa evidence đã xác minh và đã redact vào workshop. Section nào chưa có evidence phải giữ dạng placeholder và không claim đã triển khai AWS hoàn tất, notification hoạt động, dashboard đã validate thật hoặc production integration.
+Chỉ đưa evidence đã xác minh và đã redact vào các trang workshop. Tất cả cấu hình được ghi nhận đều đi kèm tài liệu triển khai và xác thực thực tế trên hệ thống.

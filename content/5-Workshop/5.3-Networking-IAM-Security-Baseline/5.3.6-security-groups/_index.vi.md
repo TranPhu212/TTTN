@@ -41,7 +41,7 @@ VPC ID: vpc-0bc9182791a842901
 
 Hình dưới đây cho thấy các Security Group thuộc VPC `socai-dev-vpc`.
 
-![Security Groups List](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-06-01-security-groups-list.jpg)
+![Security Groups List](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-06-01-security-groups-list.jpg)
 
 ## Bước 2: Kiểm tra Backend Security Group
 
@@ -88,7 +88,7 @@ Client
 
 Hình dưới đây cho thấy inbound rule của `socai-dev-backend-sg`.
 
-![Backend Security Group Inbound](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-06-02-backend-sg-inbound.jpg)
+![Backend Security Group Inbound](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-06-02-backend-sg-inbound.jpg)
 
 ## Bước 4: Kiểm tra Outbound Rules
 
@@ -109,7 +109,7 @@ Trong môi trường demo, outbound mở rộng như trên giúp dễ kiểm th�
 
 Hình dưới đây cho thấy outbound rule của `socai-dev-backend-sg`.
 
-![Backend Security Group Outbound](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-06-03-backend-sg-outbound.jpg)
+![Backend Security Group Outbound](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-06-03-backend-sg-outbound.jpg)
 
 ## Vai trò các Security Groups trong project
 

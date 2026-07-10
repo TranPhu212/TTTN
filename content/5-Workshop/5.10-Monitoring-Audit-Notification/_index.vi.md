@@ -1,7 +1,7 @@
 ---
 title: "Monitoring, Audit and Notification"
 date: 2024-01-01
-weight: 60
+weight: 10
 chapter: false
 pre: "<b>5.10. </b>"
 ---

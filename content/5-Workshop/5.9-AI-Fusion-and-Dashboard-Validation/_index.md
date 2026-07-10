@@ -1,7 +1,7 @@
 ---
 title : "AI/Fusion and Dashboard Validation"
 date : 2024-01-01
-weight : 59
+weight : 9
 chapter : false
 pre : " <b> 5.9. </b> "
 ---

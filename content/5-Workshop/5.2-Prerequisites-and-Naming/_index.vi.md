@@ -50,7 +50,7 @@ AWS Console
 
 Hình dưới đây xác nhận AWS Console đang được đặt đúng region **Asia Pacific (Singapore) - ap-southeast-1**.
 
-<img src="/fcaj-internship-report/images/5-Workshop/5.2-Prerequisites-and-Naming/w-trang-01-aws-region.jpg" alt="AWS Region" style="max-width: 500px !important; width: auto !important; height: auto !important; display: block !important; margin: 1.5rem auto !important;">
+<img src="/images/5-Workshop/5.2-Prerequisites-and-Naming/w-trang-01-aws-region.jpg" alt="AWS Region" style="max-width: 500px !important; width: auto !important; height: auto !important; display: block !important; margin: 1.5rem auto !important;">
 
 
 ## IAM Permission Check
@@ -84,7 +84,7 @@ Role này sẽ được gắn vào EC2 Backend để backend có thể gọi S3,
 
 Hình dưới đây cho thấy IAM Dashboard.
 
-![IAM Dashboard](/fcaj-internship-report/images/5-Workshop/5.2-Prerequisites-and-Naming/w-trang-02-iam-dashboard.jpg)
+![IAM Dashboard](/images/5-Workshop/5.2-Prerequisites-and-Naming/w-trang-02-iam-dashboard.jpg)
 
 
 ## Local Tools
@@ -118,7 +118,7 @@ git version 2.54.0.windows.1
 
 Hình dưới đây chứng minh máy local đã có đủ các công cụ cơ bản để tiếp tục workshop.
 
-![Local Tools Version](/fcaj-internship-report/images/5-Workshop/5.2-Prerequisites-and-Naming/w-trang-03-local-tools-version.jpg)
+![Local Tools Version](/images/5-Workshop/5.2-Prerequisites-and-Naming/w-trang-03-local-tools-version.jpg)
 
 
 ## Naming Convention
@@ -140,11 +140,11 @@ Workshop sử dụng quy ước đặt tên thống nhất để dễ quản lý
 Quy ước này giúp nhóm dễ tìm resource, dễ bàn giao thông tin và tránh nhầm lẫn giữa các thành phần như EC2 Backend, S3 bucket, SQS queue và RDS database.
 
 
-## Placeholder Convention
+##  Convention
 
-Không đưa giá trị thật hoặc secret thật vào workshop. Các giá trị thay đổi theo môi trường cần được viết bằng placeholder.
+Không đưa giá trị thật hoặc secret thật vào workshop. Các giá trị thay đổi theo môi trường cần được viết bằng .
 
-Các placeholder chính:
+Các  chính:
 
 ```text
 <AWS_REGION>
@@ -189,10 +189,10 @@ Không đưa các thông tin sau vào workshop:
 Nếu cần minh họa cấu hình, chỉ dùng dạng đã che:
 
 ```text
-DATABASE_URL=<redacted>
-SQS_QUEUE_URL=<redacted>
+DATABASE_URL=<>
+SQS_QUEUE_URL=<>
 S3_DATA_BUCKET=socai-data-bucket-...
-RDS_SECRET_ID=<redacted>
+RDS_SECRET_ID=<>
 ```
 
 

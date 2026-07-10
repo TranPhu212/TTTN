@@ -64,7 +64,7 @@ The expected response can include:
 }
 ```
 
-![SQS and S3 evidence for AWS pipeline](/fcaj-internship-report/images/5-Workshop/5.8-AWS-Pipeline-Validation-and-Dashboard-Evidence/5.8.1.png)
+![SQS and S3 evidence for AWS pipeline](/images/5-Workshop/5.8-AWS-Pipeline-Validation-and-Dashboard-Evidence/5.8.1.png)
 
 #### Verify Worker/RDS evidence
 
@@ -86,7 +86,7 @@ LIMIT 5;
 
 If the actual table is `alerts`, replace `final_alerts` with `alerts`.
 
-![Worker processed event and RDS validation](/fcaj-internship-report/images/5-Workshop/5.8-AWS-Pipeline-Validation-and-Dashboard-Evidence/5.8.2.png)
+![Worker processed event and RDS validation](/images/5-Workshop/5.8-AWS-Pipeline-Validation-and-Dashboard-Evidence/5.8.2.png)
 
 #### Verify the API/Dashboard alert
 
@@ -107,7 +107,7 @@ echo "Screenshot: 5.8.3"
 curl -s http://127.0.0.1:8000/api/alerts/latest | python3 -m json.tool
 ```
 
-![Latest alert with AI analysis and MITRE mapping](/fcaj-internship-report/images/5-Workshop/5.8-AWS-Pipeline-Validation-and-Dashboard-Evidence/5.8.3.png)
+![Latest alert with AI analysis and MITRE mapping](/images/5-Workshop/5.8-AWS-Pipeline-Validation-and-Dashboard-Evidence/5.8.3.png)
 
 #### Troubleshooting
 
@@ -128,4 +128,4 @@ The validation result shows that the AWS pipeline works as a thin-slice end-to-e
 
 This section does not claim Local Lab or production HA. Auto Scaling, CloudTrail, and SNS email notification are separate extension sections handled by other team members.
 
-> Do not include DB passwords, secret values, access keys, full account IDs, full ARNs, private endpoints, real internal IPs, `.pem` files, tokens, or unredacted `.env` files in screenshots or workshop content.
+> Do not include DB passwords, secret values, access keys, full account IDs, full ARNs, private endpoints, real internal IPs, `.pem` files, tokens, or un `.env` files in screenshots or workshop content.

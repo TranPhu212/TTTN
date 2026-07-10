@@ -41,7 +41,7 @@ VPC ID: vpc-0bc9182791a842901
 
 The image below shows the Security Groups belonging to VPC `socai-dev-vpc`.
 
-![Security Groups List](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-06-01-security-groups-list.jpg)
+![Security Groups List](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-06-01-security-groups-list.jpg)
 
 ## Step 2: Check Backend Security Group
 
@@ -88,7 +88,7 @@ Client
 
 The image below shows the inbound rule of `socai-dev-backend-sg`.
 
-![Backend Security Group Inbound](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-06-02-backend-sg-inbound.jpg)
+![Backend Security Group Inbound](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-06-02-backend-sg-inbound.jpg)
 
 ## Step 4: Check Outbound Rules
 
@@ -109,7 +109,7 @@ In the demo environment, the wide outbound like this makes testing easier. In a 
 
 The image below shows the outbound rule of `socai-dev-backend-sg`.
 
-![Backend Security Group Outbound](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-06-03-backend-sg-outbound.jpg)
+![Backend Security Group Outbound](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-06-03-backend-sg-outbound.jpg)
 
 ## Role of Security Groups in the project
 

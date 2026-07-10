@@ -17,7 +17,7 @@ Trong phần này, chúng ta sẽ kiểm tra:
 - Python runtime và dependencies.
 - systemd service.
 - Endpoint health `/health`.
-- Placeholder cho async endpoint sau khi hoàn thành backend source.
+-  cho async endpoint sau khi hoàn thành backend source.
 
 ## Bước 1: Kiểm tra danh sách EC2 Instances
 
@@ -35,7 +35,7 @@ socai-dev-ai-worker-01
 
 Hình dưới đây cho thấy danh sách EC2 instances trong dự án.
 
-![EC2 Instance List](/fcaj-internship-report/images/5-Workshop/5.5-Backend-EC2-Runtime/w-trang-04-01-ec2-instance-list.jpg)
+![EC2 Instance List](/images/5-Workshop/5.5-Backend-EC2-Runtime/w-trang-04-01-ec2-instance-list.jpg)
 
 ## Bước 2: Kiểm tra trạng thái Backend EC2
 
@@ -55,7 +55,7 @@ Public IPv4 address: -
 
 Instance không có Public IPv4, điều này có nghĩa là backend không được expose trực tiếp ra Internet. Điều này phù hợp khi backend nằm trong mạng riêng và nhận traffic thông qua ALB hoặc các lớp mạng phù hợp.
 
-![EC2 Backend Summary](/fcaj-internship-report/images/5-Workshop/5.5-Backend-EC2-Runtime/w-trang-04-02-ec2-backend-summary.jpg)
+![EC2 Backend Summary](/images/5-Workshop/5.5-Backend-EC2-Runtime/w-trang-04-02-ec2-backend-summary.jpg)
 
 ## Bước 3: Kết nối đến EC2 Backend
 
@@ -75,7 +75,7 @@ sh-5.2$
 
 Điều này chứng minh người thực hiện đã kết nối được đến backend server.
 
-![EC2 Connect Success](/fcaj-internship-report/images/5-Workshop/5.5-Backend-EC2-Runtime/w-trang-04-03-ec2-connect-success.jpg)
+![EC2 Connect Success](/images/5-Workshop/5.5-Backend-EC2-Runtime/w-trang-04-03-ec2-connect-success.jpg)
 
 ## Bước 4: Kiểm tra lệnh cơ bản trên EC2
 
@@ -88,7 +88,7 @@ ls -la
 
 Kết quả hiện tại cho thấy các lệnh đã chạy thành công trên EC2.
 
-![Basic Command Check](/fcaj-internship-report/images/5-Workshop/5.5-Backend-EC2-Runtime/w-trang-04-04-basic-command-check.jpg)
+![Basic Command Check](/images/5-Workshop/5.5-Backend-EC2-Runtime/w-trang-04-04-basic-command-check.jpg)
 
 Lưu ý: hình này chứng minh truy cập và thao tác đã có thể hoạt động trên EC2. Nếu cần đến đúng thư mục backend source và chạy thêm lệnh để chứng minh backend source chi tiết hơn:
 ```bash
@@ -115,7 +115,7 @@ Trong đó:
 - `fastapi`: framework dùng để xây dựng backend API.
 - `uvicorn`: ASGI server dùng để chạy FastAPI.
 
-![Runtime FastAPI Uvicorn](/fcaj-internship-report/images/5-Workshop/5.5-Backend-EC2-Runtime/w-trang-04-05-runtime-fastapi-uvicorn.jpg)
+![Runtime FastAPI Uvicorn](/images/5-Workshop/5.5-Backend-EC2-Runtime/w-trang-04-05-runtime-fastapi-uvicorn.jpg)
 
 ## Bước 6: Kiểm tra boto3 và botocore Dependencies
 
@@ -141,7 +141,7 @@ Trong đó:
 
 `boto3` và `botocore` cần thiết để backend tích hợp với S3 và SQS.
 
-![Backend Dependencies Boto3](/fcaj-internship-report/images/5-Workshop/5.5-Backend-EC2-Runtime/w-trang-04-06-backend-dependencies-boto3.jpg)
+![Backend Dependencies Boto3](/images/5-Workshop/5.5-Backend-EC2-Runtime/w-trang-04-06-backend-dependencies-boto3.jpg)
 
 ## Bước 7: Kiểm tra systemd service
 
@@ -165,7 +165,7 @@ Active: active (running)
 
 Điều này chứng minh backend service đang chạy ổn định trên EC2. Các log systemd cũng cho thấy backend nhận request `/health` và trả về `200 OK`.
 
-![Systemctl Backend Active](/fcaj-internship-report/images/5-Workshop/5.5-Backend-EC2-Runtime/w-trang-04-07-systemctl-backend-active.jpg)
+![Systemctl Backend Active](/images/5-Workshop/5.5-Backend-EC2-Runtime/w-trang-04-07-systemctl-backend-active.jpg)
 
 ## Bước 8: Kiểm tra health endpoint
 
@@ -185,7 +185,7 @@ content-type: application/json
 
 Điều này chứng minh service `socai-backend` đang chạy thành công trên EC2.
 
-![Health Local Response](/fcaj-internship-report/images/5-Workshop/5.5-Backend-EC2-Runtime/w-trang-04-08-health-local-response.jpg)
+![Health Local Response](/images/5-Workshop/5.5-Backend-EC2-Runtime/w-trang-04-08-health-local-response.jpg)
 
 Vì backend instance hiện tại không có Public IPv4, nên health check được test cục bộ trong EC2. Nếu sau này backend được expose qua ALB hoặc CloudFront, bạn có thể test:
 ```bash
@@ -193,7 +193,7 @@ curl -i http://<ALB_DNS_NAME>/health
 curl -i https://<CLOUDFRONT_DOMAIN>/health
 ```
 
-## Bước 9: Placeholder cho async ingestion endpoint
+## Bước 9:  cho async ingestion endpoint
 
 Endpoint `/api/events/http/async` nhận HTTP evidence từ collector hoặc tailer.
 

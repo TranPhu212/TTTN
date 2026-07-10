@@ -24,19 +24,19 @@ Ghi lại backend integration evidence đã có cho đường đi SQS, đồng t
 
 Log này chứng minh backend đã nhận async HTTP event request và trả `202 Accepted`. Đây là evidence cho ingestion endpoint, nhưng chưa tự chứng minh mọi downstream step đã hoàn tất.
 
-![Backend async API accepted event](/fcaj-internship-report/images/5-Workshop/5.6-SQS-DLQ-and-S3-Data-Bucket/w-tin-17-backend-sqs-s3-log.png)
+![Backend async API accepted event](/images/5-Workshop/5.6-SQS-DLQ-and-S3-Data-Bucket/w-tin-17-backend-sqs-s3-log.png)
 
 ## SQS message được tạo sau backend ingestion
 
 Screenshot này hiển thị message body nhận từ SQS. Event có schema version, event type, event ID, timestamp, source/destination IP và HTTP evidence. Ảnh này hỗ trợ claim rằng backend ingestion có thể tạo queue message.
 
-![SQS message after backend ingestion](/fcaj-internship-report/images/5-Workshop/5.6-SQS-DLQ-and-S3-Data-Bucket/w-tin-15-sqs-message-after-backend.png)
+![SQS message after backend ingestion](/images/5-Workshop/5.6-SQS-DLQ-and-S3-Data-Bucket/w-tin-15-sqs-message-after-backend.png)
 
 ## Worker follow-up và blocker hiện tại
 
 Worker service đang enabled và active, nhưng log có `AccessDeniedException` với `secretsmanager:GetSecretValue`. Đây là troubleshooting evidence quan trọng: đường SQS đã có evidence, nhưng worker-to-RDS processing vẫn cần quyền Secrets Manager đúng trước khi claim end-to-end pipeline hoàn chỉnh.
 
-![Worker log and Secrets Manager access issue](/fcaj-internship-report/images/5-Workshop/5.6-SQS-DLQ-and-S3-Data-Bucket/w-tin-14-async-api-response-queued.png)
+![Worker log and Secrets Manager access issue](/images/5-Workshop/5.6-SQS-DLQ-and-S3-Data-Bucket/w-tin-14-async-api-response-queued.png)
 
 ## Evidence còn thiếu
 

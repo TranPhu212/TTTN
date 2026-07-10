@@ -24,7 +24,7 @@ This VPC will be used for the next steps like creating subnets, route tables, In
 
 On the AWS Console, open the **VPC** service, go to **Your VPCs** page and select **Create VPC** as shown below.
 
-![Create VPC Button](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-01-01-create-vpc-button.jpg)
+![Create VPC Button](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-01-01-create-vpc-button.jpg)
 
 
 ## Step 2: Configure VPC
@@ -35,7 +35,7 @@ In this workshop, select **VPC only** to manually configure subsequent component
 
 The `10.20.0.0/16` CIDR block is sufficient to be divided into multiple subnets for public layer, app layer, and database layer.
 
-![Create VPC Settings](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-01-02-create-vpc-settings.jpg)
+![Create VPC Settings](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-01-02-create-vpc-settings.jpg)
 
 After verifying the information is correct, select **Create VPC**.
 
@@ -46,7 +46,7 @@ After creation, return to the **Your VPCs** page and check the newly created VPC
 
 Information to see:
 
-![VPC List Created](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-01-03-vpc-list-created.jpg)
+![VPC List Created](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-01-03-vpc-list-created.jpg)
 
 
 ## Step 4: Check VPC details
@@ -56,7 +56,7 @@ Select VPC `socai-dev-vpc` to check detailed information.
 Need to confirm key information:
 
 
-![VPC Detail](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-01-04-vpc-detail.jpg)
+![VPC Detail](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-01-04-vpc-detail.jpg)
 
 
 ## Role of VPC in the workshop

@@ -20,7 +20,7 @@ Trên AWS Console, mở dịch vụ **VPC**, chọn **Subnets** ở menu bên tr
 
 Sau đó chọn **Create subnet** để bắt đầu tạo subnet mới.
 
-![Create Subnet Button](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-02-01-create-subnet-button.jpg)
+![Create Subnet Button](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-02-01-create-subnet-button.jpg)
 
 
 ## Bước 2: Chọn VPC cho subnet
@@ -42,7 +42,7 @@ Tất cả subnet trong phần này phải được tạo trong cùng VPC `socai
 
 Không sử dụng các subnet có CIDR `172.31.x.x` vì đó là subnet thuộc default VPC, không phải VPC của project.
 
-![Select VPC for Subnet](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-02-02-setting-subnet.jpg)
+![Select VPC for Subnet](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-02-02-setting-subnet.jpg)
 
 
 ## Bước 3: Kiểm tra Public Subnets
@@ -70,7 +70,7 @@ Destination: 0.0.0.0/0
 Target: Internet Gateway
 ```
 
-![Public Subnets](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-02-03-public-subnet-settings.jpg)
+![Public Subnets](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-02-03-public-subnet-settings.jpg)
 
 
 ## Bước 4: Kiểm tra Private App Subnets
@@ -93,7 +93,7 @@ IPv4 CIDR: 10.20.144.0/20
 
 Backend EC2 trong private subnet không nên nhận traffic trực tiếp từ Internet. Nếu cần public access, request nên đi qua ALB hoặc CloudFront tùy kiến trúc cuối.
 
-![Private App Subnets](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-02-04-private-app-subnet-settings.jpg)
+![Private App Subnets](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-02-04-private-app-subnet-settings.jpg)
 
 
 ## Bước 5: Kiểm tra Private DB Subnets
@@ -116,7 +116,7 @@ IPv4 CIDR: 10.20.33.0/24
 
 RDS thường cần DB subnet group gồm ít nhất hai subnet ở hai Availability Zone khác nhau. Tuy nhiên, nếu project đang demo Single-AZ để giảm chi phí, cần ghi đúng trạng thái thật và không claim Multi-AZ nếu chưa bật.
 
-![Private DB Subnets](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-02-05-private-db-subnet-settings.jpg)
+![Private DB Subnets](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-02-05-private-db-subnet-settings.jpg)
 
 
 ## Bước 6: Kiểm tra danh sách Subnets
@@ -149,7 +149,7 @@ Available
 
 Các subnet có CIDR `172.31.x.x` thuộc default VPC nên không được dùng trong project này.
 
-![Subnet List](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-02-06-subnet-list.jpg)
+![Subnet List](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-02-06-subnet-list.jpg)
 
 
 ## Bước 7: Kiểm tra chi tiết Private App Subnet
@@ -171,7 +171,7 @@ Route table: socai-dev-rt-private-a
 
 Private app subnet dùng cho Backend EC2 hoặc Worker. Ở kiến trúc production-style, subnet này không nên public trực tiếp ra Internet.
 
-![Private App Subnet Detail](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-02-07-private-app-subnet-detail.jpg)
+![Private App Subnet Detail](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-02-07-private-app-subnet-detail.jpg)
 
 
 ## Bước 8: Kiểm tra chi tiết Private DB Subnet
@@ -193,7 +193,7 @@ Route table: socai-dev-rt-db
 
 Private DB subnet dùng cho RDS PostgreSQL. Database subnet cần được giữ private để tránh public exposure.
 
-![DB Subnet Detail](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-02-08-db-subnet-detail.jpg)
+![DB Subnet Detail](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-02-08-db-subnet-detail.jpg)
 
 
 ## Vai trò subnet trong workshop

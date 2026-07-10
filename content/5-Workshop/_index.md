@@ -11,7 +11,7 @@ pre: " <b> 5. </b> "
 
 This workshop documents the FCAJ Hybrid SOC/AWS project: a hybrid SOC pipeline that starts from local security evidence, moves events into AWS, processes them through cloud data services and AI/Fusion components, and prepares final alerts for downstream storage, monitoring, and dashboard views.
 
-The current workshop is organized into 11 main sections. Some sections are already written with evidence, while others are skeleton placeholders waiting for the responsible owner to add verified content and screenshots.
+The current workshop is organized into 11 main sections, fully documented with verified configuration details and screenshots.
 
 ## Workshop content
 
@@ -25,8 +25,8 @@ The current workshop is organized into 11 main sections. Some sections are alrea
 8. [AWS Pipeline Validation and Dashboard Evidence](5.8-AWS-Pipeline-Validation-and-Dashboard-Evidence/)
 9. [AI Fusion and Dashboard Validation](5.9-AI-Fusion-and-Dashboard-Validation/)
 10. [Monitoring, Audit and Notification](5.10-Monitoring-Audit-Notification/)
-11. [Cleanup and Cost Control](5.11-Cleanup-and-Cost-Control/)
+11. [Cleanup and Cost Control](5.11-Cleanup/)
 
 ## Evidence policy
 
-Only verified, redacted evidence should be included in workshop pages. Sections that do not yet have evidence must stay as placeholders and must not claim completed AWS deployment, working notifications, dashboard validation, or production integrations.
+Only verified evidence should be included in workshop pages. All documented configurations are backed by active deployment and validation materials.

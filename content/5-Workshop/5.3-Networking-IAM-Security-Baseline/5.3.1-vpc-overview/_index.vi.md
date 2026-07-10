@@ -24,7 +24,7 @@ VPC này sẽ được dùng cho các bước tiếp theo như tạo subnet, rou
 
 Trên AWS Console, mở dịch vụ **VPC**, vào trang **Your VPCs** và chọn **Create VPC** như hình bên dưới.
 
-![Create VPC Button](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-01-01-create-vpc-button.jpg)
+![Create VPC Button](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-01-01-create-vpc-button.jpg)
 
 
 ## Bước 2: Cấu hình VPC
@@ -35,7 +35,7 @@ Trong workshop này, chọn **VPC only** để tự cấu hình riêng các thà
 
 Dải CIDR `10.20.0.0/16` đủ để chia thành nhiều subnet cho public layer, app layer và database layer.
 
-![Create VPC Settings](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-01-02-create-vpc-settings.jpg)
+![Create VPC Settings](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-01-02-create-vpc-settings.jpg)
 
 Sau khi kiểm tra đúng thông tin, chọn **Create VPC**.
 
@@ -46,7 +46,7 @@ Sau khi tạo xong, quay lại trang **Your VPCs** và kiểm tra VPC vừa tạ
 
 Thông tin cần thấy:
 
-![VPC List Created](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-01-03-vpc-list-created.jpg)
+![VPC List Created](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-01-03-vpc-list-created.jpg)
 
 ## Bước 4: Kiểm tra chi tiết VPC
 
@@ -54,7 +54,7 @@ Chọn VPC `socai-dev-vpc` để kiểm tra thông tin chi tiết.
 
 Cần xác nhận các thông tin chính:
 
-![VPC Detail](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-01-04-vpc-detail.jpg)
+![VPC Detail](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-01-04-vpc-detail.jpg)
 
 
 ## Vai trò của VPC trong workshop

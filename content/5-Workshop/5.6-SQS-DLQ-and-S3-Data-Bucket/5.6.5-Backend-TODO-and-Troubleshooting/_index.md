@@ -24,19 +24,19 @@ Document the backend integration evidence that has been captured for the SQS pat
 
 This log proves that the backend accepted the async HTTP event request and returned `202 Accepted`. It is evidence for the ingestion endpoint, not by itself proof that every downstream step completed.
 
-![Backend async API accepted event](/fcaj-internship-report/images/5-Workshop/5.6-SQS-DLQ-and-S3-Data-Bucket/w-tin-17-backend-sqs-s3-log.png)
+![Backend async API accepted event](/images/5-Workshop/5.6-SQS-DLQ-and-S3-Data-Bucket/w-tin-17-backend-sqs-s3-log.png)
 
 ## SQS message created after backend ingestion
 
 This screenshot shows the message body received from SQS. The event includes a schema version, event type, event ID, timestamp, source and destination IP fields, and HTTP evidence. This supports the claim that backend ingestion can create a queue message.
 
-![SQS message after backend ingestion](/fcaj-internship-report/images/5-Workshop/5.6-SQS-DLQ-and-S3-Data-Bucket/w-tin-15-sqs-message-after-backend.png)
+![SQS message after backend ingestion](/images/5-Workshop/5.6-SQS-DLQ-and-S3-Data-Bucket/w-tin-15-sqs-message-after-backend.png)
 
 ## Worker follow-up and current blocker
 
 The worker service is enabled and active, but the captured log shows `AccessDeniedException` for `secretsmanager:GetSecretValue`. This is useful troubleshooting evidence: the SQS path has evidence, but worker-to-RDS processing still needs the correct Secrets Manager permission before the end-to-end pipeline can be claimed as complete.
 
-![Worker log and Secrets Manager access issue](/fcaj-internship-report/images/5-Workshop/5.6-SQS-DLQ-and-S3-Data-Bucket/w-tin-14-async-api-response-queued.png)
+![Worker log and Secrets Manager access issue](/images/5-Workshop/5.6-SQS-DLQ-and-S3-Data-Bucket/w-tin-14-async-api-response-queued.png)
 
 ## Remaining evidence
 

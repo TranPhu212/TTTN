@@ -24,7 +24,7 @@ socai-dev-nat-a
 
 Hình dưới đây cho thấy NAT Gateway đang ở trạng thái `Available`.
 
-![NAT Gateway List](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-05-01-nat-gateway-list.jpg)
+![NAT Gateway List](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-05-01-nat-gateway-list.jpg)
 
 ## Bước 2: Kiểm tra thông tin NAT Gateway
 
@@ -47,7 +47,7 @@ Primary Public IPv4: 47.131.186.17
 
 NAT Gateway đang nằm trong public subnet `social-dev-public-subnet-a`, đây là cấu hình đúng vì NAT Gateway cần có đường ra Internet thông qua Internet Gateway.
 
-![NAT Gateway Detail](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-05-02-nat-gateway-detail.jpg)
+![NAT Gateway Detail](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-05-02-nat-gateway-detail.jpg)
 
 ## Bước 3: Xác định private subnet sử dụng NAT Gateway
 
@@ -71,7 +71,7 @@ Target: nat-0a7e6ff8f16b60be7
 
 Hình dưới đây cho thấy các private app subnet thuộc VPC `socai-dev-vpc`.
 
-![Private App Subnets](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-05-03-private-app-subnets.jpg)
+![Private App Subnets](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-05-03-private-app-subnets.jpg)
 
 ## Vai trò NAT Gateway trong workshop
 

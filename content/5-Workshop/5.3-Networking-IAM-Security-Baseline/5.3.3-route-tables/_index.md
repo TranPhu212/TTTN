@@ -27,7 +27,7 @@ VPC ID: vpc-04c78e55ae4ceec8a
 
 The image below shows the list of route tables in the project VPC.
 
-![Route Tables List](/fcaj-internship-report/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-03-01-route-tables-list.jpg)
+![Route Tables List](/images/5-Workshop/5.3-Networking-IAM-Security-Baseline/w-trang-03-01-route-tables-list.jpg)
 
 
 ## Step 2: Check existing Route Tables

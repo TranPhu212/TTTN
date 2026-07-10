@@ -31,21 +31,21 @@ RDS PostgreSQL được cấu hình ở chế độ private access. Database kh�
 
 RDS PostgreSQL đang available và chạy Single-AZ để giảm chi phí demo.
 
-![RDS PostgreSQL Single-AZ summary](/fcaj-internship-report/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.1.png)
+![RDS PostgreSQL Single-AZ summary](/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.1.png)
 
 RDS sử dụng private connectivity, public access disabled, endpoint và port 5432.
 
-![RDS private connectivity and endpoint](/fcaj-internship-report/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.2.png)
+![RDS private connectivity and endpoint](/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.2.png)
 
 Security Group chỉ cho backend/worker truy cập PostgreSQL 5432.
 
-![RDS security group inbound rule](/fcaj-internship-report/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.3.png)
+![RDS security group inbound rule](/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.3.png)
 
 #### Secrets Manager
 
 RDS credential được lưu trong AWS Secrets Manager. Khi chụp screenshot, không hiển thị secret value, password hoặc connection string chứa password.
 
-![RDS secret stored in Secrets Manager with value redacted](/fcaj-internship-report/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.4.png)
+![RDS secret stored in Secrets Manager with value ](/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.4.png)
 
 #### Test kết nối từ EC2/Worker đến RDS
 
@@ -57,13 +57,13 @@ timeout 5 bash -c '</dev/tcp/<RDS_ENDPOINT>/5432' \
   || echo "RDS port 5432 is not reachable"
 ```
 
-Nếu dùng `psql`, sử dụng placeholder cho thông tin kết nối và không đưa password thật vào markdown.
+Nếu dùng `psql`, sử dụng  cho thông tin kết nối và không đưa password thật vào markdown.
 
 ```bash
 psql "host=<RDS_ENDPOINT> port=5432 dbname=<DB_NAME> user=<DB_USER> sslmode=require"
 ```
 
-![RDS connectivity test from EC2 or worker](/fcaj-internship-report/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.5.png)
+![RDS connectivity test from EC2 or worker](/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.5.png)
 
 #### Kiểm tra bảng final alerts
 
@@ -80,7 +80,7 @@ LIMIT 5;
 
 Nếu table thực tế là `alerts`, thay `final_alerts` bằng `alerts`.
 
-![Final alerts table in PostgreSQL](/fcaj-internship-report/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.6.png)
+![Final alerts table in PostgreSQL](/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.6.png)
 
 #### Kiểm tra worker service
 
@@ -90,7 +90,7 @@ AI Worker chạy dưới dạng systemd service trên EC2 worker instance. Worke
 sudo systemctl status socai-ai-worker --no-pager
 ```
 
-![AI worker systemd service status](/fcaj-internship-report/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.7.png)
+![AI worker systemd service status](/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.7.png)
 
 #### Worker processed message
 
@@ -101,7 +101,7 @@ echo "Screenshot: 5.7.8"
 sudo journalctl -u socai-ai-worker --no-pager | grep "processed message" | tail -n 5
 ```
 
-![AI worker processed SQS message](/fcaj-internship-report/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.8.png)
+![AI worker processed SQS message](/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.8.png)
 
 #### RDS final alert row
 
@@ -123,7 +123,7 @@ ORDER BY created_at DESC
 LIMIT 5;
 ```
 
-![Final alert row stored in RDS](/fcaj-internship-report/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.9.png)
+![Final alert row stored in RDS](/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.9.png)
 
 #### API latest alert
 
@@ -133,11 +133,11 @@ Cuối cùng, kiểm tra backend API để xác nhận alert có thể được 
 curl -s http://127.0.0.1:8000/api/alerts/latest | python3 -m json.tool
 ```
 
-![Latest alert returned by backend API](/fcaj-internship-report/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.10.png)
+![Latest alert returned by backend API](/images/5-Workshop/5.7-RDS-Secrets-Worker-Pipeline/5.7.10.png)
 
 #### Ghi chú bảo mật
 
-> Không đưa DB password, secret value, access key, `.pem`, token hoặc file `.env` chưa redacted vào screenshot/workshop.
+> Không đưa DB password, secret value, access key, `.pem`, token hoặc file `.env` chưa  vào screenshot/workshop.
 
 #### Troubleshooting
 

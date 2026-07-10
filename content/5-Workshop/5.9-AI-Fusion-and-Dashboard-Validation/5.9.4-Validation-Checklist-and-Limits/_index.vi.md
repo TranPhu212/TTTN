@@ -10,31 +10,31 @@ pre : " <b> 5.9.4. </b> "
 
 Dashboard overview xác nhận giao diện SOC chính load được và hiển thị các khu vực workflow cho analyst.
 
-![Dashboard overview](/fcaj-internship-report/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-phu-48-dashboard-overview.png)
+![Dashboard overview](/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-phu-48-dashboard-overview.png)
 
 KPI và visual analytics evidence validate summary cards và chart layout.
 
-![Dashboard KPI detail](/fcaj-internship-report/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-phu-49-dashboard-kpi-detail.png)
+![Dashboard KPI detail](/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-phu-49-dashboard-kpi-detail.png)
 
-![Dashboard visual analytics](/fcaj-internship-report/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-phu-50-dashboard-visual-analytics.png)
+![Dashboard visual analytics](/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-phu-50-dashboard-visual-analytics.png)
 
 Alert table thể hiện workflow dạng danh sách cho analyst. Nếu dữ liệu là mock hoặc replay, wording phải ghi rõ.
 
-![Dashboard alert table](/fcaj-internship-report/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-phu-51-dashboard-alert-table.png)
+![Dashboard alert table](/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-phu-51-dashboard-alert-table.png)
 
 MITRE và event detail evidence cho thấy alert có thể được enrich bằng investigation context.
 
-![Dashboard MITRE badge](/fcaj-internship-report/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-phu-52-dashboard-mitre-badge.png)
+![Dashboard MITRE badge](/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-phu-52-dashboard-mitre-badge.png)
 
-![Dashboard event detail evidence](/fcaj-internship-report/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-phu-53-dashboard-event-detail-evidence.png)
+![Dashboard event detail evidence](/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-phu-53-dashboard-event-detail-evidence.png)
 
 Decision flow view giải thích cách AI và evidence được trình bày cho analyst.
 
-![Dashboard decision flow](/fcaj-internship-report/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-phu-54-dashboard-decision-flow.png)
+![Dashboard decision flow](/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-phu-54-dashboard-decision-flow.png)
 
 Nếu dùng real backend alert evidence, phần mô tả phải ghi chính xác path đã validate.
 
-![Dashboard real alert after backend](/fcaj-internship-report/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-phu-56-dashboard-real-alert-after-backend.png)
+![Dashboard real alert after backend](/images/5-Workshop/5.9-AI-Fusion-and-Dashboard-Validation/w-phu-56-dashboard-real-alert-after-backend.png)
 
 ## Giới hạn
 

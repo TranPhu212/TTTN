@@ -192,7 +192,7 @@ Nếu đã cấu hình CloudWatch Logs, log backend có thể được đẩy l�
 
 ## Sơ đồ kiến trúc
 
-![Hybrid SOC Architecture](/fcaj-internship-report/images/5-Workshop/5.1-Overview-and-Architecture/w-trang-01-architecture-overview.jpg)
+![Hybrid SOC Architecture](/images/5-Workshop/5.1-Overview-and-Architecture/w-trang-01-architecture-overview.jpg)
 
 ## Công nghệ chính
 
@@ -242,4 +242,4 @@ Local Lab
 
 Các thành phần như ALB, Target Group, Auto Scaling Group, CloudTrail và SNS chỉ nên được ghi là phần mở rộng nếu chưa có evidence cấu hình thật trên AWS Console.
 
-Backend hiện đang được cập nhật source để bổ sung boto3 integration cho S3 và SQS. Vì vậy, section sau sẽ tập trung kiểm tra EC2 runtime, systemd service, endpoint `/health` và đặt placeholder cho endpoint `/api/events/http/async` đến khi source mới sẵn sàng.
+Backend hiện đang được cập nhật source để bổ sung boto3 integration cho S3 và SQS. Vì vậy, section sau sẽ tập trung kiểm tra EC2 runtime, systemd service, endpoint `/health` và đặt  cho endpoint `/api/events/http/async` đến khi source mới sẵn sàng.
