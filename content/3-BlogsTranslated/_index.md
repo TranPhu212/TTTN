@@ -19,6 +19,6 @@ This blog introduces using the FinOps Agent built on Amazon Bedrock AgentCore to
 This blog shares how CLICKFORCE built the Lumos system to automate the ad analysis process using Amazon Bedrock Agents, Knowledge Bases, SageMaker AI, and other AWS services. The solution helps reduce report creation time from 2-6 weeks to less than 1 hour, cuts operating costs by 47%, and allows users to query data in natural language with Text-to-SQL.
 
 ### [Blog 3 - Internal AI for Enterprises: When Employees Don’t Need to Search Every Folder for Information](3.3-Blog3/)
-**Author:** Tran Dinh Phu.
+**Author:** Van Quang Tin
 
 This blog guides how to build an internal AI Assistant for enterprises using Amazon Bedrock Knowledge Bases and other AWS services. The solution helps employees search information from internal documents (HR policies, processes, onboarding...) in natural language, get answers with clear source citations, starting with a small scope for easy testing and gradual expansion.
