@@ -10,7 +10,7 @@ pre: " <b> 3.1. </b> "
 
 **Original authors:** Salman Ahmed, Sergio Barraza, and Ravi Kumar
 
-**Translator:** Le Thi Huyen Trang
+**Translator:** Tran Dinh Phu
 
 **Source:** [AWS Machine Learning Blog](https://aws.amazon.com/blogs/machine-learning/build-a-finops-agent-using-amazon-bedrock-agentcore/)
 

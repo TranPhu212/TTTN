@@ -10,7 +10,7 @@ pre: " <b> 3.2. </b> "
 
 **Tác giả bài gốc:** Ray Wang và Shanna Chang
 
-**Người dịch:** Lê Thị Huyền Trang
+**Người dịch:** Trần Đình Phú
 
 **Nguồn:** [AWS Machine Learning Blog](https://aws.amazon.com/blogs/machine-learning/how-clickforce-accelerates-data-driven-advertising-with-amazon-bedrock-agents/)
 
