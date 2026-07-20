@@ -24,6 +24,16 @@ pre: " <b> 1.11. </b> "
 
 ### Kết quả đạt được tuần 11:
 
+### Công việc đã thực hiện trong dự án FCAJ Hybrid SOC/AWS
+
+* Cập nhật frontend **SOC Console** để dữ liệu không còn phụ thuộc vào một luồng cố định, mà có thể chọn rõ ba chế độ `demo`, `replay` và `live` thông qua biến cấu hình `VITE_DATA_MODE`.
+* Chỉnh sửa `App.tsx`, `useSocket.ts` và `RealtimeIncidentStream.tsx` để đồng bộ trạng thái kết nối, hạn chế tạo WebSocket trùng lặp và ưu tiên hiển thị cảnh báo mới nhất.
+* Điều chỉnh các trang Network Monitoring, AI Threat Detection và Threat Hunting để nhận đúng dữ liệu từ Zeek, Suricata và các mô hình AI theo từng chế độ vận hành.
+* Bổ sung các API hỗ trợ ở backend FastAPI (`/api/status`, `/api/events`, `/api/replay/demo`, `/ws/alerts`) và dữ liệu người dùng demo để kiểm thử luồng đăng nhập, replay và realtime.
+* Kiểm tra luồng frontend–backend và chuẩn bị nền tảng để SOC Console có thể trình diễn bằng dữ liệu mẫu, phát lại dữ liệu lịch sử hoặc kết nối với Local Security Lab.
+
+Ba ngày đầu tuần là các bài thực hành AWS bổ trợ cho kiến thức bảo mật, serverless và data pipeline; công việc đóng góp trực tiếp vào project được thực hiện vào thứ 5 với SOC Console như mô tả trên.
+
 ## Thứ 2: CLOUDFRONT WITH S3 BUCKET ORIGIN
 * **Giới thiệu**
   * Hướng dẫn cách **host nội dung web tĩnh** trên **Amazon S3 bucket**, sau đó sử dụng **Amazon CloudFront** để bảo vệ và tăng tốc độ phân phối nội dung

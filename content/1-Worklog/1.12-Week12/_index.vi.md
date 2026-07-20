@@ -15,7 +15,11 @@ pre: " <b> 1.12 </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --------- | ------------ | --------------- | -------------- |
-| 2 - 6 | - Viết và hoàn thiện báo cáo workshop FCAJ Hybrid SOC/AWS | 06/07/2026 | 10/07/2026 |
+| 2 | Viết phần tổng quan, phạm vi và sơ đồ kiến trúc Hybrid SOC/AWS | 06/07/2026 | 06/07/2026 | Nội dung project và evidence các tuần trước |
+| 3 | Hoàn thiện hướng dẫn Networking, IAM, S3, CloudFront, WAF và Backend EC2 | 07/07/2026 | 07/07/2026 | Cấu hình và ảnh kiểm chứng của project |
+| 4 | Viết luồng SQS/DLQ, S3 Data Bucket, RDS, Secrets Manager và Worker Pipeline | 08/07/2026 | 08/07/2026 | Kết quả triển khai data pipeline |
+| 5 | Bổ sung phần kiểm chứng Dashboard, AI Fusion, Monitoring, Audit và Notification | 09/07/2026 | 09/07/2026 | Screenshot, log và kết quả test |
+| 6 | Rà soát song ngữ, chuẩn hóa hình ảnh/đường dẫn và hoàn thiện Cleanup & Cost Control | 10/07/2026 | 10/07/2026 | Toàn bộ nội dung workshop |
 
 
 ### Kết quả đạt được tuần 12:

@@ -8,6 +8,12 @@ pre: " <b> 3.2. </b> "
 
 # CLICKFORCE TĂNG TỐC PHÂN TÍCH QUẢNG CÁO VỚI AMAZON BEDROCK AGENTS
 
+**Tác giả bài gốc:** Ray Wang và Shanna Chang
+
+**Người dịch:** Lê Thị Huyền Trang
+
+**Nguồn:** [AWS Machine Learning Blog](https://aws.amazon.com/blogs/machine-learning/how-clickforce-accelerates-data-driven-advertising-with-amazon-bedrock-agents/)
+
 Trong bối cảnh Generative AI và AI Agent ngày càng phát triển, mình thấy một trong những bài toán thực tế nhất mà doanh nghiệp đang gặp phải chính là: phân tích dữ liệu quảng cáo thủ công quá chậm, không theo kịp tốc độ ra quyết định.
 
 ![Kiến trúc hệ thống Lumos của CLICKFORCE](/images/3-BlogsTranslated/blog2.jpg)

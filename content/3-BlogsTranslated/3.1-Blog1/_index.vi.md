@@ -8,6 +8,12 @@ pre: " <b> 3.1. </b> "
 
 # TỰ ĐỘNG HÓA QUẢN LÝ CHI PHÍ AWS VỚI FINOPS AGENT TRÊN AMAZON BEDROCK AGENTCORE
 
+**Tác giả bài gốc:** Salman Ahmed, Sergio Barraza và Ravi Kumar
+
+**Người dịch:** Lê Thị Huyền Trang
+
+**Nguồn:** [AWS Machine Learning Blog](https://aws.amazon.com/blogs/machine-learning/build-a-finops-agent-using-amazon-bedrock-agentcore/)
+
 Khi doanh nghiệp sử dụng nhiều AWS account và nhiều dịch vụ cloud, việc kiểm soát chi phí không còn đơn giản là chỉ xem báo cáo cuối tháng. Để giải quyết vấn đề này, AWS giới thiệu FinOps Agent được xây dựng trên Amazon Bedrock AgentCore, giúp người dùng hỏi dữ liệu chi phí AWS bằng ngôn ngữ tự nhiên, nhận phân tích về cost driver, budget, anomaly và các đề xuất tối ưu tài nguyên. Theo mình, điểm hay của giải pháp này là Agent không thay thế các công cụ như Cost Explorer hay Compute Optimizer, mà đóng vai trò gom dữ liệu, diễn giải kết quả và hỗ trợ đưa ra hành động tối ưu chi phí nhanh hơn.
 
 ![Kiến trúc FinOps Agent trên Amazon Bedrock AgentCore](/images/3-BlogsTranslated/blog1.jpg)

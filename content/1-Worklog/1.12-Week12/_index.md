@@ -15,7 +15,11 @@ pre: " <b> 1.12. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | ---- | ---------- | --------------- | ------------------ |
-| Mon - Fri | - Write and complete the FCAJ Hybrid SOC/AWS workshop report | 06/07/2026 | 10/07/2026 |
+| Monday | Write the overview, scope, and Hybrid SOC/AWS architecture | 06/07/2026 | 06/07/2026 | Project content and evidence from previous weeks |
+| Tuesday | Complete the Networking, IAM, S3, CloudFront, WAF, and Backend EC2 guides | 07/07/2026 | 07/07/2026 | Project configuration and validation screenshots |
+| Wednesday | Document SQS/DLQ, S3 Data Bucket, RDS, Secrets Manager, and the Worker Pipeline | 08/07/2026 | 08/07/2026 | Data-pipeline implementation results |
+| Thursday | Add Dashboard, AI Fusion, Monitoring, Audit, and Notification validation | 09/07/2026 | 09/07/2026 | Screenshots, logs, and test results |
+| Friday | Review both languages, standardize images/links, and complete Cleanup & Cost Control | 10/07/2026 | 10/07/2026 | Full workshop content |
 
 
 ### Week 12 Achievements:

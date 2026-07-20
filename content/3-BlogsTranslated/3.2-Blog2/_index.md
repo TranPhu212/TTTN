@@ -8,6 +8,12 @@ pre: " <b> 3.2. </b> "
 
 # CLICKFORCE ACCELERATES AD ANALYTICS WITH AMAZON BEDROCK AGENTS
 
+**Original authors:** Ray Wang and Shanna Chang
+
+**Translator:** Le Thi Huyen Trang
+
+**Source:** [AWS Machine Learning Blog](https://aws.amazon.com/blogs/machine-learning/how-clickforce-accelerates-data-driven-advertising-with-amazon-bedrock-agents/)
+
 In the context of the growing development of Generative AI and AI Agents, I find that one of the most practical problems businesses are facing is: manual ad data analysis is too slow and can't keep up with decision-making speed.
 
 ![CLICKFORCE Lumos System Architecture](/images/3-BlogsTranslated/blog2.jpg)

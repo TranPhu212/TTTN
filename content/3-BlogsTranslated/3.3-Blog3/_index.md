@@ -8,6 +8,8 @@ pre: " <b> 3.3. </b> "
 
 # INTERNAL AI FOR ENTERPRISES: WHEN EMPLOYEES DON’T NEED TO SEARCH EVERY FOLDER FOR INFORMATION
 
+**Author:** Van Quang Tin
+
 ![Internal AI Assistant Architecture with Amazon Bedrock](/images/3-BlogsTranslated/blog3.jpg)
 
 Data in enterprises is usually not in one single place. Some might be in Google Drive, some in SharePoint, some in CRM or ERP. Internal processes might be in PDF files. Customer FAQs might be in the ticket system. Other information might be in emails, Excel files, or department-specific folders.
